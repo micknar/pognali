@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Marina Chibirova](https://up.htmlacademy.ru/adaptive/19/user/527331).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 
 ---
 
