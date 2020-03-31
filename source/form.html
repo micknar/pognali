@@ -6,52 +6,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__inner">
-        <nav class="main-nav">
-          <div class="main-nav__sticky">
-            <a class="main-nav__logo logo">
-              <img src="logo.png" alt="Логотип 'Погнали'" width="120" height="30">
-            </a>
-            <button type="button" class="main-nav__trigger" aria-label="Открыть/скрыть меню">
-              <!-- svg -->
-            </button>
-          </div>
-          <div class="main-nav__dropdown">
+      <div class="header__nav">
+        <div class="header__sticky">
+          <a class="header__logo logo">
+            <img src="logo.png" alt="Логотип «Погнали»" width="120" height="30">
+          </a>
+          <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
+            <!-- svg -->
+          </button>
+        </div>
+        <div class="header__dropdown">
+          <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__list"><a href="index.html" class="main-nav__link">О сервисе</a></li>
-              <li class="main-nav__list"><a class="main-nav__link main-nav__link--active">Направления</a></li>
-              <li class="main-nav__list"><a href="catalog.html" class="main-nav__link">Попутчики</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">О сервисе</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Направления</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Попутчики</a></li>
             </ul>
-            <a href="#" class="button">Авторизация</a>
-            <ul class="contacts main-nav__contacts">
-              <li class="contacts__item">
-                <!-- svg -->
-                <a href="tel:+78005558628" class="contacts__link contacts__link--phone">8 800 555-86-28</a>
-              </li>
-              <li class="contacts__item">
-                <!-- svg -->
-                <a href="mailto:mail@htmlacademy.ru" class="contacts__link contacts__link--mail">mail@htmlacademy.ru</a>
-              </li>
-            </ul>
-            <ul class="social-links main-nav__social-links">
-              <li class="social-links__item">
-                <a href="" class="social-links__link social-links__link--fb" target="_blank">
-                  <span class="visually-hidden">Facebook</span>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a href="" class="social-links__link social-links__link--vk" target="_blank">
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a href="" class="social-links__link social-links__link--insta" target="_blank">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          </nav>
+          <a href="#" class="button">Авторизация</a>
+          <ul class="contacts header__contacts">
+            <li class="contacts__item">
+              <!-- svg -->
+              <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts__item">
+              <!-- svg -->
+              <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="social-links header__social-links">
+            <li class="social-links__item">
+              <a href="" class="social-links__link social-links__link--fb" target="_blank">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-links__link social-links__link--vk" target="_blank">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-links__link social-links__link--insta" target="_blank">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -68,7 +68,7 @@
 
     <footer class="footer">
       <a class="footer__logo logo">
-        <img src="logo.png" alt="Логотип 'Погнали'" width="120" height="30">
+        <img src="logo.png" alt="Логотип «Погнали»" width="120" height="30">
       </a>
 
       <ul class="social-links footer__social-links">
