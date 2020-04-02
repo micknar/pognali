@@ -63,16 +63,145 @@
         </div>
       </div>
 
-      <!-- <section class="country-filter">
+      <section class="country-filter">
         <div class="country-filter__inner">
           <h2 class="country-filter__title">Фильтрация по странам</h2>
-          <ul class="">
-          </ul>
           <button class="country-filter__trigger" type="button" aria-label="Развернуть/свернуть фильтр"></button>
         </div>
-      </section> -->
+        <div class="country-filter__dropdown">
+          <ul class="country-filter__region regions">
+            <li class="regions__item"><a class="regions__link regions__link--active" href="#">Европа</a></li>
+            <li class="regions__item"><a class="regions__link" href="#">Азия</a></li>
+            <li class="regions__item"><a class="regions__link" href="#">Америка</a></li>
+            <li class="regions__item"><a class="regions__link" href="#">Острова</a></li>
+          </ul>
+          <ul class="country-filter__letters letters">
+            <li class="letters__item letters__item--active">
+              <a href="#letter-a" class="letters__link">А</a>
+              <ul class="country-filter__countries countries" id="letter-a">
+                <li class="countries__item"><a class="countries__link" href="/countries/australia">Австралия</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/austria">Австрия</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/azerbaijan">Азербайджан</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/albania">Албания</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/algeria">Алжир</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/angola">Ангола</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/andorra">Андорра</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/antigua-and-barbuda">Антигуа и Барбуда</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/argentina">Аргентина</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/armenia">Армения</a></li>
+                <li class="countries__item"><a class="countries__link" href="/countries/afghanistan">Афганистан</a></li>
+              </ul>
+            </li>
+            <li class="letters__item"><a class="letters__link" href="#">Б</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">В</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Г</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Д</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Е</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">З</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">И</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">К</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Л</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">М</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Н</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">О</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">П</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Р</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">С</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Т</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">У</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Ф</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Х</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Ч</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Ш</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Э</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Ю</a></li>
+            <li class="letters__item"><a class="letters__link" href="#">Я</a></li>
+          </ul>
+        </div>
+        <button class="country-filter__close" type="button">Свернуть</button>
+      </section>
 
-      <!-- <aside class="travelmates-filter"></aside> -->
+      <aside class="travelmates-filter">
+        <h2 class="travelmates-filter__title">Подберите идеального попутчика</h2>
+        <form class="travelmates-filter__form" action="http://echo.htmlacademy.ru" method="get">
+          <fieldset class="travelmates-filter__item">
+            <legend class="travelmates-filter__legend">Хобби</legend>
+            <!-- <ul class="travelmates-filter__list">
+              <li class="travelmates-filter__item">
+                <input class="visually-hidden" type="checkbox" name="" id="" value="">
+                <label for=""></label>
+              </li>
+            </ul> -->
+          </fieldset>
+          <fieldset class="travelmates-filter__fieldset">
+            <legend class="travelmates-filter__legend">Музыка</legend>
+            <ul class="travelmates-filter__list">
+              <li class="travelmates-filter__item">
+                <input class="visually-hidden" type="checkbox" name="music" id="filter-rock" value="rock" checked>
+                <label for="filter-rock">Тяжелый рок</label>
+              </li>
+              <li class="travelmates-filter__item">
+                <input class="visually-hidden" type="checkbox" name="music" id="filter-rap" value="rap">
+                <label for="filter-rap">Русский рэп</label>
+              </li>
+              <li class="travelmates-filter__item">
+                <input class="visually-hidden" type="checkbox" name="music" id="filter-eurodance" value="eurodance">
+                <label for="filter-eurodance">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="travelmates-filter__fieldset">
+            <legend class="travelmates-filter__legend">Еда</legend>
+            <!-- <ul class="travelmates-filter__list">
+              <li class="travelmates-filter__item">
+                <input class="visually-hidden" type="checkbox" name="" id="" value="">
+                <label for=""></label>
+              </li>
+            </ul> -->
+          </fieldset>
+          <fieldset class="travelmates-filter__fieldset transport">
+            <legend class="travelmates-filter__legend">Транспорт</legend>
+            <ul class="travelmates-filter__list transport__list">
+              <li class="transport__item">
+                <input class="visually-hidden" type="checkbox" name="transport" id="filter-plane" value="plane" checked>
+                <label class="transport__label" for="filter-plane">Авиаперелет</label>
+              </li>
+              <li class="transport__item">
+                <input class="visually-hidden" type="checkbox" name="transport" id="filter-car" value="car" checked>
+                <label class="transport__label" for="filter-car">Автотранспорт</label>
+              </li>
+              <li class="transport__item">
+                <input class="visually-hidden" type="checkbox" name="transport" id="filter-bike" value="bike">
+                <label class="transport__label" for="filter-bike">Велосипед</label>
+              </li>
+              <li class="transport__item">
+                <input class="visually-hidden" type="checkbox" name="transport" id="filter-by-foot" value="by-foot" checked>
+                <label class="transport__label" for="filter-by-foot">Пешком</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="travelmates-filter__fieldset">
+            <legend class="travelmates-filter__legend">Левел</legend>
+            <div class="travelmates-filter__list range-slider">
+              <input class="range-slider__value range-slider__value--min" type="text" value="30" name="min">
+              <span>&mdash;</span>
+              <input class="range-slider__value range-slider__value--max" type="text" value="100" name="max">
+              <div class="range-slider__track">
+                <div class="range-slider__slider">
+                  <div class="range-slider__bar"></div>
+                </div>
+                <button class="range-slider__pin range-slider__pin--min" type="button">
+                  <!-- svg -->
+                </button>
+                <button class="range-slider__pin range-slider__pin--max" type="button">
+                  <!-- svg -->
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <button class="travelmates-filter__submit" type="submit">Показать</button>
+        </form>
+      </aside>
 
       <section class="filter-result travelmates travelmates--catalog">
         <h2 class="visually-hidden">Список попутчиков</h2>
@@ -147,8 +276,8 @@
                 <div class="travelmate__progress-bar">
                   <h4 class="travelmate__title">левел</h4>
                   <!-- svg -->
-                  <span class="travelmate__level-number">99</span>
-                  <span class="travelmate__level">level</span>
+                  <span class="progress-bar__number">99</span>
+                  <span class="progress-bar__level">level</span>
                 </div>
               </div>
             </div>
@@ -218,8 +347,8 @@
                 <div class="travelmate__progress-bar">
                   <h4 class="travelmate__title">левел</h4>
                   <!-- svg -->
-                  <span class="travelmate__level-number">80</span>
-                  <span class="travelmate__level">level</span>
+                  <span class="progress-bar__number">80</span>
+                  <span class="progress-bar__level">level</span>
                 </div>
               </div>
             </div>
@@ -293,8 +422,8 @@
                 <div class="travelmate__progress-bar">
                   <h4 class="travelmate__title">левел</h4>
                   <!-- svg -->
-                  <span class="travelmate__level-number">25</span>
-                  <span class="travelmate__level">level</span>
+                  <span class="progress-bar__number">25</span>
+                  <span class="progress-bar__level">level</span>
                 </div>
               </div>
             </div>
@@ -363,8 +492,8 @@
                 <div class="travelmate__progress-bar">
                   <h4 class="travelmate__title">левел</h4>
                   <!-- svg -->
-                  <span class="travelmate__level-number">50</span>
-                  <span class="travelmate__level">level</span>
+                  <span class="progress-bar__number">50</span>
+                  <span class="progress-bar__level">level</span>
                 </div>
               </div>
             </div>
