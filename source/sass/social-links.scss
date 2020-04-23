@@ -1,0 +1,29 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #ffd74b;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #1d2e5b;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}

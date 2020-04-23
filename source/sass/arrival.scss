@@ -1,0 +1,75 @@
+.arrival__inner {
+  padding: 0 5px;
+}
+
+.arrival__fieldset {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.arrival__label,
+.arrival__unit {
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 1;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.arrival__unit {
+  opacity: 0.3;
+}
+
+.arrival__controls-wrapper {
+  position: relative;
+  display: flex;
+  order: 3;
+  width: 100%;
+}
+
+.arrival__input {
+  display: block;
+  width: 100%;
+  height: 43px;
+  text-align: center;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
+
+  &:active {
+    border-color: #161c35;
+  }
+}
+
+.arrival__control {
+  position: absolute;
+  top: 1px;
+  display: block;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  background-color: #ffffff;
+  border: none;
+
+  &--decrease-quantity,
+  &--decrease-duration {
+    left: 1px;
+  }
+
+  &--increase-quantity,
+  &--increase-duration {
+    right: 1px;
+  }
+}
+
+.arrival__with-children {
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

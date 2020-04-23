@@ -1,0 +1,82 @@
+.my-trips {
+  position: relative;
+  z-index: 1;
+  background-color: #dfe3f0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.my-trips__inner {
+  padding: 25px 25px 50px;
+}
+
+.my-trips__title {
+  margin: 0 0 34px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.my-trips__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-trips__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 24px;
+  color: #1d2e5b;
+  background-color: #ffffff;
+  border-radius: 10px;
+  counter-increment: my-trips__list;
+}
+
+.my-trips__direction {
+  margin-bottom: 18px;
+  font-weight: bold;
+  line-height: 1;
+
+  &::before {
+    content: counter(my-trips__list) ".";
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: baseline;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+.my-trips__travelmates {
+  margin-bottom: 5px;
+}
+
+.my-trips__date {
+  margin-bottom: 20px;
+}
+
+.my-trips__travelmates,
+.my-trips__date,
+.my-trips__edit {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.my-trips__edit {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.3);
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
+}

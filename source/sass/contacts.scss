@@ -1,0 +1,39 @@
+.contacts {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffd64b;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(255, 189, 48, 0.3);
+  }
+
+  & svg {
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
+    background-color: #121936;
+    border-radius: 50%;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #ffbd30;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}

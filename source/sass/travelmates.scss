@@ -1,0 +1,103 @@
+.travelmates--preview {
+  position: relative;
+  z-index: 4;
+  margin-top: -30px;
+  padding: 102px 25px 30px;
+  color: #ffffff;
+  background-color: #192144;
+  background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 155px 60px, -10px 350px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.travelmates__container {
+  width: 270px;
+  margin: 0 auto 60px;
+  padding: 0 25px;
+}
+
+.travelmates__header {
+  margin: 0 0 23px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  color: #ff8d30;
+}
+
+.travelmates__container p {
+  margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.travelmates__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.travelmates__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  & svg {
+    width: 10px;
+    height: 14px;
+    margin-left: 4px;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.travelmates__list--catalog {
+  padding: 0 25px;
+}
+
+.travelmates__show-more {
+  display: block;
+  margin: 0 25px 18px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  &:hover,
+  &:focus {
+    color: rgba(29, 46, 91, 0.6);
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+.travelmates__pagination {
+  margin-bottom: 46px;
+  padding: 0 25px;
+}

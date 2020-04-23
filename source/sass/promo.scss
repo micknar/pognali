@@ -1,0 +1,141 @@
+.promo {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  color: #ffffff;
+  background-color: #181e39;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 54% 21%, 0 -37%;
+}
+
+.promo__inner {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.promo__title {
+  margin: 0;
+  padding-bottom: 247px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.promo__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.promo__nav-link {
+  display: block;
+
+  &--rounded {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.promo__nav-link--phone {
+  background-color: #ff8d30;
+
+  &:hover,
+  &:focus {
+    background-color: #f26926;
+  }
+}
+
+.promo__nav-link--mail {
+  background-color: #ffbd30;
+
+  &:hover,
+  &:focus {
+    background-color: #ff8d30;
+  }
+}
+
+.promo__nav-link--auth {
+  max-width: 190px;
+  padding: 5px 40px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #161c35;
+  text-transform: uppercase;
+  background-color: #ffd74b;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+}
+
+.promo__nav-link:active {
+  color: rgba(22, 28, 53, 0.3);
+}
+
+.promo__review {
+  margin-left: 25px;
+  margin-right: 75px;
+}
+
+.promo__steps {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+.promo__steps-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  min-height: 90px;
+  padding-top: 23px;
+  padding-left: 25px;
+  padding-right: 23px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: #161c35;
+  counter-increment: promo__steps;
+  background-color: #ffd74b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &::before {
+    content: "" counter(promo__steps);
+    display: block;
+    color: #ffffff;
+  }
+
+  &:not(:first-child) {
+    margin-top: -10px;
+  }
+
+  &:nth-child(1) {
+    background-color: #ff8d30;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+
+  &:last-child {
+    min-height: 80px;
+    border-radius: 10px;
+  }
+}

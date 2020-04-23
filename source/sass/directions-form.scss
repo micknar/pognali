@@ -1,0 +1,23 @@
+.directions-form__submit {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161c35;
+  background-color: #ffd74b;
+  border: none;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}

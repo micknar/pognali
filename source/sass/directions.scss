@@ -1,0 +1,134 @@
+.directions {
+  position: relative;
+  z-index: 5;
+  margin-top: -30px;
+  padding: 102px 25px 30px;
+  background-color: $main-bg;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.directions__container {
+  width: 270px;
+  margin: 0 auto 66px;
+  padding: 0 25px;
+}
+
+.directions__header {
+  margin: 0 0 23px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  color: #ff8d30;
+}
+
+.directions__container p {
+  margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.directions__item {
+  position: relative;
+  width: 100%;
+  min-height: 189px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+
+.directions__img {
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
+}
+
+.directions__flag {
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+  left: 25px;
+}
+
+.directions__item-inner {
+  position: relative;
+  z-index: 1;
+  min-height: 90px;
+  margin-top: -16px;
+  padding: 0 24px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.directions__title {
+  margin: 0;
+  padding: 25px 0 5px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #161c35;
+
+  &:hover,
+  &:focus {
+    color: rgba(29, 46, 91, 0.7);
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+.directions__item-text {
+  margin: 0;
+  line-height: 1.13;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.directions__counter {
+  position: absolute;
+  top: 23px;
+  right: 26px;
+  line-height: 1.88;
+  color: rgba(68, 68, 68, 0.3);
+
+  &::before {
+    display: none; //temp
+    content: "";
+    background-image: url("");
+  }
+}
+
+.directions__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  & svg {
+    width: 10px;
+    height: 14px;
+    margin-left: 4px;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}

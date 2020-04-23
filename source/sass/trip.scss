@@ -1,0 +1,91 @@
+.trip__inner {
+  padding: 0 5px;
+}
+
+.trip__route-box {
+  position: relative;
+}
+
+.trip__route {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.trip__letters {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.trip__countries {
+  padding: 15px 20px;
+  border: 1px solid #cbced9;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+}
+
+.trip__countries-box {
+  display: none;
+}
+
+.trip__dropdown {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  padding: 11px 12px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  &--selected {
+    width: 168px;
+  }
+}
+
+.trip__country {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  &--selected {
+    width: 104px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &--selected::after {
+    content: "";
+    position: absolute;
+    right: -19px;
+    top: -3px;
+    display: block;
+    width: 5px;
+    height: 24px;
+    box-shadow: -14px 0 12px 4px #ffffff;
+  }
+}
+
+.trip__edit {
+  position: relative;
+  width: 53px;
+  height: 42px;
+  margin-bottom: 22px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  &:last-child {
+    border-left: none;
+  }
+}
+
+//добавить кнопки с состояниями и мелкие декоративные элементы

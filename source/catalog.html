@@ -3,13 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Погнали? - Попутчики</title>
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__nav">
+      <div class="header__nav header__nav--expanded header__nav--sticky">
         <div class="header__sticky">
-          <a class="header__logo logo">
-            <img src="logo.png" alt="Логотип «Погнали»" width="120" height="30">
+          <a class="header__logo logo header__logo--blue" href="index.html">
+            <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+          </a>
+          <a class="header__logo logo header__logo--white" href="index.html">
+            <img src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
           </a>
           <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
             <!-- svg -->
@@ -23,30 +28,34 @@
               <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Попутчики</a></li>
             </ul>
           </nav>
-          <a href="#" class="button">Авторизация</a>
+          <a class="header__auth" href="#">Авторизация</a>
           <ul class="contacts header__contacts">
             <li class="contacts__item">
-              <!-- svg -->
-              <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
+              <a class="contacts__link contacts__link--phone" href="tel:+78005558628">
+                <!-- svg -->
+                8 800 555-86-28
+              </a>
             </li>
             <li class="contacts__item">
-              <!-- svg -->
-              <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">
+                <!-- svg -->
+                mail@htmlacademy.ru
+              </a>
             </li>
           </ul>
           <ul class="social-links header__social-links">
             <li class="social-links__item">
-              <a href="" class="social-links__link social-links__link--fb" target="_blank">
+              <a class="social-links__link social-links__link--fb" href="#" target="_blank">
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li class="social-links__item">
-              <a href="" class="social-links__link social-links__link--vk" target="_blank">
+              <a class="social-links__link social-links__link--vk" href="#" target="_blank">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="social-links__item">
-              <a href="" class="social-links__link social-links__link--insta" target="_blank">
+              <a class="social-links__link social-links__link--insta" href="#" target="_blank">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
@@ -58,15 +67,15 @@
     <main>
       <div class="page-header">
         <div class="page-header__inner">
-          <h1 class="page-header__title">Попутчики</h1>
-          <a class="page-header__link" href="index.html">На главную</a>
+          <h1 class="page-header__title"><span>Попутчики</span></h1>
+          <a class="page-header__link" href="index.html" aria-label="Вернуться на главную"></a>
         </div>
       </div>
 
       <section class="country-filter">
         <div class="country-filter__inner">
           <h2 class="country-filter__title">Фильтрация по странам</h2>
-          <button class="country-filter__trigger" type="button" aria-label="Развернуть/свернуть фильтр"></button>
+          <button class="country-filter__trigger" type="button" aria-label="Развернуть/свернуть фильтр"><svg></svg></button>
         </div>
         <div class="country-filter__dropdown">
           <ul class="country-filter__region regions">
@@ -75,22 +84,10 @@
             <li class="regions__item"><a class="regions__link" href="#">Америка</a></li>
             <li class="regions__item"><a class="regions__link" href="#">Острова</a></li>
           </ul>
+
           <ul class="country-filter__letters letters">
             <li class="letters__item letters__item--active">
-              <a href="#letter-a" class="letters__link">А</a>
-              <ul class="country-filter__countries countries" id="letter-a">
-                <li class="countries__item"><a class="countries__link" href="/countries/australia">Австралия</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/austria">Австрия</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/azerbaijan">Азербайджан</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/albania">Албания</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/algeria">Алжир</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/angola">Ангола</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/andorra">Андорра</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/antigua-and-barbuda">Антигуа и Барбуда</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/argentina">Аргентина</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/armenia">Армения</a></li>
-                <li class="countries__item"><a class="countries__link" href="/countries/afghanistan">Афганистан</a></li>
-              </ul>
+              <a href="#letter-a" class="letters__link letters__link--active">А</a>
             </li>
             <li class="letters__item"><a class="letters__link" href="#">Б</a></li>
             <li class="letters__item"><a class="letters__link" href="#">В</a></li>
@@ -117,15 +114,34 @@
             <li class="letters__item"><a class="letters__link" href="#">Ю</a></li>
             <li class="letters__item"><a class="letters__link" href="#">Я</a></li>
           </ul>
+
+          <ul class="country-filter__countries countries" id="letter-a">
+            <li class="countries__item"><a class="countries__link" href="/countries/australia">Австралия</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/austria">Австрия</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/azerbaijan">Азербайджан</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/albania">Албания</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/algeria">Алжир</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/angola">Ангола</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/andorra">Андорра</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/antigua-and-barbuda">Антигуа и Барбуда</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/argentina">Аргентина</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/armenia">Армения</a></li>
+            <li class="countries__item"><a class="countries__link" href="/countries/afghanistan">Афганистан</a></li>
+          </ul>
+
+          <button class="country-filter__close" type="button">Свернуть</button>
         </div>
-        <button class="country-filter__close" type="button">Свернуть</button>
       </section>
 
       <aside class="travelmates-filter">
         <h2 class="travelmates-filter__title">Подберите идеального попутчика</h2>
         <form class="travelmates-filter__form" action="http://echo.htmlacademy.ru" method="get">
-          <fieldset class="travelmates-filter__item">
-            <legend class="travelmates-filter__legend">Хобби</legend>
+          <fieldset class="travelmates-filter__fieldset">
+            <legend class="travelmates-filter__legend">
+              Хобби
+              <button class="travelmates-filter__btn" type="button"></button>
+            </legend>
+
             <!-- <ul class="travelmates-filter__list">
               <li class="travelmates-filter__item">
                 <input class="visually-hidden" type="checkbox" name="" id="" value="">
@@ -134,7 +150,11 @@
             </ul> -->
           </fieldset>
           <fieldset class="travelmates-filter__fieldset">
-            <legend class="travelmates-filter__legend">Музыка</legend>
+            <legend class="travelmates-filter__legend travelmates-filter__legend--expanded">
+              Музыка
+              <button class="travelmates-filter__btn travelmates-filter__btn--expanded" type="button"></button>
+            </legend>
+
             <ul class="travelmates-filter__list">
               <li class="travelmates-filter__item">
                 <input class="visually-hidden" type="checkbox" name="music" id="filter-rock" value="rock" checked>
@@ -151,7 +171,11 @@
             </ul>
           </fieldset>
           <fieldset class="travelmates-filter__fieldset">
-            <legend class="travelmates-filter__legend">Еда</legend>
+            <legend class="travelmates-filter__legend">
+              Еда
+              <button class="travelmates-filter__btn" type="button"></button>
+            </legend>
+
             <!-- <ul class="travelmates-filter__list">
               <li class="travelmates-filter__item">
                 <input class="visually-hidden" type="checkbox" name="" id="" value="">
@@ -159,9 +183,13 @@
               </li>
             </ul> -->
           </fieldset>
-          <fieldset class="travelmates-filter__fieldset transport">
-            <legend class="travelmates-filter__legend">Транспорт</legend>
-            <ul class="travelmates-filter__list transport__list">
+          <fieldset class="travelmates-filter__fieldset">
+            <legend class="travelmates-filter__legend travelmates-filter__legend--expanded">
+              Транспорт
+              <button class="travelmates-filter__btn travelmates-filter__btn--expanded" type="button"></button>
+            </legend>
+
+            <ul class="travelmates-filter__list transport">
               <li class="transport__item">
                 <input class="visually-hidden" type="checkbox" name="transport" id="filter-plane" value="plane" checked>
                 <label class="transport__label" for="filter-plane">Авиаперелет</label>
@@ -181,21 +209,22 @@
             </ul>
           </fieldset>
           <fieldset class="travelmates-filter__fieldset">
-            <legend class="travelmates-filter__legend">Левел</legend>
+            <legend class="travelmates-filter__legend travelmates-filter__legend--expanded">
+              Левел
+              <button class="travelmates-filter__btn travelmates-filter__btn--expanded" type="button"></button>
+            </legend>
+
             <div class="travelmates-filter__list range-slider">
-              <input class="range-slider__value range-slider__value--min" type="text" value="30" name="min">
-              <span>&mdash;</span>
-              <input class="range-slider__value range-slider__value--max" type="text" value="100" name="max">
+              <div class="range-slider__value-box">
+                <input class="range-slider__value range-slider__value--min" type="text" value="30" name="min">
+                <input class="range-slider__value range-slider__value--max" type="text" value="100" name="max">
+              </div>
               <div class="range-slider__track">
                 <div class="range-slider__slider">
                   <div class="range-slider__bar"></div>
                 </div>
-                <button class="range-slider__pin range-slider__pin--min" type="button">
-                  <!-- svg -->
-                </button>
-                <button class="range-slider__pin range-slider__pin--max" type="button">
-                  <!-- svg -->
-                </button>
+                <button class="range-slider__pin range-slider__pin--min" type="button"></button>
+                <button class="range-slider__pin range-slider__pin--max" type="button"></button>
               </div>
             </div>
           </fieldset>
@@ -203,13 +232,13 @@
         </form>
       </aside>
 
-      <section class="filter-result travelmates travelmates--catalog">
+      <section class="travelmates travelmates--catalog">
         <h2 class="visually-hidden">Список попутчиков</h2>
 
         <div class="travelmates__list travelmates__list--catalog">
           <article class="travelmate travelmate--catalog">
             <a href="#">
-              <img class="travelmate__picture" src="img/pic-1.jpg" alt="Девушка плавает в океане" width="270" height="270">
+              <img class="travelmate__picture" src="img/travelmates/firsova-mobile@1x.jpg" alt="Девушка плавает в океане" width="70" height="70">
             </a>
 
             <div class="travelmate__user-info">
@@ -241,43 +270,47 @@
             </div>
 
             <div class="travelmate__trip-info">
-              <h4 class="travelmate__title">хочет посетить</h4>
+              <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
               <ul class="travelmate__trip">
                 <li class="travelmate__country travelmate__country--sri-lanka">
                   <img class="travelmate__flag" src="img/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--sri-lanka">Шри-Ланка</span>
+                  <span class="travelmate__country-name">Шри-Ланка</span>
                 </li>
                 <li class="travelmate__country travelmate__country--thailand">
                   <img class="travelmate__flag" src="img/flag-thailand.svg" alt="Флаг Таиланда" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--thailand">Таиланд</span>
+                  <span class="travelmate__country-name">Таиланд</span>
                 </li>
                 <li class="travelmate__country travelmate__country--seychelles">
                   <img class="travelmate__flag" src="img/flag-seychelles.svg" alt="Флаг Сейшел" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--seychelles">Сейшелы</span>
+                  <span class="travelmate__country-name">Сейшелы</span>
                 </li>
               </ul>
 
               <div class="travelmate__transport-level-wrapper">
-                <h4 class="travelmate__title">транспорт</h4>
-                <ul class="travelmate__transport-list transport">
-                  <li class="transport__item transport__item--plane">
-                    <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
-                  </li>
-                  <li class="transport__item transport__item--car transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
-                  </li>
-                  <li class="transport__item transport__item--bike transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
-                  </li>
-                  <li class="transport__item transport__item--by-foot transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
-                  </li>
-                </ul>
-                <div class="travelmate__progress-bar">
-                  <h4 class="travelmate__title">левел</h4>
-                  <!-- svg -->
-                  <span class="progress-bar__number">99</span>
-                  <span class="progress-bar__level">level</span>
+                <div class="travelmate__transport-wrapper">
+                  <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
+                  <ul class="travelmate__transport-list transport">
+                    <li class="transport__item transport__item--plane">
+                      <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
+                    </li>
+                    <li class="transport__item transport__item--car transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
+                    </li>
+                    <li class="transport__item transport__item--bike transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--by-foot transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="travelmate__progress-bar-wrapper">
+                  <h4 class="travelmate__title travelmate__title--narrow">левел</h4>
+                  <div class="travelmate__progress-bar progress-bar">
+                    <!-- svg -->
+                    <span class="progress-bar__number">99</span>
+                    <span class="progress-bar__level">level</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -285,7 +318,7 @@
 
           <article class="travelmate travelmate--catalog">
             <a href="#">
-              <img class="travelmate__picture" src="img/pic-1.jpg" alt="Бородатый парень в черной шапке и очках" width="270" height="270">
+              <img class="travelmate__picture" src="img/travelmates/demin-tablet@1x.jpg" alt="Бородатый парень в черной шапке и очках" width="70" height="70">
             </a>
 
             <div class="travelmate__user-info">
@@ -316,39 +349,43 @@
             </div>
 
             <div class="travelmate__trip-info">
-              <h4 class="travelmate__title">хочет посетить</h4>
+              <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
               <ul class="travelmate__trip">
                 <li class="travelmate__country travelmate__country--belgium">
                   <img class="travelmate__flag" src="img/flag-belgium.svg" alt="Флаг Бельгии" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--belgium">Бельгия</span>
+                  <span class="travelmate__country-name">Бельгия</span>
                 </li>
                 <li class="travelmate__country travelmate__country--czech">
                   <img class="travelmate__flag" src="img/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--czech">Чехия</span>
+                  <span class="travelmate__country-name">Чехия</span>
                 </li>
               </ul>
 
               <div class="travelmate__transport-level-wrapper">
-                <h4 class="travelmate__title">транспорт</h4>
-                <ul class="travelmate__transport-list transport">
-                  <li class="transport__item transport__item--plane">
-                    <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
-                  </li>
-                  <li class="transport__item transport__item--car">
-                    <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
-                  </li>
-                  <li class="transport__item transport__item--bik transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
-                  </li>
-                  <li class="transport__item transport__item--by-foot">
-                    <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
-                  </li>
-                </ul>
-                <div class="travelmate__progress-bar">
-                  <h4 class="travelmate__title">левел</h4>
-                  <!-- svg -->
-                  <span class="progress-bar__number">80</span>
-                  <span class="progress-bar__level">level</span>
+                <div class="travelmate__transport-wrapper">
+                  <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
+                  <ul class="travelmate__transport-list transport">
+                    <li class="transport__item transport__item--plane">
+                      <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
+                    </li>
+                    <li class="transport__item transport__item--car">
+                      <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
+                    </li>
+                    <li class="transport__item transport__item--bik transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--by-foot">
+                      <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="travelmate__progress-bar-wrapper">
+                  <h4 class="travelmate__title travelmate__title--narrow">левел</h4>
+                  <div class="travelmate__progress-bar progress-bar">
+                    <!-- svg -->
+                    <span class="progress-bar__number">80</span>
+                    <span class="progress-bar__level">level</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -356,7 +393,7 @@
 
           <article class="travelmate travelmate--catalog">
             <a href="#">
-              <img class="travelmate__picture" src="img/pic-1.jpg" alt="Парень в белой футболке и шортах сидит на крыше авто" width="270" height="270">
+              <img class="travelmate__picture" src="img/travelmates/smolov-mobile@1x.jpg" alt="Парень в белой футболке и шортах сидит на крыше авто" width="70" height="70">
             </a>
 
             <div class="travelmate__user-info">
@@ -387,7 +424,7 @@
             </div>
 
             <div class="travelmate__trip-info">
-              <h4 class="travelmate__title">хочет посетить</h4>
+              <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
               <ul class="travelmate__trip">
                 <li class="travelmate__country travelmate__country--usa">
                   <img class="travelmate__flag" src="img/flag-usa.svg" alt="Флаг США" width="35" height="24">
@@ -395,35 +432,39 @@
                 </li>
                 <li class="travelmate__country travelmate__country--australia">
                   <img class="travelmate__flag" src="img/flag-australia.svg" alt="Флаг Австралии" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--australia">Австралия</span>
+                  <span class="travelmate__country-name">Австралия</span>
                 </li>
                 <li class="travelmate__country travelmate__country--dominica">
                   <img class="travelmate__flag" src="img/flag-dominica.svg" alt="Флаг Доминики" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--dominica">Доминика</span>
+                  <span class="travelmate__country-name">Доминика</span>
                 </li>
               </ul>
 
               <div class="travelmate__transport-level-wrapper">
-                <h4 class="travelmate__title">транспорт</h4>
-                <ul class="travelmate__transport-list transport">
-                  <li class="transport__item transport__item--plane">
-                    <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
-                  </li>
-                  <li class="transport__item transport__item--car transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
-                  </li>
-                  <li class="transport__item transport__item--bike">
-                    <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
-                  </li>
-                  <li class="transport__item transport__item--by-foot transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
-                  </li>
-                </ul>
-                <div class="travelmate__progress-bar">
-                  <h4 class="travelmate__title">левел</h4>
-                  <!-- svg -->
-                  <span class="progress-bar__number">25</span>
-                  <span class="progress-bar__level">level</span>
+                <div class="travelmate__transport-wrapper">
+                  <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
+                  <ul class="travelmate__transport-list transport">
+                    <li class="transport__item transport__item--plane">
+                      <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
+                    </li>
+                    <li class="transport__item transport__item--car transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
+                    </li>
+                    <li class="transport__item transport__item--bike">
+                      <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--by-foot transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="travelmate__progress-bar-wrapper">
+                  <h4 class="travelmate__title travelmate__title--narrow">левел</h4>
+                  <div class="travelmate__progress-bar progress-bar">
+                    <!-- svg -->
+                    <span class="progress-bar__number">25</span>
+                    <span class="progress-bar__level">level</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -431,7 +472,7 @@
 
           <article class="travelmate travelmate--catalog">
             <a href="#">
-              <img class="travelmate__picture" src="img/pic-1.jpg" alt="Парень в белой футболке и шортах сидит на крыше авто" width="270" height="270">
+              <img class="travelmate__picture" src="img/travelmates/rogovaya-mobile@1x.jpg" alt="Парень в белой футболке и шортах сидит на крыше авто" width="70" height="70">
             </a>
 
             <div class="travelmate__user-info">
@@ -461,46 +502,50 @@
             </div>
 
             <div class="travelmate__trip-info">
-              <h4 class="travelmate__title">хочет посетить</h4>
+              <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
               <ul class="travelmate__trip">
                 <li class="travelmate__country travelmate__country--uk">
                   <img class="travelmate__flag" src="img/flag-uk.svg" alt="Флаг Великобритании" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--uk">Великобритания</span>
+                  <span class="travelmate__country-name">Великобритания</span>
                 </li>
                 <li class="travelmate__country travelmate__country--germany">
                   <img class="travelmate__flag" src="img/flag-germany.svg" alt="Флаг Германии" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--germany">Германия</span>
+                  <span class="travelmate__country-name">Германия</span>
                 </li>
               </ul>
 
               <div class="travelmate__transport-level-wrapper">
-                <h4 class="travelmate__title">транспорт</h4>
-                <ul class="travelmate__transport-list transport">
-                  <li class="transport__item transport__item--plane">
-                    <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
-                  </li>
-                  <li class="transport__item transport__item--car">
-                    <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
-                  </li>
-                  <li class="transport__item transport__item--bike transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
-                  </li>
-                  <li class="transport__item transport__item--by-foot transport__item--disabled">
-                    <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
-                  </li>
-                </ul>
-                <div class="travelmate__progress-bar">
-                  <h4 class="travelmate__title">левел</h4>
-                  <!-- svg -->
-                  <span class="progress-bar__number">50</span>
-                  <span class="progress-bar__level">level</span>
+                <div class="travelmate__transport-wrapper">
+                  <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
+                  <ul class="travelmate__transport-list transport">
+                    <li class="transport__item transport__item--plane">
+                      <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
+                    </li>
+                    <li class="transport__item transport__item--car">
+                      <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
+                    </li>
+                    <li class="transport__item transport__item--bike transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--by-foot transport__item--disabled">
+                      <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="travelmate__progress-bar-wrapper">
+                  <h4 class="travelmate__title travelmate__title--narrow">левел</h4>
+                  <div class="travelmate__progress-bar progress-bar">
+                    <!-- svg -->
+                    <span class="progress-bar__number">50</span>
+                    <span class="progress-bar__level">level</span>
+                  </div>
                 </div>
               </div>
             </div>
           </article>
         </div>
 
-        <a class="travelmates__link travelmates__link--show-more" href="#">Показать еще</a>
+        <a class="travelmates__show-more" href="#">Показать еще</a>
 
         <div class="travelmates__pagination pagination">
           <ul class="pagination__list pagination__list--buttons">
@@ -512,33 +557,35 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__logo logo">
-        <img src="logo.png" alt="Логотип «Погнали»" width="120" height="30">
-      </a>
+      <div class="footer__inner">
+        <a class="footer__logo logo" href="index.html">
+          <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+        </a>
 
-      <ul class="social-links footer__social-links">
-        <li class="social-links__item">
-          <a href="" class="social-links__link social-links__link--fb" target="_blank">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a href="" class="social-links__link social-links__link--vk" target="_blank">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a href="" class="social-links__link social-links__link--insta" target="_blank">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="social-links footer__social-links">
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--fb" href="#" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--vk" href="#" target="_blank">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--insta" href="#" target="_blank">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
 
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <span class="copyright__text">Разработано</span>
-        <span class="visually-hidden">HTML Academy</span>
-        <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
-      </a>
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="copyright__text">Разработано</span>
+          <span class="visually-hidden">HTML Academy</span>
+          <svg></svg>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

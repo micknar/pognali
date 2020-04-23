@@ -1,0 +1,22 @@
+.pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__link {
+  display: block;
+  width: 135px;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.pagination__link--prev {
+  border-right: 1px solid $main-bg;
+  border-radius: 20px 0 0 20px;
+}
+
+.pagination__link--next {
+  border-radius: 0 20px 20px 0;
+}

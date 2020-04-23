@@ -1,0 +1,37 @@
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 25px 1px;
+  padding: 0;
+  list-style: none;
+}
+
+.letters__link {
+  display: block;
+  width: 45px;
+  height: 42px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #1d2e5b;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
+
+  &--active,
+  &:active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+}
+
+.letters__item:nth-child(5n) .letters__link {
+  width: 44px;
+}
