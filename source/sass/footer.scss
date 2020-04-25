@@ -30,3 +30,17 @@
 .footer__social-links {
   margin-bottom: 37px;
 }
+
+.footer__social-links .social-links__link {
+  &--fb {
+    padding: 12px 17px;
+  }
+
+  &--vk {
+    padding: 13px 11px;
+  }
+
+  &--insta {
+    padding: 14px;
+  }
+}

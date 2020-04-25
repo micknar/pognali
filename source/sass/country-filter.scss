@@ -18,15 +18,48 @@
   margin: 0;
   font-size: inherit;
   font-weight: bold;
+  color: #192144;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 15px;
+    height: 10px;
+    margin-right: 12px;
+    background-image: url("../img/icons/filter.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .country-filter__trigger {
   padding: 0;
+  color: #192144;
+  background-color: transparent;
   border: none;
 
-  & svg {
-    display: none; //temp
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 3px;
+    background-image: url("../img/icons/dots.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -49,7 +82,7 @@
   font-size: 16.5px;
   font-weight: bold;
   line-height: 1.79;
-  color: #161c35;
+  color: #1d2e5b;
   text-transform: uppercase;
   background-color: #d6daed;
   border: none;
@@ -57,7 +90,7 @@
 
   &:hover,
   &:focus {
-    color: #1d2e5b;
+    color: rgba(29, 46, 91, 0.6);
     background-color: #c8cee8;
   }
 
@@ -65,11 +98,23 @@
     color: rgba(29, 46, 91, 0.3);
   }
 
-  & svg {
-    fill: #192144;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    background-image: url("../img/icons/filter-close.svg");
+    background-repeat: no-repeat;
   }
 
-  &:active svg {
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
     opacity: 0.3;
   }
 }

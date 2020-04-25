@@ -96,15 +96,23 @@
   color: rgba(68, 68, 68, 0.3);
 
   &::before {
-    display: none; //temp
     content: "";
-    background-image: url("");
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: -17px;
+    width: 11px;
+    height: 11px;
+    opacity: 0.1;
+    background-image: url("../img/icons/user.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .directions__btn {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 22px 24px;
   font-size: 18px;
   font-weight: bold;
@@ -122,13 +130,17 @@
     color: rgba(29, 46, 91, 0.3);
   }
 
-  & svg {
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
     width: 10px;
     height: 14px;
-    margin-left: 4px;
+    background-image: url("../img/icons/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
   }
 
-  &:active svg {
+  &:active::after {
     opacity: 0.3;
   }
 }

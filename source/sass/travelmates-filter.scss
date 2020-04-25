@@ -64,19 +64,27 @@
 }
 
 .travelmates-filter__btn {
+  width: 8px;
   padding: 0;
+  background-color: transparent;
   border: none;
 
-  & svg {
-    fill: #192144;
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 8px;
+    height: 4px;
+    background-image: url("../img/icons/dropdown.svg");
+    background-repeat: no-repeat;
   }
 
-  &:active svg {
+  &:active::after {
     opacity: 0.3;
   }
 
   &--expanded {
-    transform: rotateY(180deg);
+    transform: rotate(180deg);
   }
 }
 

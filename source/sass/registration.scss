@@ -25,7 +25,7 @@
 }
 
 .registration__inner p {
-  margin: 0 0 23px;
+  margin: 0 0 16px;
   padding: 0 26px;
   text-align: center;
 }
@@ -93,6 +93,12 @@
     color: #ffffff;
     background-color: transparent;
   }
+
+  &--error {
+    color: #ff0000;
+    background-color: #ffefef;
+    border-color: #ffefef;
+  }
 }
 
 .registration__btn {
@@ -104,11 +110,6 @@
   border: none;
   border-radius: 10px;
 
-  & svg {
-    width: 10px;
-    height: 14px;
-  }
-
   &:hover,
   &:focus {
     background-color: #ffbd30;
@@ -118,7 +119,17 @@
     color: rgba(29, 46, 91, 0.3);
   }
 
-  &:active svg {
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/icons/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after {
     opacity: 0.3;
   }
 }

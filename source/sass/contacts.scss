@@ -20,12 +20,18 @@
     color: rgba(255, 189, 48, 0.3);
   }
 
-  & svg {
+  & span {
+    display: block;
     width: 45px;
     height: 45px;
-    margin-right: 16px;
+    padding: 13px 14px;
     background-color: #121936;
+    margin-right: 16px;
     border-radius: 50%;
+  }
+
+  & svg {
+    fill: #ffd74b;
   }
 
   &:hover svg,

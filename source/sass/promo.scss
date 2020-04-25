@@ -37,7 +37,16 @@
   &--rounded {
     width: 40px;
     height: 40px;
+    padding: 11px;
     border-radius: 50%;
+  }
+
+  & svg {
+    fill: #161c35;
+  }
+
+  &:active svg {
+    opacity: 0.3;
   }
 }
 

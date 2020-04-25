@@ -17,19 +17,34 @@
 }
 
 .calendar__control {
-  width: 17px; //temp
-  height: 17px; //temp
   padding: 0;
   background-color: transparent;
   border: none;
 
-  &:hover,
-  &:focus {
-    //
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 17px;
+    opacity: 0.3;
+    background-repeat: no-repeat;
   }
 
-  &:active {
-    //
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.5;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &--prev::before {
+    background-image: url("../img/icons/month-arrow-left.svg");
+  }
+
+  &--next::before {
+    background-image: url("../img/icons/month-arrow-right.svg");
   }
 }
 

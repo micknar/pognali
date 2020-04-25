@@ -6,17 +6,47 @@
 }
 
 .pagination__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 135px;
   height: 50px;
   background-color: #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 20px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .pagination__link--prev {
   border-right: 1px solid $main-bg;
   border-radius: 20px 0 0 20px;
+
+  &::before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 9px solid #192144;
+  }
 }
 
 .pagination__link--next {
   border-radius: 0 20px 20px 0;
+
+  &::before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 9px solid #192144;
+  }
 }
