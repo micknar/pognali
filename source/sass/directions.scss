@@ -30,6 +30,23 @@
   }
 }
 
+.directions__list {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -17px;
+    z-index: 1;
+    display: block;
+    width: 320px;
+    height: 13px;
+    background: rgba(237, 239, 246, 0.35);
+    box-shadow: 0 -17px 27px 15px #edeff6;
+  }
+}
+
 .directions__item {
   position: relative;
   width: 100%;

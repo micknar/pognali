@@ -107,8 +107,42 @@
   }
 }
 
-.arrival__with-children {
+.arrival__with-kids {
   display: block;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+.arrival__with-kids span {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  padding: 2px 8px;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] + .arrival__with-kids svg {
+  opacity: 0;
+}
+
+input[type="heckbox"]:hover + .arrival__with-kids span,
+input[type="checkbox"]:focus + .arrival__with-kids span {
+  border-color: #959bb2;
+}
+
+input[type="checkbox"]:active + .arrival__with-kids span {
+  background-color: #e2e5f1;
+  border-color: #e2e5f1;
+}
+
+input[type="checkbox"]:checked + .arrival__with-kids svg {
+  opacity: 1;
+}
+
+input[type="checkbox"]:active:checked + .arrival__with-kids svg {
+  opacity: 0.3;
 }

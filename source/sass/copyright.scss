@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding-top: 14px;
   padding-bottom: 14px;
-  width: 100%;
   color: $basic-text;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 
@@ -22,7 +22,7 @@
     display: inline-block;
     vertical-align: middle;
     width: 27px;
-    height: 34px;
+    height: 35px;
     background-image: url("../img/icons/htmlacademy.svg");
     background-repeat: no-repeat;
   }

@@ -2,7 +2,6 @@
   position: relative;
   background: #ffffff;
   border-radius: 10px;
-  overflow: hidden;
 
   &:hover,
   &:focus {
@@ -35,6 +34,10 @@
   font-size: 14px;
 }
 
+.travelmate--preview .travelmate__picture-link {
+  border-radius: 10px 10px 0 0;
+}
+
 .travelmate__picture-link {
   display: block;
   width: 270px;
@@ -62,7 +65,7 @@
 }
 
 .travelmate__inner {
-  padding: 27px 34px 22px;
+  padding: 27px 34px 8px;
   text-align: center;
 }
 
@@ -138,6 +141,7 @@
 .travelmate--catalog {
   margin-bottom: 10px;
   padding: 16px 20px 76px;
+  border-radius: 20px;
 
   &:last-of-type {
     margin-bottom: 18px;
@@ -258,6 +262,10 @@
 
   &--narrow::after {
     width: 63px;
+  }
+
+  &--medium {
+    margin-bottom: 19px;
   }
 }
 

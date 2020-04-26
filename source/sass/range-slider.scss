@@ -35,6 +35,15 @@
     border-left: 0;
     border-radius: 0 4px 4px 0;
   }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus,
+  &:active {
+    border-color: #161c35;
+  }
 }
 
 .range-slider__track {
@@ -72,5 +81,14 @@
 
   &--max {
     right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
   }
 }

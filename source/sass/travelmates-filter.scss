@@ -94,6 +94,11 @@
   list-style: none;
 }
 
+.travelmates-filter__list.transport {
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
 .travelmates-filter__item label {
   font-size: 15px;
   line-height: 1;
@@ -108,6 +113,43 @@
   &:active {
     color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.travelmates-filter__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.travelmates-filter__label span {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  padding: 2px 5px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] + .travelmates-filter__label svg {
+  opacity: 0;
+}
+
+input[type="checkbox"]:hover + .travelmates-filter__label span,
+input[type="checkbox"]:focus + .travelmates-filter__label span {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="checkbox"]:active + .travelmates-filter__label span {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="checkbox"]:checked + .travelmates-filter__label svg {
+  opacity: 1;
+}
+
+input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
+  opacity: 0.2;
 }
 
 .travelmates-filter__submit {
