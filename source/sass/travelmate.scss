@@ -199,6 +199,65 @@
   color: #161c35;
 }
 
+.travelmate__like {
+  position: absolute;
+  top: -6px;
+  left: -38px;
+  width: 31px;
+  height: 31px;
+  padding-top: 4px;
+  background-color: $main-bg;
+  border: none;
+  border-radius: 50%;
+
+  & .travelmate__liked-heart {
+    display: none;
+  }
+
+  & .travelmate__heart {
+    margin: auto;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #e2e5f2;
+  }
+
+  &:hover .travelmate__heart,
+  &:focus .travelmate__heart {
+    opacity: 0.5;
+  }
+
+  &:active .travelmate__heart {
+    opacity: 0.1;
+  }
+
+  &--liked {
+    padding-top: 3px;
+    background-color: #f9eaea;
+  }
+
+  &--liked .travelmate__heart {
+    display: none;
+  }
+
+  &--liked .travelmate__liked-heart {
+    display: block;
+    margin: auto;
+  }
+
+  &--liked:hover,
+  &--liked:focus {
+    background-color: #f9d8d8;
+  }
+
+  &--liked:active .travelmate__liked-heart {
+    opacity: 0.3;
+  }
+
+}
+
 .travelmate__call {
   position: absolute;
   bottom: 22px;
