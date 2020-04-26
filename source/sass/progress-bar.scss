@@ -14,20 +14,11 @@
 .progress-bar__number {
   position: relative;
   margin-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
   font-size: 24px;
   font-weight: bold;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 50%;
-    display: block;
-    width: 31px;
-    height: 1px;
-    margin-left: -16px;
-    background-color: rgba(255, 255, 255, 0.3);
-  }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .progress-bar__level {

@@ -10,7 +10,7 @@
 
 .directions__container {
   width: 270px;
-  margin: 0 auto 66px;
+  margin: 0 auto 60px;
   padding: 0 25px;
 }
 
@@ -23,11 +23,10 @@
 }
 
 .directions__container p {
-  margin-bottom: 27px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  max-width: 200px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 300;
 }
 
 .directions__list {
@@ -39,7 +38,6 @@
     right: 0;
     bottom: -17px;
     z-index: 1;
-    display: block;
     width: 320px;
     height: 13px;
     background: rgba(237, 239, 246, 0.35);
@@ -49,8 +47,6 @@
 
 .directions__item {
   position: relative;
-  width: 100%;
-  min-height: 189px;
   margin-bottom: 10px;
 
   &:last-child {
@@ -59,6 +55,7 @@
 }
 
 .directions__img {
+  display: block;
   width: 270px;
   height: 110px;
   border-radius: 10px 10px 0 0;
@@ -73,17 +70,21 @@
 
 .directions__item-inner {
   position: relative;
-  z-index: 1;
   min-height: 90px;
-  margin-top: -16px;
-  padding: 0 24px;
+  margin-top: -11px;
+  padding: 25px 24px 15px;
   background-color: #ffffff;
   border-radius: 10px;
 }
 
+.directions__link {
+  display: block;
+  width: calc(100% - 65px);
+  margin-bottom: 5px;
+}
+
 .directions__title {
   margin: 0;
-  padding: 25px 0 5px;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
@@ -109,13 +110,13 @@
   position: absolute;
   top: 23px;
   right: 26px;
+  font-weight: 500;
   line-height: 1.88;
   color: rgba(68, 68, 68, 0.3);
 
   &::before {
     content: "";
     position: absolute;
-    display: block;
     top: 9px;
     left: -17px;
     width: 11px;

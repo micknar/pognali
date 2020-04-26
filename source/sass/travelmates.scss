@@ -14,7 +14,7 @@
 
 .travelmates__container {
   width: 270px;
-  margin: 0 auto 60px;
+  margin: 0 auto 57px;
   padding: 0 25px;
 }
 
@@ -28,6 +28,8 @@
 
 .travelmates__container p {
   margin-bottom: 27px;
+  margin-top: 0;
+  font-weight: 300;
 
   &:last-child {
     margin-bottom: 0;

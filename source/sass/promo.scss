@@ -1,6 +1,6 @@
 .promo {
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
   color: #ffffff;
   background-color: #181e39;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
@@ -14,8 +14,7 @@
 }
 
 .promo__title {
-  margin: 0;
-  padding-bottom: 247px;
+  margin: 0 0 247px;
   font-size: 36px;
   font-weight: bold;
   line-height: 1.11;
@@ -69,13 +68,14 @@
 }
 
 .promo__nav-link--auth {
-  max-width: 190px;
-  padding: 5px 40px;
+  min-width: 190px;
+  padding: 5px 15px;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
   color: #161c35;
   text-transform: uppercase;
+  text-align: center;
   background-color: #ffd74b;
   border-radius: 20px;
 
@@ -90,14 +90,15 @@
 }
 
 .promo__review {
-  margin-left: 25px;
-  margin-right: 75px;
+  padding-left: 25px;
+  padding-right: 75px;
 }
 
 .promo__steps {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -107,11 +108,10 @@
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-between;
-  min-height: 90px;
-  padding-top: 23px;
+  padding-top: 20px;
   padding-left: 25px;
   padding-right: 23px;
-  padding-bottom: 20px;
+  padding-bottom: 33px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
@@ -144,7 +144,7 @@
   }
 
   &:last-child {
-    min-height: 80px;
+    padding-bottom: 23px;
     border-radius: 10px;
   }
 }

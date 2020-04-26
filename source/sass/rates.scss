@@ -27,7 +27,6 @@
     position: absolute;
     top: 66px;
     right: 26px;
-    display: block;
     width: 99px;
     height: 99px;
     background-image: url("../img/rates@1x.png");
@@ -51,7 +50,6 @@
 
   &::before {
     content: "" counter(rates__list);
-    display: block;
     width: 34px;
     height: 34px;
     margin-top: 6px;
@@ -81,6 +79,7 @@
   width: 100%;
   margin: 0;
   padding: 13px 0;
+  font-weight: 300;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 

@@ -54,11 +54,12 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
   color: #1d2e5b;
 
   &--selected {
-    width: 104px;
+    width: 122px;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -66,9 +67,8 @@
   &--selected::after {
     content: "";
     position: absolute;
-    right: -19px;
+    right: -12px;
     top: -3px;
-    display: block;
     width: 5px;
     height: 24px;
     box-shadow: -14px 0 12px 4px #ffffff;

@@ -15,6 +15,7 @@
   font-weight: 500;
   line-height: 1;
   color: #1d2e5b;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
 }
 
@@ -27,12 +28,11 @@
   display: flex;
   order: 3;
   width: 100%;
+  height: 43px;
 }
 
 .arrival__input {
-  display: block;
   width: 100%;
-  height: 43px;
   text-align: center;
   border: 1px solid #cbced9;
   border-radius: 4px;
@@ -58,12 +58,10 @@
 
 .arrival__control {
   position: absolute;
-  top: 1px;
-  display: block;
   width: 41px;
-  height: 41px;
+  height: 100%;
   padding: 14px;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
 
   &::before {
@@ -84,12 +82,14 @@
 
   &--decrease-quantity,
   &--decrease-duration {
-    left: 1px;
+    left: 0;
+    border-radius: 4px 0 0 4px;
   }
 
   &--increase-quantity,
   &--increase-duration {
-    right: 1px;
+    right: 0;
+    border-radius: 0 4px 4px 0;
   }
 
   &--decrease-quantity::before,

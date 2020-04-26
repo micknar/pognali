@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   margin-top: -30px;
-  padding: 46px 25px 30px;
+  padding: 62px 25px 30px;
   color: #ffffff;
   background-color: #ffd74b;
   border-bottom-left-radius: 30px;
@@ -12,11 +12,11 @@
 .address__inner {
   width: 270px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .address__text {
   position: relative;
+  margin-top: 0;
   margin-left: 61px;
   margin-bottom: 32px;
   font-weight: bold;
@@ -27,7 +27,6 @@
     content: "";
     position: absolute;
     left: -61px;
-    display: block;
     width: 45px;
     height: 45px;
     background-color: #121936;
