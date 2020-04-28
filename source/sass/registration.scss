@@ -107,32 +107,8 @@
   right: 0;
   width: 60px;
   height: 62px;
-  background-color: #ffd74b;
+  font-size: 0;
   border: none;
-  border-radius: 10px;
-
-  &:hover,
-  &:focus {
-    background-color: #ffbd30;
-  }
-
-  &:active {
-    color: rgba(29, 46, 91, 0.3);
-  }
-
-  &::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 10px;
-    height: 14px;
-    background-image: url("../img/icons/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-  }
-
-  &:active::after {
-    opacity: 0.3;
-  }
 }
 
 .registration__contacts {

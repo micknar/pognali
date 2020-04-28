@@ -51,7 +51,7 @@
 
 .new-trip__step-item {
   margin-bottom: 10px;
-  padding: 24px 20px 22px;
+  padding: 24px 20px 11px;
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -71,36 +71,9 @@
 .new-trip__next-step,
 .new-trip__prev-step {
   display: block;
-  width: 100%;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.76;
-  text-align: center;
-  text-transform: uppercase;
-  color: #161c35;
 }
 
 .new-trip__next-step {
-  padding: 5px;
-  background-color: #ffd74b;
-  border-radius: 20px;
-
-  &:hover,
-  &:focus {
-    background-color: #ffbd30;
-  }
-
-  &:active {
-    color: rgba(29, 46, 91, 0.3);
-  }
-}
-
-.new-trip__prev-step {
-  &:hover,
-  &:focus {
-    color: rgba(29, 46, 91, 0.7);
-  }
-
   &:active {
     color: rgba(29, 46, 91, 0.3);
   }
@@ -108,5 +81,5 @@
 
 .new-trip__btn-box .new-trip__next-step,
 .new-trip__btn-box .directions-form__submit {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }

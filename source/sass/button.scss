@@ -1,0 +1,113 @@
+.btn {
+  padding: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
+  text-align: center;
+  color: #161c35;
+  background-color: #ffd74b;
+  border-radius: 20px;
+
+  & svg {
+    width: 10px;
+    height: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+
+  &--rounded {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 24px;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: unset;
+    border-radius: 10px;
+  }
+
+  &--rounded::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/icons/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--rounded:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  &--rounded:active::after {
+    opacity: 0.3;
+  }
+
+  &--inverse {
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+
+  &--inverse:hover,
+  &--inverse:focus {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &--inverse:active {
+    background-color: #f3c72b;
+  }
+
+  &--no-bg {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &--no-bg:hover,
+  &--no-bg:focus {
+    color: rgba(29, 46, 91, 0.7);
+    background-color: transparent;
+  }
+
+  &--no-bg:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  &--bordered {
+    padding: 19px 21px;
+    color: #192144;
+    border: 3px solid #192144;
+  }
+
+  &--bordered:hover,
+  &--bordered:focus {
+    color: #ffffff;
+    background-color: #192144;
+  }
+
+  &--bordered:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--bordered:hover svg,
+  &--bordered:focus svg {
+    fill: #ffffff;
+  }
+
+  &--bordered:active svg {
+    opacity: 0.3;
+  }
+
+  &--bordered::after {
+    display: none;
+  }
+}

@@ -11,7 +11,7 @@
   &--chain::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 10px;
     left: -14px;
     width: 2px;
     height: 279px;
@@ -21,7 +21,7 @@
 
 .entertainment__item {
   position: relative;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -56,7 +56,7 @@
   display: block;
   width: 156px;
   padding-left: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
   font-size: 18px;
   font-weight: 500;
   line-height: 1;

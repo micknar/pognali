@@ -126,39 +126,3 @@
     background-repeat: no-repeat;
   }
 }
-
-.directions__btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 24px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
-  color: #1d2e5b;
-  background-color: #ffd74b;
-  border-radius: 10px;
-
-  &:hover,
-  &:focus {
-    background-color: #ffbd30;
-  }
-
-  &:active {
-    color: rgba(29, 46, 91, 0.3);
-  }
-
-  &::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 10px;
-    height: 14px;
-    background-image: url("../img/icons/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-  }
-
-  &:active::after {
-    opacity: 0.3;
-  }
-}

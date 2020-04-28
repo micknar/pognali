@@ -70,23 +70,6 @@
 .promo__nav-link--auth {
   min-width: 190px;
   padding: 5px 15px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 30px;
-  color: #161c35;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #ffd74b;
-  border-radius: 20px;
-
-  &:hover,
-  &:focus {
-    background-color: #ffbd30;
-  }
-}
-
-.promo__nav-link:active {
-  color: rgba(22, 28, 53, 0.3);
 }
 
 .promo__review {

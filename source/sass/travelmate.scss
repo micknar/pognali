@@ -261,24 +261,6 @@
   position: absolute;
   bottom: 22px;
   width: 230px;
-  padding: 5px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.76;
-  text-align: center;
-  color: #161c35;
-  text-transform: uppercase;
-  background-color: #ffd74b;
-  border-radius: 20px;
-
-  &:hover,
-  &:focus {
-    background-color: #ffbd30;
-  }
-
-  &:active {
-    color: rgba(22, 28, 53, 0.3);
-  }
 }
 
 .travelmate__title {

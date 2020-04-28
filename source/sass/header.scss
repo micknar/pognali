@@ -73,22 +73,7 @@
   display: block;
   margin: 0 auto 51px;
   padding: 10px 80px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 30px;
-  color: #161c35;
-  text-transform: uppercase;
-  background-color: #ffd74b;
   border-radius: 25px;
-
-  &:hover,
-  &:focus {
-    background-color: #ffbd30;
-  }
-
-  &:active {
-    color: rgba(22, 28, 53, 0.3);
-  }
 }
 
 .header__contacts {
