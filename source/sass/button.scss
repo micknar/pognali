@@ -110,4 +110,13 @@
   &--bordered::after {
     display: none;
   }
+
+  &--secondary {
+    background-color: #dfe3f0;
+  }
+
+  &--secondary:hover,
+  &--secondary:focus {
+    background-color: #d1d7e9;
+  }
 }

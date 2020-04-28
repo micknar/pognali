@@ -43,20 +43,7 @@
 .user-profile__btn {
   width: 100%;
   margin-bottom: 18px;
-  padding: 5px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.76;
-  color: #161c35;
-  text-transform: uppercase;
-  background-color: #dfe3f0;
   border: none;
-  border-radius: 20px;
-
-  &:hover,
-  &:focus {
-    background-color: #d1d7e9;
-  }
 
   &:active {
     color: rgba(29, 46, 91, 0.3);
