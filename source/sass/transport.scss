@@ -23,7 +23,7 @@
 
 .transport__tooltip {
   position: absolute;
-  top: 34px;
+  top: 44px;
   left: 50%;
   z-index: 1;
   display: none;
@@ -120,6 +120,10 @@ input[type="checkbox"]:active:checked + .transport__label svg {
 
 .transport__item--no-bg svg {
   margin-top: 0;
+}
+
+.transport__item--no-bg .transport__tooltip {
+  top: 34px;
 }
 
 .transport__item--no-bg.transport__item--plane svg {
