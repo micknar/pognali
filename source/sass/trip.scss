@@ -35,57 +35,195 @@
   display: none;
 }
 
-.trip__dropdown {
-  display: flex;
-  justify-content: space-between;
+.trip__route-item {
+  position: relative;
   margin-bottom: 22px;
-  padding: 11px 12px;
-  border: 1px solid #cbced9;
-  border-radius: 4px;
 
-  &--selected {
-    width: 168px;
+  &:not(:last-of-type)::before {
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: -16px;
+    width: 5px;
+    height: 10px;
+    background-image: url("../img/icons/small-arrow.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .trip__country {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 12px 11px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  text-align: left;
   color: #1d2e5b;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  &--dropdown:hover,
+  &--dropdown:focus {
+    border-color: #959bb2;
+  }
+
+  &--dropdown .trip__dropdown-icon {
+    display: block;
+    opacity: 0.3;
+  }
+
+  &--dropdown:hover .trip__dropdown-icon,
+  &--dropdown:focus .trip__dropdown-icon {
+    opacity: 0.5;
+  }
+
+  &--dropdown .trip__dropdown-hide-icon {
+    display: none;
+  }
+
+  &--expanded .trip__dropdown-icon {
+    display: none;
+  }
+
+  &--expanded .trip__dropdown-hide-icon {
+    display: block;
+    opacity: 0.3;
+  }
+
+  &--expanded:hover .trip__dropdown-hide-icon,
+  &--expanded:focus .trip__dropdown-hide-icon {
+    opacity: 1;
+  }
+
+  &--expanded:active .trip__dropdown-hide-icon {
+    opacity: 0.1;
+  }
+
+  &:not(.trip__country--selected) {
+    width: 100%;
+  }
+
+  &:not(.trip__country--selected)::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 48px;
+    width: 8px;
+    height: 8px;
+    background-color: trnsparent;
+    border: 1px solid #cbced9;
+    border-radius: 50%;
+  }
+
+  &--expanded {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+
+  &--expanded::before,
+  &--expanded .trip__country-name::after {
+    display: none;
+  }
 
   &--selected {
+    width: 168px;
+  }
+
+  &--selected::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+  }
+
+  &--selected .trip__country-name {
     width: 122px;
     white-space: nowrap;
     overflow: hidden;
   }
 
-  &--selected::after {
+  &--selected .trip__country-name::after {
     content: "";
     position: absolute;
-    right: -12px;
-    top: -3px;
-    width: 5px;
-    height: 24px;
-    box-shadow: -14px 0 12px 4px #ffffff;
+    right: 18px;
+    top: 8px;
+    width: 6px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: -16px 0 11px 2px #ffffff;
+  }
+
+  &--add {
+    background-color: $main-bg;
+    border-color: $main-bg;
+  }
+
+  &--add:hover,
+  &--add:focus {
+    background-color: #dfe3f0;
+    border-color: #dfe3f0;
+  }
+
+  &--add:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: #dfe3f0;
+    border-color: #dfe3f0;
+  }
+
+  &--add svg {
+    opacity: 0.2;
+  }
+
+  &--add:hover svg,
+  &--add:focus svg {
+    opacity: 0.3;
+  }
+
+  &--add:active svg {
+    opacity: 0.1;
   }
 }
 
 .trip__edit {
   position: relative;
-  width: 53px;
+  width: 52px;
   height: 42px;
   margin-bottom: 22px;
   border: 1px solid #cbced9;
   border-radius: 4px;
-
-  &:last-child {
-    border-left: none;
-  }
+  border-left-color: transparent;
 }
 
-//добавить кнопки с состояниями и мелкие декоративные элементы
+.trip__flag {
+  display: block;
+}
+
+.trip__remove-btn {
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  background-color: $main-bg;
+  border: none;
+  border-radius: 50%;
+
+  & svg {
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+    opacity: 0.3;
+  }
+}
