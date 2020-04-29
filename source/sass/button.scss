@@ -34,21 +34,15 @@
     border-radius: 10px;
   }
 
-  &--rounded::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 10px;
-    height: 14px;
-    background-image: url("../img/icons/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
+  &--rounded svg {
+    fill: #1d2e5b;
   }
 
   &--rounded:active {
     color: rgba(29, 46, 91, 0.3);
   }
 
-  &--rounded:active::after {
+  &--rounded:active svg {
     opacity: 0.3;
   }
 
@@ -101,14 +95,6 @@
   &--bordered:hover svg,
   &--bordered:focus svg {
     fill: #ffffff;
-  }
-
-  &--bordered:active svg {
-    opacity: 0.3;
-  }
-
-  &--bordered::after {
-    display: none;
   }
 
   &--secondary {
