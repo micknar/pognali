@@ -1,0 +1,157 @@
+.travelmates-filter {
+  margin: 0 25px 28px;
+  padding: 26px 0 22px;
+  background-color: #ffd74b;
+  border-radius: 20px;
+}
+
+.travelmates-filter__title {
+  margin: 0 0 30px;
+  padding: 0 25px;
+  font-size: 22.5px;
+  font-weight: bold;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.travelmates-filter__form {
+  padding: 0 20px;
+}
+
+.travelmates-filter__fieldset {
+  position: relative;
+  margin: 0 5px 20px;
+  padding: 0;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    width: 100%;
+    height: 1px;
+    background-color: #f3c72b;
+  }
+
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+
+.travelmates-filter__legend {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  line-height: 1.13;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--expanded {
+    margin-bottom: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(29, 46, 91, 0.6);
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+.travelmates-filter__btn {
+  width: 8px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 8px;
+    height: 4px;
+    background-image: url("../img/icons/dropdown.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &--expanded {
+    transform: rotate(180deg);
+  }
+}
+
+.travelmates-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.travelmates-filter__list.transport {
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.travelmates-filter__item label {
+  font-size: 15px;
+  line-height: 1;
+  color: $basic-text;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba(68, 68, 68, 0.6);
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.travelmates-filter__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.travelmates-filter__label span {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  padding: 2px 5px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] + .travelmates-filter__label svg {
+  opacity: 0;
+}
+
+input[type="checkbox"]:hover + .travelmates-filter__label span,
+input[type="checkbox"]:focus + .travelmates-filter__label span {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="checkbox"]:active + .travelmates-filter__label span {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="checkbox"]:checked + .travelmates-filter__label svg {
+  opacity: 1;
+}
+
+input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
+  opacity: 0.2;
+}
+
+.travelmates-filter__submit {
+  width: 100%;
+  border: none;
+}

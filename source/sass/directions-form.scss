@@ -1,0 +1,9 @@
+.directions-form__submit {
+  display: block;
+  width: 100%;
+  border: none;
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}

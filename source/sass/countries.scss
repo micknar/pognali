@@ -1,0 +1,18 @@
+.countries {
+  margin: 0 0 38px;
+  padding: 0;
+  list-style: none;
+}
+
+.countries__link {
+  color: $basic-text;
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}

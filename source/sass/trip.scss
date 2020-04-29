@@ -1,0 +1,229 @@
+.trip__inner {
+  padding: 0 5px;
+}
+
+.trip__route-box {
+  position: relative;
+}
+
+.trip__route {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.trip__letters {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.trip__countries {
+  padding: 15px 20px;
+  border: 1px solid #cbced9;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+}
+
+.trip__countries-box {
+  display: none;
+}
+
+.trip__route-item {
+  position: relative;
+  margin-bottom: 22px;
+
+  &:not(:last-of-type)::before {
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: -16px;
+    width: 5px;
+    height: 10px;
+    background-image: url("../img/icons/small-arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.trip__country {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 12px 11px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #1d2e5b;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  &--dropdown:hover,
+  &--dropdown:focus {
+    border-color: #959bb2;
+  }
+
+  &--dropdown .trip__dropdown-icon {
+    display: block;
+    opacity: 0.3;
+  }
+
+  &--dropdown:hover .trip__dropdown-icon,
+  &--dropdown:focus .trip__dropdown-icon {
+    opacity: 0.5;
+  }
+
+  &--dropdown .trip__dropdown-hide-icon {
+    display: none;
+  }
+
+  &--expanded .trip__dropdown-icon {
+    display: none;
+  }
+
+  &--expanded .trip__dropdown-hide-icon {
+    display: block;
+    opacity: 0.3;
+  }
+
+  &--expanded:hover .trip__dropdown-hide-icon,
+  &--expanded:focus .trip__dropdown-hide-icon {
+    opacity: 1;
+  }
+
+  &--expanded:active .trip__dropdown-hide-icon {
+    opacity: 0.1;
+  }
+
+  &:not(.trip__country--selected) {
+    width: 100%;
+  }
+
+  &:not(.trip__country--selected)::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 48px;
+    width: 8px;
+    height: 8px;
+    background-color: trnsparent;
+    border: 1px solid #cbced9;
+    border-radius: 50%;
+  }
+
+  &--expanded {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+
+  &--expanded::before,
+  &--expanded .trip__country-name::after {
+    display: none;
+  }
+
+  &--selected {
+    width: 168px;
+  }
+
+  &--selected::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+  }
+
+  &--selected .trip__country-name {
+    width: 122px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &--selected .trip__country-name::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    top: 8px;
+    width: 6px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: -16px 0 11px 2px #ffffff;
+  }
+
+  &--add {
+    background-color: $main-bg;
+    border-color: $main-bg;
+  }
+
+  &--add:hover,
+  &--add:focus {
+    background-color: #dfe3f0;
+    border-color: #dfe3f0;
+  }
+
+  &--add:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: #dfe3f0;
+    border-color: #dfe3f0;
+  }
+
+  &--add svg {
+    opacity: 0.2;
+  }
+
+  &--add:hover svg,
+  &--add:focus svg {
+    opacity: 0.3;
+  }
+
+  &--add:active svg {
+    opacity: 0.1;
+  }
+}
+
+.trip__edit {
+  position: relative;
+  width: 52px;
+  height: 42px;
+  margin-bottom: 22px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  border-left-color: transparent;
+}
+
+.trip__flag {
+  display: block;
+}
+
+.trip__remove-btn {
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  background-color: $main-bg;
+  border: none;
+  border-radius: 50%;
+
+  & svg {
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+    opacity: 0.3;
+  }
+}

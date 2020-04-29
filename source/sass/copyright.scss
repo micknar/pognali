@@ -1,0 +1,33 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  color: $basic-text;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 35px;
+    background-image: url("../img/icons/htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}

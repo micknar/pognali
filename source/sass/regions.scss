@@ -1,0 +1,23 @@
+.regions {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 25px;
+  list-style: none;
+}
+
+.regions__link {
+  font-weight: bold;
+  color: rgba(25, 33, 68, 0.3);
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: rgba(25, 33, 68, 0.6);
+  }
+
+  &:active,
+  &--active {
+    color: #192144;
+  }
+}

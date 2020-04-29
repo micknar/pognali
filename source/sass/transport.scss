@@ -1,0 +1,151 @@
+.transport {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.transport__item {
+  position: relative;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  background-color: $main-bg;
+  border-radius: 50%;
+}
+
+.transport__item svg {
+  margin-top: 8px;
+}
+
+.transport__tooltip {
+  position: absolute;
+  top: 44px;
+  left: 50%;
+  z-index: 1;
+  display: none;
+  padding: 16px 22px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: #101d41;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    display: block;
+    margin-left: -8px;
+    border-bottom: 8px solid #192144;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+
+  &--plane {
+    margin-left: -75px;
+  }
+
+  &--car {
+    margin-left: -82px;
+  }
+
+  &--bike {
+    margin-left: -65px;
+  }
+
+  &--by-foot {
+    margin-left: -54px;
+  }
+}
+
+.transport__item--plane:hover .transport__tooltip--plane,
+.transport__item--car:hover .transport__tooltip--car,
+.transport__item--bike:hover .transport__tooltip--bike,
+.transport__item--by-foot:hover .transport__tooltip--by-foot {
+  display: block;
+}
+
+.transport__label {
+  display: block;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + .transport__label svg {
+  opacity: 0.15;
+}
+
+input[type="checkbox"]:hover + .transport__label svg,
+input[type="checkbox"]:focus + .transport__label svg {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]:active + .transport__label {
+  background-color: #e2e5f1;
+}
+
+input[type="checkbox"]:active + .transport__label svg {
+  opacity: 0.1;
+}
+
+input[type="checkbox"]:checked + .transport__label svg {
+  opacity: 1;
+}
+
+input[type="checkbox"]:hover:checked + .transport__label svg,
+input[type="checkbox"]:focus:checked + .transport__label svg {
+  opacity: 0.7;
+}
+
+input[type="checkbox"]:active:checked + .transport__label {
+  background-color: #e2e5f1;
+}
+
+input[type="checkbox"]:active:checked + .transport__label svg {
+  opacity: 0.3;
+}
+
+.transport__item--no-bg {
+  background-color: transparent;
+}
+
+.transport__item--no-bg svg {
+  margin-top: 0;
+}
+
+.transport__item--no-bg .transport__tooltip {
+  top: 34px;
+}
+
+.transport__item--no-bg.transport__item--plane svg {
+  width: 19px;
+  height: 21px;
+}
+
+.transport__item--no-bg.transport__item--car svg {
+  width: 17px;
+  height: 21px;
+}
+
+.transport__item--no-bg.transport__item--bike svg {
+  width: 24px;
+  height: 21px;
+}
+
+.transport__item--no-bg.transport__item--by-foot svg {
+  width: 20px;
+  height: 21px;
+}
+
+.transport__item.transport__item--disabled svg {
+  opacity: 0.15;
+}

@@ -1,0 +1,42 @@
+.business-rates {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 270px;
+  min-height: 443px;
+  margin-left: -135px;
+  margin-top: -222px;
+}
+
+.business-rates__header {
+  margin: 0 0 23px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  color: #ff8d30;
+}
+
+.business-rates__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 33px;
+  padding: 0;
+  list-style: none;
+}
+
+.business-rates__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 13px 0;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}

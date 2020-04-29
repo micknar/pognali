@@ -1,0 +1,120 @@
+.country-filter {
+  position: relative;
+  z-index: 1;
+  margin-top: -30px;
+  margin-bottom: 24px;
+  background-color: #e2e5f2;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.country-filter__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 25px 11px;
+}
+
+.country-filter__title {
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+  color: #192144;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 15px;
+    height: 10px;
+    margin-right: 12px;
+    background-image: url("../img/icons/filter.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.country-filter__trigger {
+  padding: 0;
+  color: #192144;
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 3px;
+    background-image: url("../img/icons/dots.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.country-filter__dropdown {
+  padding: 15px 25px 27px;
+}
+
+.country-filter__region {
+  margin-bottom: 25px;
+}
+
+.country-filter__letters,
+.country-filter__countries {
+  padding: 0 25px;
+}
+
+.country-filter__close {
+  width: 100%;
+  padding: 5px;
+  font-size: 16.5px;
+  font-weight: bold;
+  line-height: 1.79;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  background-color: #d6daed;
+  border: none;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    color: rgba(29, 46, 91, 0.6);
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    background-image: url("../img/icons/filter-close.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}

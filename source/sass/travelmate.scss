@@ -1,0 +1,334 @@
+.travelmate {
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.travelmate--preview {
+  &:hover .travelmate__picture,
+  &:focus .travelmate__picture {
+    transform: scale(1.02);
+  }
+}
+
+.travelmate--preview .progress-bar {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.travelmate--preview .progress-bar__level {
+  font-size: 14px;
+}
+
+.travelmate--preview .travelmate__picture-link {
+  border-radius: 10px 10px 0 0;
+}
+
+.travelmate__picture-link {
+  display: block;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.travelmate__picture {
+  display: block;
+}
+
+.travelmate__trip {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.travelmate--preview .travelmate__trip {
+  position: absolute;
+  top: 258px;
+  justify-content: center;
+}
+
+.travelmate__country-tooltip {
+  display: none; //temp
+}
+
+.travelmate__inner {
+  padding: 28px 34px 10px;
+  text-align: center;
+}
+
+.travelmate__profile-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13px;
+  font-size: 21px;
+  line-height: 1;
+  color: #1d2e5b;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.travelmate__status {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+
+  &--offline {
+    background-color: #f97676;
+  }
+
+  &--online {
+    background-color: #81e31e;
+  }
+}
+
+.travelmate__name {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.travelmate--preview .travelmate__name {
+  margin-left: 11px;
+}
+
+.travelmate__tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.travelmate__tags-item {
+  margin-right: 4px;
+  line-height: 1.13;
+}
+
+.travelmate__tags-link {
+  line-height: 1.13;
+  color: $basic-text;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.travelmate--catalog {
+  margin-bottom: 10px;
+  padding: 16px 20px 76px;
+  border-radius: 20px;
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
+}
+
+.travelmate--catalog .travelmate__picture {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.travelmate--catalog .travelmate__trip {
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.travelmate--catalog .travelmate__profile-link {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 38px;
+  margin-left: 84px;
+  font-size: 20px;
+}
+
+.travelmate--catalog .travelmate__name {
+  max-width: 96px;
+}
+
+.travelmate--catalog .travelmate__status {
+  width: 6px;
+  height: 6px;
+  margin-top: 7px;
+  margin-right: 2px;
+}
+
+.travelmate--catalog .travelmate__tags-list {
+  justify-content: flex-start;
+  max-width: 185px;
+  margin-bottom: 10px;
+}
+
+.travelmate--catalog .travelmate__likes-counter {
+  position: absolute;
+  top: 62px;
+  left: 104px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #161c35;
+}
+
+.travelmate__like {
+  position: absolute;
+  top: -6px;
+  left: -38px;
+  width: 31px;
+  height: 31px;
+  padding-top: 4px;
+  background-color: $main-bg;
+  border: none;
+  border-radius: 50%;
+
+  & .travelmate__liked-heart {
+    display: none;
+  }
+
+  & .travelmate__heart {
+    margin: auto;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #e2e5f2;
+  }
+
+  &:hover .travelmate__heart,
+  &:focus .travelmate__heart {
+    opacity: 0.5;
+  }
+
+  &:active .travelmate__heart {
+    opacity: 0.1;
+  }
+
+  &--liked {
+    padding-top: 3px;
+    background-color: #f9eaea;
+  }
+
+  &--liked .travelmate__heart {
+    display: none;
+  }
+
+  &--liked .travelmate__liked-heart {
+    display: block;
+    margin: auto;
+  }
+
+  &--liked:hover,
+  &--liked:focus {
+    background-color: #f9d8d8;
+  }
+
+  &--liked:active .travelmate__liked-heart {
+    opacity: 0.3;
+  }
+}
+
+.travelmate__call {
+  position: absolute;
+  bottom: 22px;
+  width: 230px;
+}
+
+.travelmate__title {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: $basic-text;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 9px;
+    left: -20px;
+    width: 270px;
+    height: 1px;
+    background-color: $main-bg;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    z-index: -1;
+    height: 18px;
+    background-color: #ffffff;
+  }
+
+  &--wide::after {
+    width: 116px;
+  }
+
+  &--medium::after {
+    width: 90px;
+  }
+
+  &--narrow::after {
+    width: 63px;
+  }
+
+  &--medium {
+    margin-bottom: 19px;
+  }
+}
+
+.travelmate__country-name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.travelmate__transport-level-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.travelmate--catalog .progress-bar__number {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.travelmate--catalog .progress-bar__level {
+  display: none;
+}

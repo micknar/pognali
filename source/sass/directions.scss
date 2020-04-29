@@ -1,0 +1,128 @@
+.directions {
+  position: relative;
+  z-index: 5;
+  margin-top: -30px;
+  padding: 102px 25px 30px;
+  background-color: $main-bg;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.directions__container {
+  width: 270px;
+  margin: 0 auto 60px;
+  padding: 0 25px;
+}
+
+.directions__header {
+  margin: 0 0 23px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  color: #ff8d30;
+}
+
+.directions__container p {
+  max-width: 200px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.directions__list {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -17px;
+    z-index: 1;
+    width: 320px;
+    height: 13px;
+    background: rgba(237, 239, 246, 0.35);
+    box-shadow: 0 -17px 27px 15px #edeff6;
+  }
+}
+
+.directions__item {
+  position: relative;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+
+.directions__img {
+  display: block;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
+}
+
+.directions__flag {
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+  left: 25px;
+}
+
+.directions__item-inner {
+  position: relative;
+  min-height: 90px;
+  margin-top: -11px;
+  padding: 25px 24px 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.directions__link {
+  display: block;
+  width: calc(100% - 65px);
+  margin-bottom: 5px;
+}
+
+.directions__title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #161c35;
+
+  &:hover,
+  &:focus {
+    color: rgba(29, 46, 91, 0.7);
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+.directions__item-text {
+  margin: 0;
+  line-height: 1.13;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.directions__counter {
+  position: absolute;
+  top: 23px;
+  right: 26px;
+  font-weight: 500;
+  line-height: 1.88;
+  color: rgba(68, 68, 68, 0.3);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -17px;
+    width: 11px;
+    height: 11px;
+    opacity: 0.1;
+    background-image: url("../img/icons/user.svg");
+    background-repeat: no-repeat;
+  }
+}

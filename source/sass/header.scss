@@ -1,0 +1,125 @@
+.header__nav {
+  padding: 0 25px;
+  background-color: #161c36;
+
+  &--expanded,
+  &--sticky {
+    background-color: #ffffff;
+  }
+}
+
+.header__dropdown {
+  padding-bottom: 28px;
+}
+
+.header__sticky {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 0;
+}
+
+.header__logo {
+  margin-top: 6px;
+}
+
+.header__nav .header__logo--blue {
+  display: none;
+}
+
+.header__nav .header__logo--white {
+  display: block;
+}
+
+.header__nav--expanded .header__logo--white,
+.header__nav--sticky .header__logo--white {
+  display: none;
+}
+
+.header__nav--expanded .header__logo--blue,
+.header__nav--sticky .header__logo--blue {
+  display: block;
+}
+
+.header__menu-trigger {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  margin-top: -1px;
+  margin-right: -3px;
+  background-color: transparent;
+  border: none;
+
+  & svg {
+    margin-top: 6px;
+    fill: #ffffff;
+  }
+
+  &--sticky svg {
+    fill: #cccccc;
+  }
+
+  &--expanded svg {
+    fill: transparent;
+  }
+
+  &--expanded {
+    background-image: url("../img/icons/menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.header__auth {
+  display: block;
+  margin: 0 auto 51px;
+  padding: 10px 80px;
+  border-radius: 25px;
+}
+
+.header__contacts {
+  margin-bottom: 30px;
+}
+
+.header__contacts .contacts__link {
+  color: #192144;
+}
+
+.header__social-links {
+  justify-content: center;
+}
+
+.header__social-links .social-links__link,
+.header__social-links .social-links__link:hover,
+.header__social-links .social-links__link:focus,
+.header__social-links .social-links__link:active {
+  background-color: transparent;
+}
+
+.header__social-links .social-links__link {
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--fb {
+    background-image: url("../img/icons/facebook.svg");
+    background-size: 11px 21px;
+  }
+
+  &--vk {
+    background-image: url("../img/icons/vk.svg");
+    background-size: 23px 12px;
+  }
+
+  &--insta {
+    background-image: url("../img/icons/instagram.svg");
+    background-size: 18px 18px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

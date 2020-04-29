@@ -1,0 +1,46 @@
+.footer {
+  position: relative;
+  z-index: 3;
+
+  &--overlap {
+    margin-top: -26px;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 25px 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  &--home {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 37px;
+}
+
+.footer__social-links {
+  margin-bottom: 37px;
+}
+
+.footer__social-links .social-links__link {
+  &--fb {
+    padding: 12px 17px;
+  }
+
+  &--vk {
+    padding: 13px 11px;
+  }
+
+  &--insta {
+    padding: 14px;
+  }
+}
