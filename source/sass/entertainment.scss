@@ -21,7 +21,11 @@
 
 .entertainment__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
 
   &::before {
     content: "";
@@ -80,6 +84,7 @@
 }
 
 .entertainment__plan {
+  display: block;
   padding: 13px 15px;
   width: 100%;
   min-height: 220px;
