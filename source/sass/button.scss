@@ -106,3 +106,18 @@
     background-color: #d1d7e9;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .btn {
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 25px;
+
+    &--rounded {
+      padding-left: 34px;
+      padding-right: 36px;
+      font-size: 24px;
+      border-radius: 20px;
+    }
+  }
+}

@@ -10,7 +10,6 @@
 }
 
 .address__inner {
-  width: 270px;
   margin: 0 auto;
 }
 
@@ -34,5 +33,27 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    margin-top: -60px;
+    padding: 127px 75px 85px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .address__text {
+    margin-left: 93px;
+    margin-bottom: 64px;
+    line-height: 1;
+
+    &::before {
+      top: -20px;
+      left: -93px;
+      width: 67px;
+      height: 67px;
+    }
   }
 }

@@ -123,3 +123,45 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .header__sticky {
+    width: 52%;
+    padding: 39px 0 44px;
+  }
+
+  .header__menu-trigger {
+    margin-top: 10px;
+  }
+
+  .header__dropdown {
+    padding-left: 72px;
+    padding-bottom: 74px;
+  }
+
+  .header__contacts {
+    margin-bottom: 116px;
+  }
+
+  .header__auth {
+    display: none;
+  }
+
+  .header__social-links {
+    justify-content: flex-start;
+  }
+
+  .header__social-links .social-links__link {
+    &--fb {
+      background-size: 14px 28px;
+    }
+
+    &--vk {
+      background-size: 31px 16px;
+    }
+
+    &--insta {
+      background-size: 24px 24px;
+    }
+  }
+}

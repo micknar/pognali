@@ -44,3 +44,51 @@
     padding: 14px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 47px 40px 45px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+  }
+
+  .footer__social-links {
+    min-width: 180px;
+    margin-bottom: 0;
+  }
+
+  .footer__social-links .social-links__link {
+    &--fb {
+      padding: 16px 22px;
+    }
+
+    &--fb svg {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vk {
+      padding: 13px 14px;
+    }
+
+    &--vk svg {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--insta {
+      padding: 16px 18px;
+    }
+
+    &--insta svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

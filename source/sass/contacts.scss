@@ -21,7 +21,6 @@
   }
 
   & span {
-    display: block;
     width: 45px;
     height: 45px;
     padding: 13px 14px;
@@ -31,6 +30,9 @@
   }
 
   & svg {
+    display: block;
+    height: 18px;
+    margin: auto;
     fill: #ffd74b;
   }
 
@@ -41,5 +43,24 @@
 
   &:active svg {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__link {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .contacts__link span {
+    flex: 0 0 67px;
+    width: 67px;
+    height: 67px;
+    padding-top: 19px;
+  }
+
+  .contacts__link svg {
+    width: 27px;
+    height: 27px;
   }
 }

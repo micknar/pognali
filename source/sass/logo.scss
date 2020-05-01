@@ -7,3 +7,10 @@
 .logo img {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 166px;
+    height: 42px;
+  }
+}

@@ -6,12 +6,12 @@
   background-color: #192144;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: center 0;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
 .about__inner {
-  width: 270px;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -26,10 +26,71 @@
   }
 }
 
+.about__inner b {
+  display: block;
+}
+
 .about__header {
   margin: 0 0 23px;
   font-size: 24px;
   line-height: 1;
   font-weight: bold;
   color: #ff8d30;
+}
+
+.about__btn {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-bottom: 88px;
+    background-image: none;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .about__inner {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 11px;
+  }
+
+  .about__header {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -37px;
+      left: -35px;
+      z-index: -1;
+      width: 688px;
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 20px;
+    }
+  }
+
+  .about__inner p {
+    padding-right: 310px;
+
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
+  }
+
+  .about__inner b {
+    font-size: 21px;
+    line-height: 1.19;
+  }
+
+  .about__btn {
+    display: flex;
+    max-width: 274px;
+  }
 }

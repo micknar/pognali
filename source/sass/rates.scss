@@ -6,21 +6,6 @@
   background-color: $main-bg;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-}
-
-.rates__inner {
-  width: 270px;
-  margin: 0 auto;
-  padding-left: 25px;
-}
-
-.rates__header {
-  max-width: 110px;
-  margin: 0 0 45px;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: bold;
-  color: #ff8d30;
 
   &::after {
     content: "";
@@ -33,6 +18,20 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+
+.rates__inner {
+  margin: 0 auto;
+  padding-left: 25px;
+}
+
+.rates__header {
+  margin: 0 0 45px;
+  padding-right: 135px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  color: #ff8d30;
 }
 
 .rates__list {
@@ -95,9 +94,6 @@
 
   & svg {
     display: none;
-    // width: 67px;
-    // height: 67px;
-    // margin-right: 23px;
   }
 
   &:hover,
@@ -111,5 +107,100 @@
 
   &:active svg {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .rates {
+    margin-bottom: -60px;
+    padding-top: 100px;
+    padding-bottom: 64px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    &::after {
+      top: 437px;
+      right: 86px;
+    }
+  }
+
+  .rates__inner {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .rates__header {
+    margin-bottom: 74px;
+    padding-right: 0;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .rates__list {
+    padding-right: 34px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 176px;
+      right: 40px;
+      z-index: -1;
+      width: 198px;
+      height: 285px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+  }
+
+  .rates__item {
+    flex-direction: row;
+
+    &::before {
+      width: 67px;
+      height: 67px;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 23px;
+      padding-top: 21px;
+      flex-basis: 67px;
+    }
+  }
+
+  .rates__option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  .rates__btn {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    color: #132576;
+
+    & span {
+      width: 67px;
+      height: 67px;
+      margin-right: 23px;
+      padding-top: 23px;
+      background-color: #e2e5f2;
+      border-radius: 50%;
+    }
+
+    & svg {
+      display: block;
+      margin: auto;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      opacity: 0.7;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 }

@@ -12,3 +12,12 @@
   height: 100%;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 674px;
+    margin-top: -60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+}

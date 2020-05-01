@@ -18,4 +18,29 @@
   line-height: 1.2;
   color: #192144;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #ffd74b;
+  }
+
+  &:active {
+    color: rgba(255, 215, 75, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin-top: 52px;
+    margin-bottom: 135px;
+  }
+
+  .main-nav__item {
+    text-align: left;
+  }
+
+  .main-nav__link {
+    font-size: 60px;
+    line-height: 1.18;
+  }
 }
