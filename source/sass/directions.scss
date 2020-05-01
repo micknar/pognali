@@ -130,6 +130,8 @@
 
 @media (min-width: $tablet-width) {
   .directions {
+    margin-top: -60px;
+    padding-top: 132px;
     padding-bottom: 80px;
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;

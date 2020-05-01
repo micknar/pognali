@@ -3,6 +3,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 9;
   width: 270px;
   min-height: 443px;
   margin-left: -135px;
@@ -38,5 +39,29 @@
 
   &:first-child {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .business-rates {
+    width: 688px;
+    margin-left: -344px;
+  }
+
+  .business-rates__header {
+    margin-bottom: 50px;
+    font-size: 45px;
+  }
+
+  .business-rates__list {
+    margin-bottom: 51px;
+  }
+
+  .business-rates__item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 0;
+    font-size: 22px;
+    line-height: 1.27;
   }
 }

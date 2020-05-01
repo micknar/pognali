@@ -44,6 +44,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
+    padding-right: 0;
     padding-bottom: 88px;
     background-image: none;
     border-bottom-left-radius: 60px;
@@ -52,7 +53,7 @@
 
   .about__inner {
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 0;
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: right 11px;
@@ -77,7 +78,7 @@
   }
 
   .about__inner p {
-    padding-right: 310px;
+    padding-right: 385px;
 
     &:last-of-type {
       margin-bottom: 45px;
