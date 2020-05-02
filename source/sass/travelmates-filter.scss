@@ -19,19 +19,9 @@
 }
 
 .travelmates-filter__fieldset {
-  position: relative;
   margin: 0 5px 20px;
   padding: 0;
   border: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -11px;
-    width: 100%;
-    height: 1px;
-    background-color: #f3c72b;
-  }
 
   &:last-of-type {
     margin-bottom: 24px;
@@ -39,14 +29,17 @@
 }
 
 .travelmates-filter__legend {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   width: 100%;
   font-weight: bold;
   line-height: 1.13;
   color: #1d2e5b;
   text-transform: uppercase;
   cursor: pointer;
+
+  & span {
+    display: none;
+  }
 
   &--expanded {
     margin-bottom: 12px;
@@ -60,29 +53,49 @@
   &:active {
     color: rgba(29, 46, 91, 0.3);
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    width: 100%;
+    height: 1px;
+    background-color: #f3c72b;
+  }
 }
 
 .travelmates-filter__btn {
-  width: 8px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin-top: -2px;
   padding: 0;
   background-color: transparent;
   border: none;
+  transform: rotate(180deg);
 
   &::after {
     content: "";
-    display: inline-block;
-    vertical-align: baseline;
+    display: block;
     width: 8px;
     height: 4px;
     background-image: url("../img/icons/dropdown.svg");
     background-repeat: no-repeat;
   }
 
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.6;
+  }
+
   &:active::after {
     opacity: 0.3;
   }
 
-  &--expanded {
+  &--expanded::after {
     transform: rotate(180deg);
   }
 }
@@ -91,6 +104,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .travelmates-filter__list.transport {
@@ -98,7 +115,9 @@
   margin-bottom: 10px;
 }
 
-.travelmates-filter__item label {
+.travelmates-filter__label {
+  display: block;
+  margin-bottom: 8px;
   font-size: 15px;
   line-height: 1;
   color: $basic-text;
@@ -112,11 +131,6 @@
   &:active {
     color: rgba(68, 68, 68, 0.3);
   }
-}
-
-.travelmates-filter__label {
-  display: block;
-  margin-bottom: 8px;
 }
 
 .travelmates-filter__label span {
@@ -154,4 +168,111 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
 .travelmates-filter__submit {
   width: 100%;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .travelmates-filter__title {
+    margin-bottom: 38px;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .travelmates-filter {
+    margin: 0 40px 40px;
+    padding: 33px 35px 38px;
+  }
+
+  .travelmates-filter__fieldset {
+    margin-left: 0;
+    margin-right: 0;
+
+    &:first-of-type {
+      padding-top: 30px;
+      border-top: 1px solid #f3c72b;
+    }
+
+    &:nth-of-type(4) {
+      margin-bottom: 12px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 37px;
+      margin-bottom: 36px;
+      border-bottom: 1px solid #f3c72b;
+    }
+  }
+
+  .travelmates-filter__fieldset-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .travelmates-filter__title,
+  .travelmates-filter__form {
+    padding: 0;
+  }
+
+  .travelmates-filter__legend {
+    flex: 0 0 116px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    & span {
+      display: inline;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .travelmates-filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .travelmates-filter__item {
+    flex: 0 0 164px;
+  }
+
+  .travelmates-filter__label {
+    margin: 2px 0;
+    font-size: 20px;
+
+    & span {
+      width: 24px;
+      height: 24px;
+      margin-right: 6px;
+      padding: 2px 6px;
+    }
+
+    & svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .travelmates-filter__btn {
+    display: none;
+  }
+
+  .travelmates-filter__list.transport {
+    margin-bottom: 0;
+  }
+
+  .travelmates-filter__list.range-slider {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .travelmates-filter__list .range-slider__track {
+    min-width: 277px;
+    margin-right: 61px;
+  }
 }

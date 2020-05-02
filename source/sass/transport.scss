@@ -149,3 +149,35 @@ input[type="checkbox"]:active:checked + .transport__label svg {
 .transport__item.transport__item--disabled svg {
   opacity: 0.15;
 }
+
+@media (min-width: $tablet-width) {
+  .transport__item,
+  .transport__label {
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport__item svg {
+    margin-top: 11px;
+  }
+
+  .transport__item--plane svg {
+    width: 19px;
+    height: 21px;
+  }
+
+  .transport__item--car svg {
+    width: 17px;
+    height: 21px;
+  }
+
+  .transport__item--bike svg {
+    width: 24px;
+    height: 21px;
+  }
+
+  .transport__item--by-foot svg {
+    width: 20px;
+    height: 21px;
+  }
+}

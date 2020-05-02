@@ -1,6 +1,6 @@
 .business-rates {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 9;
@@ -46,6 +46,7 @@
   .business-rates {
     width: 688px;
     margin-left: -344px;
+    margin-top: -262px;
   }
 
   .business-rates__header {
