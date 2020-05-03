@@ -202,18 +202,14 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
     }
   }
 
-  .travelmates-filter__fieldset-inner {
-    display: flex;
-    align-items: center;
-  }
-
   .travelmates-filter__title,
   .travelmates-filter__form {
     padding: 0;
   }
 
   .travelmates-filter__legend {
-    flex: 0 0 116px;
+    float: left;
+    width: 116px;
     margin-right: 8px;
     margin-bottom: 0;
     font-size: 20px;
