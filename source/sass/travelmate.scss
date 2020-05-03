@@ -286,7 +286,7 @@
     z-index: -1;
     top: 9px;
     left: -20px;
-    width: 270px;
+    width: 768px;
     height: 1px;
     background-color: $main-bg;
   }
@@ -343,7 +343,7 @@
 
 @media (min-width: $tablet-width) {
   .travelmate--preview {
-    max-width: 285px;
+    width: 285px;
     margin-right: 48px;
     border-radius: 20px;
 
@@ -453,7 +453,7 @@
   .travelmate__call,
   .travelmate--catalog .travelmate__likes-counter,
   .travelmate__like {
-    position: unset;
+    position: static;
   }
 
   .travelmate__call {

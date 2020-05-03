@@ -180,4 +180,8 @@ input[type="checkbox"]:active:checked + .transport__label svg {
     width: 20px;
     height: 21px;
   }
+
+  .transport__item--no-bg .transport__tooltip {
+    top: 46px;
+  }
 }

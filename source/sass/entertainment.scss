@@ -133,7 +133,7 @@
 
     &--chain::before {
       top: 21px;
-      left: unset;
+      left: auto;
       right: -29px;
       width: 3px;
       height: 247px;
@@ -161,7 +161,7 @@
 
     &::before {
       right: -35px;
-      left: unset;
+      left: auto;
       width: 15px;
       height: 15px;
     }

@@ -9,11 +9,14 @@
   }
 }
 
+.pagination__item {
+  width: 50%;
+}
+
 .pagination__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 135px;
   height: 50px;
   background-color: #ffffff;
 
