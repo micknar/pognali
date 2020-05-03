@@ -64,6 +64,10 @@
   &--weekend {
     color: #ff5c23;
   }
+
+  & span {
+    display: none;
+  }
 }
 
 .calendar__days-list {
@@ -100,6 +104,56 @@
   }
 
   &--current {
+    position: relative;
     border: 2px solid #ff5c23;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__header {
+    padding: 24px 0;
+  }
+
+  .calendar__month {
+    font-size: 36px;
+  }
+
+  .calendar__control {
+    &::before {
+      width: 15px;
+      height: 28px;
+      background-size: 15px 28px;
+    }
+  }
+
+  .calendar__weekday {
+    flex: 0 0 76px;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  .calendar__days-list {
+    margin-left: 2px;
+    margin-bottom: 47px;
+  }
+
+  .calendar__day {
+    width: 76px;
+    height: 70px;
+    padding-top: 26px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+
+    &--current {
+      padding: 22px;
+      border-width: 4px;
+    }
   }
 }

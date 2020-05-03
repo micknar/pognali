@@ -46,6 +46,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer--overlap {
+    margin-top: -56px;
+  }
+
   .footer__inner {
     flex-direction: row;
     justify-content: space-between;

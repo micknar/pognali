@@ -34,14 +34,21 @@
     border-radius: 10px;
   }
 
+  &--no-bg svg,
   &--rounded svg {
     fill: #1d2e5b;
+  }
+
+  &--no-bg:hover svg,
+  &--no-bg:focus svg {
+    opacity: 0.7;
   }
 
   &--rounded:active {
     color: rgba(29, 46, 91, 0.3);
   }
 
+  &--no-bg:active svg,
   &--rounded:active svg {
     opacity: 0.3;
   }
@@ -64,6 +71,10 @@
   &--no-bg {
     padding: 0;
     background-color: transparent;
+  }
+
+  &--no-bg svg {
+    display: none;
   }
 
   &--no-bg:hover,
@@ -105,6 +116,10 @@
   &--secondary:focus {
     background-color: #d1d7e9;
   }
+
+  &--transform svg {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -118,6 +133,47 @@
       padding: 22px 36px 22px 34px;
       font-size: 24px;
       border-radius: 20px;
+    }
+
+    &--no-bg {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 199px;
+      font-size: 24px;
+      line-height: 1;
+      text-transform: unset;
+    }
+
+    &--no-bg svg {
+      display: block;
+      transform: rotate(180deg);
+    }
+
+    &--transform {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 285px;
+      padding: 28px 36px 29px 34px;
+      font-size: 24px;
+      line-height: 1;
+      text-transform: unset;
+      border-radius: 20px;
+    }
+
+    &--transform svg {
+      display: block;
+      fill: #1d2e5b;
+    }
+
+    &--transform:active {
+      color: rgba(29, 46, 91, 0.3);
+    }
+
+    &--transform:active svg {
+      opacity: 0.3;
     }
   }
 }

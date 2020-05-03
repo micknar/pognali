@@ -149,3 +149,93 @@ input[type="checkbox"]:checked + .arrival__with-kids svg {
 input[type="checkbox"]:active:checked + .arrival__with-kids svg {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .arrival {
+    padding-bottom: 55px;
+  }
+
+  .arrival__fieldset {
+    position: relative;
+    margin-bottom: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #d6d9e6;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+      margin-bottom: 59px;
+    }
+  }
+
+  .arrival__label,
+  .arrival__unit {
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .arrival__controls-wrapper {
+    height: 70px;
+  }
+
+  .arrival__input,
+  .arrival__with-kids {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .arrival__with-kids {
+    text-transform: uppercase;
+    color: #1d2e5b;
+
+    & span {
+      width: 36px;
+      height: 36px;
+      margin-right: 15px;
+      padding: 7px 11px;
+    }
+
+    & svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .arrival__control {
+    width: 70px;
+    padding: 25px;
+
+    &--decrease-quantity::before,
+    &--decrease-duration::before {
+      width: 20px;
+      background-image: url("../img/icons/qty-minus.svg");
+    }
+
+    &--increase-quantity::before,
+    &--increase-duration::before {
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icons/qty-plus.svg");
+    }
+  }
+
+  .arrival__fieldsets-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrival__with-kids-wrapper {
+    margin-bottom: 30px;
+  }
+}

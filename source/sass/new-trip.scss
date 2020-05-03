@@ -83,3 +83,73 @@
 .new-trip__btn-box .directions-form__submit {
   margin-bottom: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .new-trip__inner {
+    padding: 55px 75px 109px;
+  }
+
+  .new-trip__header {
+    margin-bottom: 47px;
+  }
+
+  .new-trip__title {
+    font-size: 36px;
+    line-height: 1.39;
+  }
+
+  .new-trip__dot {
+    width: 5px;
+    margin-left: 26px;
+  }
+
+  .new-trip__step-item {
+    margin-bottom: 40px;
+    padding: 44px 39px 53px 39px;
+    border-radius: 30px;
+  }
+
+  .new-trip__step-title {
+    margin-bottom: 34px;
+    font-size: 36px;
+  }
+
+  .new-trip__step-text {
+    margin-bottom: 64px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .trip__inner .new-trip__step-text {
+    margin-bottom: 77px;
+    padding-right: 130px;
+  }
+
+  .entertainment__inner .new-trip__step-text {
+    margin-bottom: 68px;
+  }
+
+  .new-trip__btn-box .new-trip__next-step,
+  .new-trip__btn-box .directions-form__submit {
+    margin-bottom: 0;
+  }
+
+  .new-trip__btn-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .new-trip__next-step {
+    flex-basis: 285px;
+  }
+
+  .new-trip__prev-step {
+    flex-basis: 199px;
+  }
+
+  .new-trip__next-step,
+  .new-trip__prev-step {
+    display: flex;
+  }
+}

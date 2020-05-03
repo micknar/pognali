@@ -105,7 +105,8 @@
     opacity: 0.1;
   }
 
-  &:not(.trip__country--selected) {
+  &--dropdown,
+  &--add {
     width: 100%;
   }
 
@@ -114,11 +115,19 @@
     position: absolute;
     top: 17px;
     right: 48px;
+    z-index: 1;
     width: 8px;
     height: 8px;
-    background-color: trnsparent;
     border: 1px solid #cbced9;
     border-radius: 50%;
+  }
+
+  &--dropdown::before {
+    background-color: #ffffff;
+  }
+
+  &--add::before {
+    background-color: #edeff6;
   }
 
   &--expanded {
@@ -132,7 +141,7 @@
   }
 
   &--selected {
-    width: 168px;
+    width: calc(100% - 52px);
   }
 
   &--selected::before {
@@ -147,7 +156,7 @@
   }
 
   &--selected .trip__country-name {
-    width: 122px;
+    width: calc(100% - 20px);
     white-space: nowrap;
     overflow: hidden;
   }
@@ -225,5 +234,116 @@
     height: 9px;
     margin: auto;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .trip__route-box {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -42px;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #d6d9e6;
+    }
+  }
+
+  .trip__route {
+    &--edit::before {
+      content: "";
+      position: absolute;
+      top: -41px;
+      right: 96px;
+      width: 1px;
+      height: 329px;
+      background-color: #d6d9e6;
+    }
+
+    &--edit::after {
+      content: "";
+      position: absolute;
+      top: 288px;
+      right: 96px;
+      width: 1px;
+      height: 106px;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #d6d9e6 100%);
+    }
+  }
+
+  .trip__route-item {
+    width: calc(100% - 161px);
+    margin-bottom: 15px;
+
+    &:not(:last-of-type)::before {
+      display: none;
+    }
+
+    &:last-of-type {
+      margin-bottom: 49px;
+    }
+  }
+
+  .trip__country {
+    width: 100%;
+    height: 70px;
+    padding: 16px 26px;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+
+    &--selected::before {
+      top: 27px;
+      right: -34px;
+      z-index: 1;
+      width: 15px;
+      height: 15px;
+    }
+
+    &:not(.trip__country--selected)::before {
+      top: 27px;
+      right: -34px;
+      width: 15px;
+      height: 15px;
+    }
+
+    & .trip__dropdown-icon {
+      width: 17px;
+      height: 9px;
+    }
+
+    &--dropdown + .trip__remove-btn {
+      right: -165px;
+    }
+  }
+
+  .trip__route--edit {
+    right: 39px;
+  }
+
+  .trip__edit {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    padding-top: 11px;
+    border: none;
+  }
+
+  .trip__flag {
+    width: 70px;
+    height: 47px;
+  }
+
+  .trip__remove-btn {
+    top: 22px;
+    right: -43px;
+    background-color: transparent;
+    opacity: 0.3;
+
+    & svg {
+      width: 17px;
+      height: 17px;
+    }
   }
 }

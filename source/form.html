@@ -121,7 +121,7 @@
               <fieldset class="user-profile__fieldset user-profile__fieldset--transport">
                 <legend class="user-profile__legend user-profile__legend--transport">Транспорт</legend>
                 <ul class="transport">
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--plane">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-plane" value="plane" checked>
                     <label class="transport__label" for="directions-filter-plane" aria-label="Авиаперелет">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -136,7 +136,7 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--car">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-car" value="car" checked>
                     <label class="transport__label" for="directions-filter-car" aria-label="Автотранспорт">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -149,7 +149,7 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--bike">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-bike" value="bike">
                     <label class="transport__label" for="directions-filter-bike" aria-label="Велосипед">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -162,7 +162,7 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--by-foot">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-by-foot" value="by-foot" checked>
                     <label class="transport__label" for="directions-filter-by-foot" aria-label="Пешком">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -221,37 +221,45 @@
                   <h3 class="new-trip__step-title">Шаг 1.<br>Даты пребывания</h3>
                   <p class="new-trip__step-text">
                     Укажите предпочтительное количество попутчиков,
-                    которых вы хотели бы позвать в поездку
+                    которых вы&nbsp;хотели бы позвать в поездку
                     и ее предполагаемую длительность.
                   </p>
-                  <div class="arrival__fieldset">
-                    <label class="arrival__label" for="arrival-quantity">Ищу попутчиков:</label>
-                    <span class="arrival__unit">Чел.</span>
-                    <div class="arrival__controls-wrapper">
-                      <button class="arrival__control arrival__control--increase-quantity" type="button" aria-label="Уменьшить количество попутчиков"></button>
-                      <input class="arrival__input arrival__quantity" id="arrival-quantity" type="text" name="arrival-quantity" value="2">
-                      <button class="arrival__control arrival__control--decrease-quantity" type="button" aria-label="Увеличить количество попутчиков"></button>
+
+                  <div class="arrival__fieldsets-wrapper">
+                    <div class="arrival__fieldset">
+                      <label class="arrival__label" for="arrival-quantity">Ищу попутчиков:</label>
+                      <span class="arrival__unit">Чел.</span>
+                      <div class="arrival__controls-wrapper">
+                        <button class="arrival__control arrival__control--increase-quantity" type="button" aria-label="Уменьшить количество попутчиков"></button>
+                        <input class="arrival__input arrival__quantity" id="arrival-quantity" type="text" name="arrival-quantity" value="2">
+                        <button class="arrival__control arrival__control--decrease-quantity" type="button" aria-label="Увеличить количество попутчиков"></button>
+                      </div>
+                    </div>
+
+                    <div class="arrival__fieldset">
+                      <label class="arrival__label" for="arrival-duration">Длительность:</label>
+                      <span class="arrival__unit">Дн.</span>
+                      <div class="arrival__controls-wrapper">
+                        <button class="arrival__control arrival__control--increase-duration" type="button" aria-label="Уменьшить количество дней"></button>
+                        <input class="arrival__input arrival__duration" id="arrival-duration" type="text" name="arrival-duration" value="2">
+                        <button class="arrival__control arrival__control--decrease-duration" type="button" aria-label="Увеличить количество дней"></button>
+                      </div>
+                    </div>
+
+                    <div class="arrival__with-kids-wrapper">
+                      <input class="visually-hidden" type="checkbox" id="arrival-kids" checked>
+                      <label class="arrival__with-kids" for="arrival-kids">
+                        <span>
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="9" height="9" fill="#192144" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                            <polygon points="12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 "/>
+                          </svg>
+                        </span>
+                        Можно с детьми
+                      </label>
                     </div>
                   </div>
-                  <div class="arrival__fieldset">
-                    <label class="arrival__label" for="arrival-duration">Длительность:</label>
-                    <span class="arrival__unit">Дн.</span>
-                    <div class="arrival__controls-wrapper">
-                      <button class="arrival__control arrival__control--increase-duration" type="button" aria-label="Уменьшить количество дней"></button>
-                      <input class="arrival__input arrival__duration" id="arrival-duration" type="text" name="arrival-duration" value="2">
-                      <button class="arrival__control arrival__control--decrease-duration" type="button" aria-label="Увеличить количество дней"></button>
-                    </div>
-                  </div>
-                  <input class="visually-hidden" type="checkbox" id="arrival-kids" checked>
-                  <label class="arrival__with-kids" for="arrival-kids">
-                    <span>
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        width="9" height="9" fill="#192144" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
-                        <polygon points="12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 "/>
-                      </svg>
-                    </span>
-                    Можно с детьми
-                  </label>
+
                   <div class="arrival__calendar calendar">
                     <div class="calendar__header">
                       <button class="calendar__control calendar__control--prev" type="button" aria-label="Предыдущий месяц"></button>
@@ -259,13 +267,13 @@
                       <button class="calendar__control calendar__control--next" type="button" aria-label="Следующий месяц"></button>
                     </div>
                     <ul class="calendar__week">
-                      <li class="calendar__weekday">П</li>
-                      <li class="calendar__weekday">В</li>
-                      <li class="calendar__weekday">С</li>
-                      <li class="calendar__weekday">Ч</li>
-                      <li class="calendar__weekday">П</li>
-                      <li class="calendar__weekday calendar__weekday--weekend">С</li>
-                      <li class="calendar__weekday calendar__weekday--weekend">В</li>
+                      <li class="calendar__weekday">П<span>н</span></li>
+                      <li class="calendar__weekday">В<span>т</span></li>
+                      <li class="calendar__weekday">С<span>р</span></li>
+                      <li class="calendar__weekday">Ч<span>т</span></li>
+                      <li class="calendar__weekday">П<span>т</span></li>
+                      <li class="calendar__weekday calendar__weekday--weekend">С<span>б</span></li>
+                      <li class="calendar__weekday calendar__weekday--weekend">В<span>с</span></li>
                     </ul>
                     <ul class="calendar__days-list">
                       <li class="calendar__days-item">
@@ -439,7 +447,12 @@
                     </ul>
                   </div>
                 </div>
-                <a class="new-trip__next-step btn" href="#new-trip__step-2">Следующий шаг</a>
+                <a class="new-trip__next-step btn btn--transform" href="#new-trip__step-2">
+                  Следующий шаг
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                    <polygon points="0,14 0,0.1 10,7.1 "/>
+                  </svg>
+                </a>
               </li>
 
               <li class="new-trip__step-item trip" id="new-trip__step-2">
@@ -587,8 +600,18 @@
                   </div>
                 </div>
                 <div class="new-trip__btn-box">
-                  <a class="new-trip__next-step btn" href="#new-trip__step-3">Следующий шаг</a>
-                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-1">На шаг назад</a>
+                  <a class="new-trip__next-step btn btn--transform" href="#new-trip__step-3">
+                    Следующий шаг
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </a>
+                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-1">
+                    На шаг назад
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </a>
                 </div>
               </li>
 
@@ -619,8 +642,18 @@
                   </ol>
                 </div>
                 <div class="new-trip__btn-box">
-                  <button class="directions-form__submit btn" type="submit">Отправить</button>
-                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-2">На шаг назад</a>
+                  <button class="directions-form__submit btn btn--transform" type="submit">
+                    Отправить
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </button>
+                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-2">
+                    На шаг назад
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </a>
                 </div>
               </li>
             </ol>
