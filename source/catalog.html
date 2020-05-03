@@ -94,23 +94,23 @@
       <div class="page-header">
         <div class="page-header__inner">
           <h1 class="page-header__title"><span>Попутчики</span></h1>
-          <a class="page-header__link" href="index.html" aria-label="Вернуться на главную"></a>
+          <a class="page-header__link" href="index.html">На главную</a>
         </div>
       </div>
 
       <section class="country-filter">
         <div class="country-filter__inner">
           <h2 class="country-filter__title">Фильтрация по странам</h2>
-          <button class="country-filter__trigger" type="button" aria-label="Развернуть/свернуть фильтр"></button>
-        </div>
-        <div class="country-filter__dropdown">
           <ul class="country-filter__region regions">
             <li class="regions__item"><a class="regions__link regions__link--active" href="#">Европа</a></li>
             <li class="regions__item"><a class="regions__link" href="#">Азия</a></li>
             <li class="regions__item"><a class="regions__link" href="#">Америка</a></li>
             <li class="regions__item"><a class="regions__link" href="#">Острова</a></li>
           </ul>
-
+          <button class="country-filter__trigger country-filter__trigger--show" type="button" aria-label="Развернуть фильтр">Показать все</button>
+          <button class="country-filter__trigger country-filter__trigger--hide" type="button" aria-label="Свернуть фильтр">Свернуть</button>
+        </div>
+        <div class="country-filter__dropdown country-filter__dropdown--expanded">
           <ul class="country-filter__letters letters">
             <li class="letters__item letters__item--active">
               <a href="#letter-a" class="letters__link letters__link--active">А</a>

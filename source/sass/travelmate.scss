@@ -397,6 +397,10 @@
 
   .travelmate--catalog {
     padding: 35px 25px 25px 35px;
+
+    &:last-of-type {
+      margin-bottom: 42px;
+    }
   }
 
   .travelmate--catalog .travelmate__picture {

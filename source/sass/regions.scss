@@ -7,6 +7,7 @@
 }
 
 .regions__link {
+  display: block;
   font-weight: bold;
   color: rgba(25, 33, 68, 0.3);
   text-transform: uppercase;
@@ -19,5 +20,13 @@
   &:active,
   &--active {
     color: #192144;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .regions__link {
+    margin-right: 25px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
