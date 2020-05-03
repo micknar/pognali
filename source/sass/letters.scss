@@ -35,3 +35,9 @@
 .letters__item:nth-child(5n) .letters__link {
   width: 44px;
 }
+
+@media (min-width: $tablet-width) {
+  .letters__item:nth-child(5n) .letters__link {
+    width: 54px;
+  }
+}

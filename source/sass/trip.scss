@@ -33,6 +33,10 @@
 
 .trip__countries-box {
   display: none;
+
+  &--expanded {
+    display: block;
+  }
 }
 
 .trip__route-item {
@@ -316,6 +320,11 @@
     &--dropdown + .trip__remove-btn {
       right: -165px;
     }
+
+    &--expanded .trip__dropdown-hide-icon {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   .trip__route--edit {
@@ -345,5 +354,55 @@
       width: 17px;
       height: 17px;
     }
+  }
+
+  .trip__countries-box {
+    position: absolute;
+    z-index: 5;
+    display: none;
+    flex-wrap: wrap;
+    padding-top: 34px;
+    padding-left: 27px;
+    padding-bottom: 59px;
+    width: 575px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+    &--expanded {
+      display: flex;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 206px;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(68, 68, 68, 0.2);
+    }
+  }
+
+  .trip__letters {
+    align-content: flex-start;
+    width: 266px;
+    margin-right: 79px;
+  }
+
+  .trip__letters .letters__link {
+    width: 54px;
+    height: 70px;
+    padding-top: 23px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .trip__countries {
+    padding-top: 0;
+    border: none;
+    box-shadow: none;
   }
 }
