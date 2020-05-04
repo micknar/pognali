@@ -133,22 +133,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo__nav {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  .promo__nav-link {
-    &--rounded {
-      display: none;
-    }
-
-    &--auth {
-      padding: 10px 15px;
-    }
-  }
-
   .promo {
     padding-bottom: 101px;
     background-color: #192144;
@@ -158,6 +142,10 @@
   .promo__inner {
     width: auto;
     padding: 0 20px 0 40px;
+  }
+
+  .promo__nav {
+    display: none;
   }
 
   .promo__title {

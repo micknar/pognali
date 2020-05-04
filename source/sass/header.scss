@@ -72,7 +72,7 @@
 .header__auth {
   display: block;
   margin: 0 auto 51px;
-  padding: 10px 80px;
+  padding: 10px;
   border-radius: 25px;
 }
 
@@ -144,7 +144,10 @@
   }
 
   .header__auth {
-    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 189px;
   }
 
   .header__social-links {
