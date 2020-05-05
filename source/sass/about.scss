@@ -45,7 +45,7 @@
 @media (min-width: $tablet-width) {
   .about {
     padding-right: 0;
-    padding-bottom: 88px;
+    padding-bottom: 0;
     background-image: none;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -54,6 +54,7 @@
   .about__inner {
     padding-left: 50px;
     padding-right: 0;
+    padding-bottom: 88px;
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: right 11px;
@@ -62,6 +63,7 @@
   .about__header {
     position: relative;
     margin-bottom: 40px;
+    padding-right: 372px;
     font-size: 45px;
 
     &::before {
@@ -93,5 +95,41 @@
   .about__btn {
     display: flex;
     max-width: 274px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 74px;
+    padding-left: 130px;
+    padding-bottom: 0;
+  }
+
+  .about__inner {
+    padding-bottom: 163px;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 92% 11px;
+  }
+
+  .about__header {
+    margin-bottom: 60px;
+    padding-top: 55px;
+
+    &::before {
+      top: -3px;
+      left: -121px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
+  .about__inner p {
+    margin-bottom: 44px;
+    padding-right: 625px;
+
+    &:last-of-type {
+      margin-bottom: 80px;
+      padding-right: 825px;
+    }
   }
 }

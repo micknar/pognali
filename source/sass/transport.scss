@@ -26,6 +26,7 @@
   top: 44px;
   left: 50%;
   z-index: 1;
+  transform: translateX(-50%);
   display: none;
   padding: 16px 22px;
   font-size: 20px;
@@ -44,22 +45,6 @@
     border-bottom: 8px solid #192144;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-  }
-
-  &--plane {
-    margin-left: -75px;
-  }
-
-  &--car {
-    margin-left: -82px;
-  }
-
-  &--bike {
-    margin-left: -65px;
-  }
-
-  &--by-foot {
-    margin-left: -54px;
   }
 }
 

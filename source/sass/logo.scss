@@ -14,3 +14,10 @@
     height: 42px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 200px;
+    height: 52px;
+  }
+}

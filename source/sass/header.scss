@@ -148,6 +148,7 @@
     top: 40px;
     right: 40px;
     width: 189px;
+    margin-bottom: 0;
   }
 
   .header__social-links {
@@ -166,5 +167,61 @@
     &--insta {
       background-size: 24px 24px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__nav {
+    padding: 0 60px;
+  }
+
+  .header__sticky {
+    width: 100%;
+    padding: 20px 0 18px;
+  }
+
+  .header__menu-trigger {
+    display: none;
+  }
+
+  .header__logo {
+    position: relative;
+    margin-top: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: -102px;
+      width: 45px;
+      height: 2px;
+      background-color: #192144;
+    }
+  }
+
+  .header__dropdown {
+    padding: 0;
+  }
+
+  .header__auth {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+  }
+
+  .header__social-links {
+    display: none;
+  }
+
+  .header__contacts {
+    position: absolute;
+    top: 20px;
+    right: 249px;
+    display: flex;
+    margin: 0;
+  }
+
+  .header__contacts .contacts__item {
+    flex: 0 0 50px;
   }
 }

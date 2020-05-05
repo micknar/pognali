@@ -4,6 +4,7 @@
 }
 
 .main-nav__list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -42,5 +43,26 @@
   .main-nav__link {
     font-size: 60px;
     line-height: 1.18;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  .main-nav__link {
+    margin-right: 34px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }

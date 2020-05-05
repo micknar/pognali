@@ -177,3 +177,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .btn {
+    &--rounded {
+      width: 274px;
+    }
+  }
+}

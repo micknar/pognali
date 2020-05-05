@@ -64,3 +64,57 @@
     height: 27px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__link--header {
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    border-radius: 50%;
+
+    & span,
+    & svg {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+
+    &.contacts__link--phone {
+      background-color: #ff8d30;
+    }
+
+    &.contacts__link--phone::after {
+      background-image: url("../img/icons/topmenu-phone.svg");
+      background-size: 18px;
+    }
+
+    &.contacts__link--phone:hover,
+    &.contacts__link--phone:focus {
+      background-color: #f26926;
+    }
+
+    &.contacts__link--mail {
+      background-color: #ffbd30;
+    }
+
+    &.contacts__link--mail::after {
+      background-image: url("../img/icons/topmenu-mail.svg");
+      background-size: 18px 14px;
+    }
+
+    &.contacts__link--mail:hover,
+    &.contacts__link--mail:focus {
+      background-color: #ff8d30;
+    }
+  }
+}
