@@ -42,3 +42,9 @@
     text-transform: unset;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .modal__inner {
+    padding: 47px 60px 0;
+  }
+}

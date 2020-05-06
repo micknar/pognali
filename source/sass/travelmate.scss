@@ -554,3 +554,13 @@
     color: rgba(68, 68, 68, 0.4);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .travelmate--preview {
+    margin-right: 59px;
+  }
+
+  .travelmate--preview .travelmate__tags-list {
+    margin-bottom: 18px;
+  }
+}

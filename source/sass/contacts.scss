@@ -118,3 +118,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__link span {
+    margin-right: 32px;
+  }
+}

@@ -127,7 +127,7 @@
 @media (min-width: $tablet-width) {
   .header__sticky {
     width: 52%;
-    padding: 39px 0 44px;
+    padding: 39px 0 44px 12px;
   }
 
   .header__menu-trigger {
@@ -172,12 +172,19 @@
 
 @media (min-width: $desktop-width) {
   .header__nav {
-    padding: 0 60px;
+    padding: 0;
   }
 
   .header__sticky {
-    width: 100%;
     padding: 20px 0 18px;
+  }
+
+  .header__inner {
+    position: relative;
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 60px;
   }
 
   .header__menu-trigger {

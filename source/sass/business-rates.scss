@@ -66,3 +66,12 @@
     line-height: 1.27;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .business-rates {
+    width: 750px;
+    height: 526px;
+    margin-left: -375px;
+    margin-top: -263px;
+  }
+}

@@ -161,3 +161,49 @@
     border-bottom-left-radius: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .registration {
+    padding: 0;
+  }
+
+  .registration__inner {
+    max-width: $desktop-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 164px 132px 104px;
+  }
+
+  .registration__header {
+    margin-bottom: 60px;
+  }
+
+  .registration__text {
+    max-width: 630px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .registration__form {
+    margin: 60px 0 70px;
+  }
+
+  .registration__btn {
+    width: 324px;
+    font-size: 24px;
+  }
+
+  .registration__contacts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .registration__contacts .contacts__item {
+    margin-right: 110px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

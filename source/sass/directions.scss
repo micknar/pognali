@@ -8,6 +8,11 @@
   border-bottom-right-radius: 30px;
 }
 
+.directions__inner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .directions__container {
   margin: 0 auto 60px;
   padding: 0 25px;
@@ -133,9 +138,6 @@
     margin-top: -60px;
     padding-top: 132px;
     padding-bottom: 80px;
-    background-image: url("../img/flags-back@1x.png");
-    background-repeat: no-repeat;
-    background-position: 95% 114px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -147,6 +149,9 @@
 
   .directions__inner {
     padding: 0 50px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 0;
   }
 
   .directions__container {
@@ -155,7 +160,7 @@
 
   .directions__container p {
     margin-bottom: 105px;
-    padding-right: 270px;
+    padding-right: 250px;
   }
 
   .directions__list {
@@ -249,19 +254,19 @@
 
 @media (min-width: $desktop-width) {
   .directions {
-    padding-top: 220px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 138px;
+    padding-left: 0;
+    padding-right: 0;
     background-position: 95% 148px;
   }
 
   .directions__inner {
     position: relative;
+    max-width: $desktop-width;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 0 70px;
+    padding: 89px 130px 59px;
+    background-position: 1090px 16px;
   }
 
   .directions__container {
@@ -281,7 +286,7 @@
 
   .directions__list {
     position: absolute;
-    top: 0;
+    top: 89px;
     width: 560px;
 
     &::before {
