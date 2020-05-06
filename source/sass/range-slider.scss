@@ -116,3 +116,21 @@
     line-height: 0.9;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range-slider__value {
+    width: 95px;
+  }
+
+  .range-slider__value-box {
+    margin-bottom: 37px;
+
+    &::before {
+      width: 21px;
+      height: 9px;
+      margin-top: -5px;
+      margin-left: -10px;
+      border-width: 4px;
+    }
+  }
+}

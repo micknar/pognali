@@ -569,6 +569,10 @@
     width: 950px;
     margin-bottom: 30px;
     padding: 0;
+
+    &:last-of-type {
+      margin-bottom: 62px;
+    }
   }
 
   .travelmate__picture-box {

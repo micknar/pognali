@@ -24,3 +24,9 @@
     line-height: 1.5;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .countries--list {
+    margin-bottom: 48px;
+  }
+}

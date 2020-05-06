@@ -102,3 +102,14 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    margin: 0 0 77px;
+    padding-right: 26px;
+  }
+
+  .pagination__link {
+    width: 43px;
+  }
+}

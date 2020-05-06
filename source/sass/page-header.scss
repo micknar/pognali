@@ -3,8 +3,8 @@
   z-index: 2;
   color: #ffffff;
   background-color: #161c35;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .page-header__inner {
@@ -79,5 +79,12 @@
     display: flex;
     align-items: center;
     margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__inner {
+    max-width: $desktop-width;
+    margin: auto;
   }
 }

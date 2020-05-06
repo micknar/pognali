@@ -41,3 +41,18 @@
     width: 54px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .letters__letter {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #192144;
+  }
+
+  .letters__item--countries {
+    width: 20%;
+  }
+}

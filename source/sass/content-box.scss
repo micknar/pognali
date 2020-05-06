@@ -1,0 +1,11 @@
+@media (min-width: $desktop-width) {
+  .content-box--catalog {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: $desktop-width;
+    margin: auto;
+    padding: 0 60px;
+  }
+}

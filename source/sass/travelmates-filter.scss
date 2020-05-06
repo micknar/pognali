@@ -64,6 +64,19 @@
   }
 }
 
+.travelmates-filter__legend + .travelmates-filter__list,
+.travelmates-filter__legend + .travelmates-filter__list.transport {
+  display: none;
+}
+
+.travelmates-filter__legend--expanded + .travelmates-filter__list {
+  display: block;
+}
+
+.travelmates-filter__legend--expanded + .travelmates-filter__list.transport {
+  display: flex;
+}
+
 .travelmates-filter__btn {
   position: absolute;
   top: 2px;
@@ -225,6 +238,11 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
     }
   }
 
+  .travelmates-filter__legend + .travelmates-filter__list,
+  .travelmates-filter__legend--expanded + .travelmates-filter__list {
+    display: flex;
+  }
+
   .travelmates-filter__list {
     display: flex;
     flex-wrap: wrap;
@@ -270,5 +288,85 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
   .travelmates-filter__list .range-slider__track {
     min-width: 277px;
     margin-right: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmates-filter {
+    width: 285px;
+    margin: 0;
+    padding: 44px 41px 47px 48px;
+  }
+
+  .travelmates-filter__form {
+    padding-right: 5px;
+  }
+
+  .travelmates-filter__title {
+    margin-bottom: 30px;
+  }
+
+  .travelmates-filter__fieldset {
+    margin-bottom: 11px;
+
+    &:first-of-type,
+    &:last-of-type {
+      padding-top: 0;
+      border: none;
+    }
+
+    &:last-of-type {
+      margin-bottom: 43px;
+      padding-bottom: 0;
+      border: none;
+    }
+
+    &:nth-of-type(4) {
+      margin-bottom: 28px;
+    }
+  }
+
+  .travelmates-filter__legend {
+    float: none;
+    width: 100%;
+
+    & span {
+      display: none;
+    }
+
+    &--expanded {
+      margin-bottom: 20px;
+    }
+  }
+
+  .travelmates-filter__label {
+    margin: 0 0 16px;
+  }
+
+  .travelmates-filter__legend + .travelmates-filter__list {
+    display: none;
+  }
+
+  .travelmates-filter__legend--expanded + .travelmates-filter__list {
+    display: flex;
+  }
+
+  .travelmates-filter__btn {
+    display: block;
+
+    &::after {
+      width: 10px;
+      height: 5px;
+      background-size: 10px 5px;
+    }
+  }
+
+  .travelmates-filter__list.range-slider {
+    flex-direction: column;
+  }
+
+  .travelmates-filter__list .range-slider__track {
+    min-width: 191px;
+    margin-right: 0;
   }
 }

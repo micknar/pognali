@@ -210,9 +210,24 @@
     }
   }
 
-  .travelmates--preview .travelmates__list {
+  .travelmates__list--preview {
     position: absolute;
     top: 3px;
     right: 59px;
+  }
+
+  .travelmates__list--catalog {
+    width: 950px;
+    padding: 0;
+  }
+
+  .travelmates__show-more {
+    margin-bottom: 70px;
+    font-size: 20px;
+    line-height: 1.5;
+
+    &::before {
+      margin-right: 24px;
+    }
   }
 }
