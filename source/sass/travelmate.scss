@@ -563,4 +563,100 @@
   .travelmate--preview .travelmate__tags-list {
     margin-bottom: 18px;
   }
+
+  .travelmate--catalog {
+    display: flex;
+    width: 950px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .travelmate__picture-box {
+    flex: 0 0 285px;
+    margin-right: 34px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .travelmate--catalog .travelmate__picture {
+    position: static;
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .travelmate__user-info {
+    position: relative;
+    flex: 0 0 312px;
+    max-width: none;
+    margin-left: 0;
+    padding-top: 45px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 49px;
+      right: 0;
+      width: 1px;
+      height: 187px;
+      background-color: #000000;
+      opacity: 0.1;
+    }
+  }
+
+  .travelmate--catalog .travelmate__profile-link {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+
+  .travelmate--catalog .travelmate__status {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+
+  .travelmate--catalog .travelmate__tags-list {
+    padding-left: 27px;
+  }
+
+  .travelmate__action {
+    margin-left: 22px;
+  }
+
+  .travelmate__title {
+    display: none;
+  }
+
+  .travelmate__trip-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 319px;
+    margin: 0;
+    padding-top: 49px;
+    padding-left: 36px;
+    padding-right: 44px;
+    padding-bottom: 42px;
+  }
+
+  .travelmate--catalog .travelmate__trip {
+    flex-direction: column;
+  }
+
+  .travelmate__transport-level-wrapper {
+    position: static;
+    flex-direction: row;
+  }
+
+  .travelmate--catalog .travelmate__transport-list {
+    flex-direction: row;
+  }
+
+  .travelmate__country-name {
+    font-size: 20px;
+  }
+
+  .travelmate--catalog .transport__item {
+    width: 33px;
+  }
 }
