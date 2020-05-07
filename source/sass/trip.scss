@@ -450,12 +450,15 @@
   }
 
   .trip__countries-box {
-    display: flex;
     width: 730px;
     padding-bottom: 19px;
 
     &::before {
       right: 239px;
+    }
+
+    &--expanded {
+      display: flex;
     }
   }
 

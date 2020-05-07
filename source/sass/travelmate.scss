@@ -650,6 +650,7 @@
   .travelmate__transport-level-wrapper {
     position: static;
     flex-direction: row;
+    max-width: 240px;
   }
 
   .travelmate--catalog .travelmate__transport-list {
