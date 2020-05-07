@@ -242,18 +242,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .trip__route-box {
-    &::before {
-      content: "";
-      position: absolute;
-      top: -42px;
-      right: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #d6d9e6;
-    }
-  }
-
   .trip__route {
     &--edit::before {
       content: "";
@@ -404,5 +392,60 @@
     padding-top: 0;
     border: none;
     box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .trip__inner {
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .trip__country {
+    &--selected::before {
+      top: 27px;
+      right: -53px;
+      z-index: 1;
+      width: 15px;
+      height: 15px;
+    }
+
+    &:not(.trip__country--selected)::before {
+      right: -53px;
+    }
+  }
+
+  .trip__route-item {
+    max-width: 730px;
+  }
+
+  .trip__route {
+    &--edit {
+      right: 110px;
+    }
+
+    &--edit::before {
+      top: -62px;
+      right: 116px;
+      height: 442px;
+    }
+
+    &--edit::after {
+      top: 378px;
+      right: 116px;
+    }
+  }
+
+  .trip__remove-btn {
+    right: -112px;
+
+    & svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .trip__country--dropdown + .trip__remove-btn {
+    right: -274px;
   }
 }

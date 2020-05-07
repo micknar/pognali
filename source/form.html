@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Погнали? - Направления</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -117,7 +117,7 @@
             </div>
             <button class="user-profile__btn btn btn--secondary" type="button"><span>Сменить </span>фото</button>
             <div class="user-profile__bottom">
-              <fieldset class="user-profile__fieldset">
+              <fieldset class="user-profile__fieldset user-profile__fieldset--tags">
                 <legend class="user-profile__legend user-profile__legend--tags">Тэги</legend>
                 <textarea class="user-profile__textarea" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
               </fieldset>
@@ -221,12 +221,19 @@
             <ol class="new-trip__steps">
               <li class="new-trip__step-item arrival" id="new-trip__step-1">
                 <div class="arrival__inner">
-                  <h3 class="new-trip__step-title">Шаг 1.<br>Даты пребывания</h3>
-                  <p class="new-trip__step-text">
-                    Укажите предпочтительное количество попутчиков,
-                    которых вы&nbsp;хотели бы позвать в поездку
-                    и ее предполагаемую длительность.
-                  </p>
+                  <div class="new-trip__step-title-wrapper">
+                    <h3 class="new-trip__step-title">Шаг 1. <br>Даты пребывания</h3>
+                    <p class="new-trip__step-text">
+                      Укажите предпочтительное количество попутчиков,
+                      которых вы&nbsp;хотели бы позвать в поездку
+                      и ее предполагаемую длительность.
+                    </p>
+                    <ul class="new-trip__step-marks step-marks">
+                      <li class="step-marks__item step-marks__item--current">Даты</li>
+                      <li class="step-marks__item">Маршрут</li>
+                      <li class="step-marks__item">Развлечения</li>
+                    </ul>
+                  </div>
 
                   <div class="arrival__fieldsets-wrapper">
                     <div class="arrival__fieldset">
@@ -304,7 +311,7 @@
                         <input class="visually-hidden" id="february-28" name="february-28" type="checkbox" disabled>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-1">1</label>
+                        <label class="calendar__day calendar__day--disabled calendar__day--first-day" for="march-1">1 <span>мар</span></label>
                         <input class="visually-hidden" id="march-1" name="march-1" type="checkbox" disabled>
                       </li>
                       <li class="calendar__days-item">
@@ -404,7 +411,7 @@
                         <input class="visually-hidden" id="march-25" name="march-25" type="checkbox" disabled>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--active calendar__day--current" for="march-26">26</label>
+                        <label class="calendar__day calendar__day--active calendar__day--current calendar__day--arrival" for="march-26">26 <span>Заезд</span></label>
                         <input class="visually-hidden" id="march-26" name="march-26" type="checkbox" checked>
                       </li>
                       <li class="calendar__days-item">
@@ -412,7 +419,7 @@
                         <input class="visually-hidden" id="march-27" name="march-27" type="checkbox" checked>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--active" for="march-28">28</label>
+                        <label class="calendar__day calendar__day--active calendar__day--departure" for="march-28">28 <span>Выезд</span></label>
                         <input class="visually-hidden" id="march-28" name="march-28" type="checkbox" checked>
                       </li>
                       <li class="calendar__days-item">
@@ -427,8 +434,8 @@
                         <label class="calendar__day" for="march-31">31</label>
                         <input class="visually-hidden" id="march-31" name="march-31" type="checkbox">
                       </li>
-                      <li class="calendar__days-item">
-                        <label class="calendar__day" for="april-1">1</label>
+                      <li class="calendar__days-item calendar__day--first-day">
+                        <label class="calendar__day" for="april-1">1 <span>апр</span></label>
                         <input class="visually-hidden" id="april-1" name="april-1" type="checkbox">
                       </li>
                       <li class="calendar__days-item">
@@ -460,11 +467,19 @@
 
               <li class="new-trip__step-item trip" id="new-trip__step-2">
                 <div class="trip__inner">
-                  <h3 class="new-trip__step-title">Шаг 2.<br>Маршрут</h3>
-                  <p class="new-trip__step-text">
-                    Укажите страны, которые вы хотели посетить.
-                    Это может быть одна или сразу несколько.
-                  </p>
+                  <div class="new-trip__step-title-wrapper">
+                    <h3 class="new-trip__step-title">Шаг 2. <br>Маршрут</h3>
+                    <p class="new-trip__step-text">
+                      Укажите страны, которые вы хотели посетить.
+                      Это может быть одна или сразу несколько.
+                    </p>
+                    <ul class="new-trip__step-marks step-marks">
+                      <li class="step-marks__item">Даты</li>
+                      <li class="step-marks__item step-marks__item--current">Маршрут</li>
+                      <li class="step-marks__item">Развлечения</li>
+                    </ul>
+                  </div>
+
                   <div class="trip__route-box">
                     <ul class="trip__route">
                       <li class="trip__route-item trip__dropdown trip__dropdown--selected">
@@ -620,11 +635,19 @@
 
               <li class="new-trip__step-item entertainment" id="new-trip__step-3">
                 <div class="entertainment__inner">
-                  <h3 class="new-trip__step-title">Шаг 3.<br>Развлечения</h3>
-                  <p class="new-trip__step-text">
-                    Наконец, расскажите о своих планах времяпровождения.
-                    Можно писать в свободной форме и ставить тэги.
-                  </p>
+                  <div class="new-trip__step-title-wrapper">
+                    <h3 class="new-trip__step-title">Шаг 3. <br>Развлечения</h3>
+                    <p class="new-trip__step-text">
+                      Наконец, расскажите о своих планах времяпровождения.
+                      Можно писать в свободной форме и ставить тэги.
+                    </p>
+                    <ul class="new-trip__step-marks step-marks">
+                      <li class="step-marks__item">Даты</li>
+                      <li class="step-marks__item">Маршрут</li>
+                      <li class="step-marks__item step-marks__item--current">Развлечения</li>
+                    </ul>
+                  </div>
+
                   <ol class="entertainment__list entertainment__list--chain">
                     <li class="entertainment__item">
                       <span class="entertainment__country-wrapper">

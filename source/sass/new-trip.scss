@@ -56,6 +56,10 @@
   border-radius: 10px;
 }
 
+.new-trip__step-item.arrival {
+  padding-bottom: 20px;
+}
+
 .new-trip__step-title {
   margin: 0 0 15px;
   font-size: 20px;
@@ -84,6 +88,10 @@
   margin-bottom: 12px;
 }
 
+.new-trip__step-marks {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .new-trip__inner {
     padding: 55px 75px 109px;
@@ -109,24 +117,33 @@
     border-radius: 30px;
   }
 
+  .new-trip__step-item.arrival {
+    padding-bottom: 55px;
+  }
+
+  .new-trip__step-title-wrapper {
+    margin-bottom: 23px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+
   .new-trip__step-title {
     margin-bottom: 34px;
     font-size: 36px;
   }
 
   .new-trip__step-text {
-    margin-bottom: 64px;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 1.2;
   }
 
-  .trip__inner .new-trip__step-text {
-    margin-bottom: 77px;
-    padding-right: 130px;
+  .new-trip__step-item.trip .new-trip__step-title-wrapper {
+    margin-bottom: 41px;
   }
 
-  .entertainment__inner .new-trip__step-text {
-    margin-bottom: 68px;
+  .new-trip__step-item.trip .new-trip__step-text {
+    padding-right: 130px;
   }
 
   .new-trip__btn-box .new-trip__next-step,
@@ -151,5 +168,91 @@
   .new-trip__next-step,
   .new-trip__prev-step {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .new-trip {
+    margin-top: -60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .new-trip__inner {
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 59px;
+    padding-bottom: 128px;
+  }
+
+  .new-trip__header {
+    margin-bottom: 52px;
+  }
+
+  .new-trip__title {
+    margin-left: 70px;
+  }
+
+  .new-trip__controls {
+    display: none;
+  }
+
+  .new-trip__step-item {
+    margin-bottom: 45px;
+    padding: 100px 160px 105px;
+    border-radius: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .new-trip__step-item.arrival {
+    padding-bottom: 105px;
+  }
+
+  .new-trip__step-item.trip .new-trip__step-title-wrapper {
+    margin-bottom: 62px;
+  }
+
+  .new-trip__step-item.entertainment .new-trip__step-title-wrapper {
+    margin-bottom: 74px;
+  }
+
+  .new-trip__step-title br {
+    display: none;
+  }
+
+  .new-trip__step-title,
+  .new-trip__step-text {
+    max-width: 585px;
+  }
+
+  .new-trip__step-item.trip .new-trip__step-text {
+    padding-right: 190px;
+  }
+
+  .new-trip__step-item.entertainment .new-trip__step-text {
+    padding-right: 100px;
+  }
+
+  .new-trip__step-title-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 55px;
+  }
+
+  .new-trip__step-marks {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 44px;
+  }
+
+  .new-trip__prev-step {
+    max-width: 179px;
+    padding: 0;
   }
 }

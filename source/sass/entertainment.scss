@@ -183,3 +183,38 @@
     line-height: 1.2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .entertainment__inner {
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .entertainment__country-wrapper {
+    align-items: flex-start;
+    max-width: 881px;
+    margin-bottom: 26px;
+  }
+
+  .entertainment__country {
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  .entertainment__plan {
+    max-width: 730px;
+  }
+
+  .entertainment__list--chain {
+    &::before {
+      right: 195px;
+      height: 261px;
+    }
+  }
+
+  .entertainment__item {
+    &::before {
+      right: 189px;
+    }
+  }
+}

@@ -1,3 +1,9 @@
+.calendar {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .calendar__header {
   display: flex;
   margin-bottom: 20px;
@@ -56,6 +62,7 @@
 }
 
 .calendar__weekday {
+  flex: 0 0 30px;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -106,9 +113,21 @@
     position: relative;
     border: 2px solid #ff5c23;
   }
+
+  &--first-day span,
+  &--departure span,
+  &--arrival span {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .calendar {
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .calendar__header {
     padding: 24px 0;
   }
@@ -153,6 +172,69 @@
     &--current {
       padding: 22px;
       border-width: 4px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar {
+    max-width: 100%;
+  }
+
+  .calendar__header {
+    margin-bottom: 11px;
+  }
+
+  .calendar__week {
+    margin-bottom: 14px;
+  }
+
+  .calendar__weekday {
+    flex: 0 0 143px;
+    padding-left: 16px;
+    text-align: left;
+  }
+
+  .calendar__days-list {
+    margin-left: 0;
+  }
+
+  .calendar__day {
+    position: relative;
+    width: 144px;
+    height: 72px;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    text-align: left;
+
+    &:hover {
+      z-index: 1;
+      border: 4px solid #ff5c23;
+    }
+
+    &--first-day span {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+
+    &--departure span,
+    &--arrival span {
+      display: block;
+      margin-top: 10px;
+    }
+
+    &--current {
+      border: 1px solid;
+    }
+  }
+
+  .calendar__control {
+    &::before {
+      width: 18px;
+      height: 34px;
+      background-size: 18px 34px;
     }
   }
 }

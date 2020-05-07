@@ -97,6 +97,7 @@
   padding: 22px 20px;
   resize: none;
   overflow: hidden;
+  overflow-y: auto;
   background-color: transparent;
 
   &:hover {
@@ -194,5 +195,83 @@
   .user-profile__textarea {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-profile {
+    padding: 0 0 65px;
+  }
+
+  .user-profile__inner {
+    position: relative;
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 73px;
+    padding-left: 124px;
+    padding-right: 60px;
+  }
+
+  .user-profile__top {
+    position: absolute;
+    top: -190px;
+    right: 155px;
+    z-index: 2;
+    width: 329px;
+  }
+
+  .user-profile__picture {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .user-profile__level.progress-bar {
+    margin: auto 0;
+  }
+
+  .user-profile__level .progress-bar__number,
+  .user-profile__level .progress-bar__level {
+    color: #ffffff;
+  }
+
+  .user-profile__level .progress-bar__number {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .user-profile__btn {
+    position: absolute;
+    top: 0;
+    right: 155px;
+    width: 190px;
+    margin: 0;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+
+    & span {
+      display: none;
+    }
+  }
+
+  .user-profile__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-profile__fieldset--transport {
+    position: static;
+    flex-basis: 384px;
+  }
+
+  .user-profile__fieldset--tags {
+    flex-basis: 730px;
+  }
+
+  .user-profile__legend {
+    &--tags {
+      left: auto;
+      right: 20px;
+    }
   }
 }

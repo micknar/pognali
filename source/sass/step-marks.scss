@@ -1,0 +1,36 @@
+@media (min-width: $desktop-width) {
+  .step-marks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .step-marks__item {
+    position: relative;
+    margin-bottom: 22px;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -42px;
+      width: 5px;
+      height: 5px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+    }
+
+    &--current {
+      color: #000000;
+    }
+
+    &--current::before {
+      background-color: #000000;
+    }
+  }
+}
