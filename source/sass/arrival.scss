@@ -177,7 +177,13 @@ input[type="checkbox"]:active:checked + .arrival__with-kids svg {
     letter-spacing: 2px;
   }
 
+  .arrival__with-kids-wrapper {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+
   .arrival__with-kids {
+    margin-bottom: 26px;
     text-transform: uppercase;
     color: #1d2e5b;
 
@@ -215,15 +221,6 @@ input[type="checkbox"]:active:checked + .arrival__with-kids svg {
   .arrival__fieldsets-wrapper {
     display: flex;
     flex-direction: column;
-  }
-
-  .arrival__with-kids-wrapper {
-    margin-bottom: 24px;
-    border-bottom: 1px solid #d6d9e6;
-  }
-
-  .arrival__with-kids {
-    margin-bottom: 26px;
   }
 }
 
