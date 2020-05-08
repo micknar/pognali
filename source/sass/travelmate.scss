@@ -162,13 +162,14 @@
   }
 }
 
-.travelmate--catalog .travelmate__picture {
+.travelmate__picture-box {
   position: absolute;
   top: 15px;
   left: 18px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .travelmate--catalog .travelmate__trip {
@@ -408,7 +409,8 @@
     }
   }
 
-  .travelmate--catalog .travelmate__picture {
+  .travelmate__picture-box {
+    position: absolute;
     top: 35px;
     left: 35px;
     width: 190px;
@@ -576,15 +578,11 @@
   }
 
   .travelmate__picture-box {
-    flex: 0 0 285px;
-    margin-right: 34px;
-    border-radius: 20px 0 0 20px;
-  }
-
-  .travelmate--catalog .travelmate__picture {
     position: static;
     width: 285px;
     height: 285px;
+    flex: 0 0 285px;
+    margin-right: 34px;
     border-radius: 20px 0 0 20px;
   }
 

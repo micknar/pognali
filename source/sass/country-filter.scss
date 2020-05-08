@@ -9,6 +9,8 @@
 }
 
 .country-filter__inner {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   padding: 45px 25px 11px;
@@ -83,8 +85,13 @@
 }
 
 .country-filter__dropdown {
+  position: absolute;
+  z-index: 1;
   display: none;
-  padding: 128px 25px 27px;
+  margin-top: -30px;
+  padding: 158px 25px 27px;
+  background-color: #e2e5f2;
+  border-radius: 0 0 20px 20px;
 
   &--expanded {
     display: block;
@@ -93,6 +100,7 @@
 
 .country-filter__region {
   position: absolute;
+  z-index: 2;
   top: 97px;
   left: 25px;
   flex-wrap: wrap;
@@ -217,7 +225,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15px 75px 74px;
+    margin-top: -60px;
+    padding: 75px 75px 74px;
+    border-radius: 0 0 60px 60px;
   }
 
   .country-filter__letters,
@@ -311,6 +321,7 @@
   }
 
   .country-filter__dropdown {
+    position: static;
     padding-left: 60px;
     padding-right: 60px;
   }
