@@ -114,17 +114,26 @@
   }
 }
 
-.entertainment__error {
-  display: none; //temp
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  padding: 13px 15px;
-  color: #ff0000;
-  background-color: #ffefef;
-  border: 1px solid #f47e7e;
-  border-top: none;
-  border-radius: 0 0 4px 4px;
+.entertainment__plan-box--error {
+  position: relative;
+
+  &::before {
+    content: "Это поле должно быть заполнено";
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 13px 15px;
+    color: #ff0000;
+    background-color: #ffefef;
+    border: 1px solid #f47e7e;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.entertainment__plan-box--error .entertainment__plan {
+  border-color: #f47e7e;
 }
 
 @media (min-width: $tablet-width) {
@@ -176,6 +185,12 @@
     }
   }
 
+  .entertainment__plan-box {
+    &--error::before {
+      font-size: 20px;
+    }
+  }
+
   .entertainment__plan {
     min-height: 142px;
     padding: 15px 17px;
@@ -202,6 +217,10 @@
   }
 
   .entertainment__plan {
+    max-width: 730px;
+  }
+
+  .entertainment__plan-box {
     max-width: 730px;
   }
 

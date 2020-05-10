@@ -94,9 +94,20 @@
   }
 
   &--error {
-    color: #ff0000;
     background-color: #ffefef;
     border-color: #ffefef;
+  }
+
+  &--error::-moz-placeholder {
+    color: #ff0000;
+  }
+
+  &--error:-ms-input-placeholder {
+    color: #ff0000;
+  }
+
+  &--error::-webkit-input-placeholder {
+    color: #ff0000;
   }
 }
 
