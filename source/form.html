@@ -10,17 +10,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__nav header__nav--expanded header__nav--sticky">
+      <div class="header__nav header__nav--nojs header__nav--closed">
         <div class="header__inner">
           <div class="header__sticky">
             <a class="header__logo logo header__logo--blue" href="index.html">
               <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
             </a>
-            <a class="header__logo logo header__logo--white">
+            <a class="header__logo logo header__logo--white" href="index.html">
               <img src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
             </a>
-            <button type="button" class="header__menu-trigger header__menu-trigger--expanded header__menu-trigger--sticky" aria-label="Открыть/скрыть меню">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
+            <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
+              <svg class="header__menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
               viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
               <g>
                 <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
@@ -30,7 +30,7 @@
             </button>
           </div>
           <div class="header__dropdown">
-            <nav class="main-nav">
+            <nav class="header__main-nav main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="index.html">О сервисе</a></li>
                 <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Направления</a></li>
@@ -755,5 +755,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
