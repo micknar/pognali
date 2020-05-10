@@ -277,17 +277,14 @@
               </a>
 
               <ul class="travelmate__trip">
-                <li class="travelmate__country travelmate__country--sri-lanka">
+                <li class="travelmate__country tooltip" data-title="Шри-Ланка">
                   <img class="travelmate__flag" src="img/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--sri-lanka">Шри-Ланка</span>
                 </li>
-                <li class="travelmate__country travelmate__country--thailand">
+                <li class="travelmate__country tooltip" data-title="Таиланд">
                   <img class="travelmate__flag" src="img/flag-thailand.svg" alt="Флаг Таиланда" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--thailand">Таиланд</span>
                 </li>
-                <li class="travelmate__country travelmate__country--seychelles">
+                <li class="travelmate__country tooltip" data-title="Сейшелы">
                   <img class="travelmate__flag" src="img/flag-seychelles.svg" alt="Флаг Сейшел" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--seychelles">Сейшелы</span>
                 </li>
               </ul>
 
@@ -309,7 +306,7 @@
                 </ul>
 
                 <ul class="travelmate__transport-list transport">
-                  <li class="transport__item transport__item--plane transport__item--no-bg">
+                  <li class="transport__item transport__item--plane transport__item--no-bg tooltip" data-title="Авиаперелет">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="14" height="16" fill="#1d2e5b" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                       <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -320,9 +317,8 @@
                         c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
                         c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--car transport__item--no-bg transport__item--disabled">
+                  <li class="transport__item transport__item--car transport__item--no-bg tooltip transport__item--disabled" data-title="Автотранспорт">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="13" height="16" fill="#1d2e5b" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                       <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
@@ -331,9 +327,8 @@
                         M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
                         H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--bike transport__item--no-bg transport__item--disabled">
+                  <li class="transport__item transport__item--bike transport__item--no-bg tooltip transport__item--disabled" data-title="Велосипед">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="19" height="17" fill="#1d2e5b" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                       <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
@@ -342,9 +337,8 @@
                         l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
                         s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--by-foot transport__item--no-bg transport__item--disabled">
+                  <li class="transport__item transport__item--by-foot transport__item--no-bg tooltip transport__item--disabled" data-title="Пешком">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="15" height="17" fill="#1d2e5b" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                       <g>
@@ -356,7 +350,6 @@
                         z"/>
                       </g>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
                   </li>
                 </ul>
               </div>
@@ -374,13 +367,11 @@
               </a>
 
               <ul class="travelmate__trip">
-                <li class="travelmate__country travelmate__country--belgium">
+                <li class="travelmate__country tooltip" data-title="Бельгия">
                   <img class="travelmate__flag" src="img/flag-belgium.svg" alt="Флаг Бельгии" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--belgium">Бельгия</span>
                 </li>
-                <li class="travelmate__country travelmate__country--czech">
+                <li class="travelmate__country tooltip" data-title="Чехия">
                   <img class="travelmate__flag" src="img/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
-                  <span class="travelmate__country-tooltip travelmate__country-tooltip--czech">Чехия</span>
                 </li>
               </ul>
 
@@ -401,7 +392,7 @@
                 </ul>
 
                 <ul class="travelmate__transport-list transport">
-                  <li class="transport__item transport__item--plane transport__item--no-bg">
+                  <li class="transport__item transport__item--plane transport__item--no-bg tooltip" data-title="Авиаперелет">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="14" height="16" fill="#1d2e5b" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                       <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -412,9 +403,8 @@
                         c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
                         c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--plane">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--car transport__item--no-bg">
+                  <li class="transport__item transport__item--car transport__item--no-bg tooltip" data-title="Автотранспорт">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="13" height="16" fill="#1d2e5b" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                       <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
@@ -423,9 +413,8 @@
                         M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
                         H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--car">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--bike transport__item--no-bg transport__item--disabled">
+                  <li class="transport__item transport__item--bike transport__item--no-bg tooltip transport__item--disabled" data-title="Велосипед">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="19" height="17" fill="#1d2e5b" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                       <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
@@ -434,9 +423,8 @@
                         l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
                         s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--bike">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--by-foot transport__item--no-bg">
+                  <li class="transport__item transport__item--by-foot transport__item--no-bg tooltip" data-title="Пешком">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="15" height="17" fill="#1d2e5b" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                       <g>
@@ -448,7 +436,6 @@
                         z"/>
                       </g>
                     </svg>
-                    <span class="transport__tooltip transport__tooltip--by-foot">Пешком</span>
                   </li>
                 </ul>
               </div>
