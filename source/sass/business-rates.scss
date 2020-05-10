@@ -1,13 +1,6 @@
 .business-rates {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 9;
   width: 270px;
   min-height: 443px;
-  margin-left: -135px;
-  margin-top: -222px;
 }
 
 .business-rates__header {
@@ -45,8 +38,6 @@
 @media (min-width: $tablet-width) {
   .business-rates {
     width: 688px;
-    margin-left: -344px;
-    margin-top: -262px;
   }
 
   .business-rates__header {
@@ -55,7 +46,7 @@
   }
 
   .business-rates__list {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   .business-rates__item {
@@ -70,8 +61,5 @@
 @media (min-width: $desktop-width) {
   .business-rates {
     width: 750px;
-    height: 526px;
-    margin-left: -375px;
-    margin-top: -263px;
   }
 }
