@@ -20,12 +20,12 @@
   color: #192144;
   text-transform: uppercase;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     color: #ffd74b;
   }
 
-  &:active {
+  &[href]:active {
     color: rgba(255, 215, 75, 0.3);
   }
 }
@@ -59,9 +59,30 @@
     margin-top: 8px;
   }
 
+  .main-nav__item {
+    overflow: hidden;
+  }
+
   .main-nav__link {
+    position: relative;
+    display: inline-block;
     margin-right: 34px;
     font-size: 20px;
     line-height: 1.5;
+    transition: transform 0.3s;
+
+    &[href]::before {
+      content: attr(data-hover);
+      position: absolute;
+      top: 100%;
+      font-weight: 700;
+      white-space: nowrap;
+      transform: translate3d(0, 0, 0);
+    }
+
+    &[href]:hover,
+    &[href]:focus {
+      transform: translateY(-100%);
+    }
   }
 }
