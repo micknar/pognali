@@ -1,17 +1,10 @@
 .footer {
   position: relative;
   z-index: 3;
+  margin-top: -30px;
   background-color: #ffffff;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-
-  &--overlap {
-    margin-top: -26px;
-  }
-
-  &--home {
-    margin-top: -240px;
-  }
 }
 
 .footer__inner {
@@ -46,16 +39,9 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    margin-top: -60px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-
-    &--home {
-      margin-top: -156px;
-    }
-  }
-
-  .footer--overlap {
-    margin-top: -56px;
   }
 
   .footer__inner {

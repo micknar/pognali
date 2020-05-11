@@ -1,3 +1,7 @@
+.pagination {
+  padding: 0 25px;
+}
+
 .pagination__list {
   display: flex;
   margin: 0;
@@ -62,9 +66,6 @@
   .pagination {
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 62px;
     padding: 25px 19px 25px 28px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -105,7 +106,6 @@
 
 @media (min-width: $desktop-width) {
   .pagination {
-    margin: 0 0 77px;
     padding-right: 26px;
   }
 

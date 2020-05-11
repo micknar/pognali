@@ -26,6 +26,9 @@
 }
 
 .rates__header {
+  display: flex;
+  align-items: center;
+  min-height: 72px;
   margin: 0 0 45px;
   padding-right: 135px;
   font-size: 24px;
@@ -131,6 +134,8 @@
   }
 
   .rates__header {
+    display: block;
+    min-height: auto;
     margin-bottom: 74px;
     padding-right: 0;
     font-size: 45px;

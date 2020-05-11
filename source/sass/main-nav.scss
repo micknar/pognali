@@ -47,12 +47,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    position: absolute;
-    left: 450px;
-    margin: 0;
-  }
-
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;

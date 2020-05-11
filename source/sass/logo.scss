@@ -10,6 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .logo {
+    flex: 0 0 166px;
     width: 166px;
     height: 42px;
   }
@@ -17,6 +18,7 @@
 
 @media (min-width: $desktop-width) {
   .logo {
+    flex: 0 0 200px;
     width: 200px;
     height: 52px;
   }
