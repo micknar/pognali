@@ -25,24 +25,6 @@
   color: #1d2e5b;
 }
 
-.new-trip__controls {
-  margin-right: 15px;
-}
-
-.new-trip__dot {
-  width: 6px;
-  height: 5px;
-  margin-left: 10px;
-  padding: 0;
-  background-color: rgba(128, 130, 133, 0.3);
-  border: none;
-  border-radius: 50%;
-
-  &--active {
-    background-color: #1d2e5b;
-  }
-}
-
 .new-trip__steps {
   margin: 0;
   padding: 0;
@@ -88,8 +70,12 @@
   margin-bottom: 12px;
 }
 
-.new-trip__step-marks {
+.new-trip__steps .new-trip__step-marks {
   display: none;
+}
+
+.new-trip__step-marks.step-marks--dots {
+  margin-right: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -104,11 +90,6 @@
   .new-trip__title {
     font-size: 36px;
     line-height: 1.39;
-  }
-
-  .new-trip__dot {
-    width: 5px;
-    margin-left: 26px;
   }
 
   .new-trip__step-item {
@@ -195,10 +176,6 @@
     margin-left: 70px;
   }
 
-  .new-trip__controls {
-    display: none;
-  }
-
   .new-trip__step-item {
     margin-bottom: 45px;
     padding: 100px 160px 105px;
@@ -244,7 +221,11 @@
     padding-bottom: 55px;
   }
 
-  .new-trip__step-marks {
+  .new-trip__header .new-trip__step-marks {
+    display: none;
+  }
+
+  .new-trip__steps .new-trip__step-marks {
     display: block;
     position: absolute;
     top: 0;

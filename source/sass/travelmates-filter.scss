@@ -281,7 +281,7 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
   .travelmates-filter__list.range-slider {
     align-items: center;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: nowrap;
   }
 

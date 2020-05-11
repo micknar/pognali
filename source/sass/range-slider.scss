@@ -106,12 +106,14 @@
   }
 
   .range-slider__value-box {
-    flex-grow: 1;
+    width: 150px;
     height: 46px;
     margin-bottom: 0;
   }
 
   .range-slider__value {
+    width: 75px;
+    height: 46px;
     font-size: 20px;
     line-height: 0.9;
   }
@@ -123,6 +125,7 @@
   }
 
   .range-slider__value-box {
+    width: auto;
     margin-bottom: 37px;
 
     &::before {
