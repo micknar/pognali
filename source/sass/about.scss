@@ -6,12 +6,12 @@
   background-color: #192144;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: center 0;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
 .about__inner {
-  width: 270px;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -26,10 +26,115 @@
   }
 }
 
+.about__inner b {
+  display: block;
+}
+
 .about__header {
   margin: 0 0 23px;
   font-size: 24px;
   line-height: 1;
   font-weight: bold;
   color: #ff8d30;
+}
+
+.about__btn {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-right: 0;
+    padding-bottom: 0;
+    background-image: none;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .about__inner {
+    padding-left: 50px;
+    padding-right: 0;
+    padding-bottom: 88px;
+    background-image: url("../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 11px;
+  }
+
+  .about__header {
+    position: relative;
+    margin-bottom: 40px;
+    padding-right: 372px;
+    font-size: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -37px;
+      left: -35px;
+      z-index: -1;
+      width: 688px;
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 20px;
+    }
+  }
+
+  .about__inner p {
+    padding-right: 385px;
+
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
+  }
+
+  .about__inner b {
+    font-size: 21px;
+    line-height: 1.19;
+  }
+
+  .about__btn {
+    display: flex;
+    max-width: 274px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 74px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .about__inner {
+    max-width: $desktop-width;
+    padding-left: 130px;
+    padding-bottom: 163px;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 93% 11px;
+  }
+
+  .about__header {
+    max-width: 600px;
+    margin-bottom: 60px;
+    padding-top: 55px;
+    padding-right: 0;
+
+    &::before {
+      top: -3px;
+      left: -70px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
+  .about__inner p {
+    max-width: 670px;
+    margin-bottom: 44px;
+    padding-right: 0;
+
+    &:last-of-type {
+      margin-bottom: 80px;
+      padding-right: 230px;
+    }
+  }
 }

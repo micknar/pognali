@@ -1,20 +1,19 @@
 .promo {
-  padding-top: 25px;
-  padding-bottom: 39px;
   color: #ffffff;
-  background-color: #181e39;
+  background-color: #0f1632;
+}
+
+.promo__inner {
+  margin: 0 auto;
+  padding: 25px 25px 39px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 54% 21%, 0 -37%;
 }
 
-.promo__inner {
-  width: 270px;
-  margin: 0 auto;
-}
-
 .promo__title {
-  margin: 0 0 247px;
+  max-width: 240px;
+  margin: 0 auto 247px;
   font-size: 36px;
   font-weight: bold;
   line-height: 1.11;
@@ -80,7 +79,6 @@
 .promo__steps {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -91,6 +89,7 @@
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-between;
+  width: 100%;
   padding-top: 20px;
   padding-left: 25px;
   padding-right: 23px;
@@ -114,20 +113,155 @@
     margin-top: -10px;
   }
 
-  &:nth-child(1) {
+  &:nth-child(4n-3) {
     background-color: #ff8d30;
   }
 
-  &:nth-child(2) {
+  &:nth-child(2n) {
     background-color: #ffa530;
   }
 
-  &:nth-child(3) {
+  &:nth-child(4n-1) {
     background-color: #ffbd30;
+  }
+
+  &:nth-child(4n) {
+    background-color: #ffd74b;
   }
 
   &:last-child {
     padding-bottom: 23px;
     border-radius: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-color: #182044;
+  }
+
+  .promo__inner {
+    width: auto;
+    padding: 25px 20px 101px 40px;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+    background-position: 73% 43%, -364px 247px;
+  }
+
+  .promo__nav {
+    display: none;
+  }
+
+  .promo__title {
+    max-width: 410px;
+    margin-bottom: 90px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .promo__review {
+    max-width: 305px;
+    margin-bottom: 208px;
+    padding-left: 35px;
+    padding-right: 0;
+  }
+
+  .promo__steps-item {
+    flex-direction: column-reverse;
+    width: 50%;
+    padding: 28px 30px 23px;
+    font-size: 24px;
+
+    &::before {
+      margin-top: 8px;
+      font-size: 30px;
+      left: 4px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4n-3) {
+      border-radius: 20px 0 0 0;
+    }
+
+    &:nth-child(2n) {
+      margin-left: -20px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    &:nth-child(4n-1) {
+      border-radius: 0 0 0 20px;
+    }
+
+    &:nth-child(4n) {
+      margin-left: -20px;
+      border-radius: 0 0 20px 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: $desktop-width;
+    padding: 120px 25px 122px 60px;
+    background-color: #161c34;
+    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
+    background-position: 59% bottom, -200px bottom;
+  }
+
+  .promo__title {
+    max-width: 480px;
+    margin: 0 0 100px;
+    padding-left: 66px;
+    text-align: left;
+  }
+
+  .promo__review {
+    flex-basis: 265px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+    padding: 0;
+  }
+
+  .promo__steps {
+    width: 100%;
+  }
+
+  .promo__steps-item {
+    flex-direction: row-reverse;
+    width: 25%;
+    padding: 27px 51px 30px 34px;
+
+    &::before {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    &:nth-child(4n-3) {
+      width: 335px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &:nth-child(2n) {
+      width: 365px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &:nth-child(4n-1) {
+      width: 365px;
+      margin-left: -20px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &:nth-child(4n),
+    &:last-child {
+      width: 315px;
+      padding-right: 32px;
+      border-radius: 20px;
+    }
   }
 }

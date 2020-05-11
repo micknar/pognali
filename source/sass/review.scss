@@ -9,3 +9,14 @@
   margin-bottom: 30px;
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width) {
+  .review__quote {
+    margin-bottom: 50px;
+  }
+
+  .review__author {
+    font-size: 21px;
+    line-height: 1.19;
+  }
+}

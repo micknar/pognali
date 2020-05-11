@@ -2,90 +2,94 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Погнали? - Направления</title>
 
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__nav header__nav--expanded header__nav--sticky">
-        <div class="header__sticky">
-          <a class="header__logo logo header__logo--blue" href="index.html">
-            <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
-          </a>
-          <a class="header__logo logo header__logo--white">
-            <img src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
-          </a>
-          <button type="button" class="header__menu-trigger header__menu-trigger--expanded header__menu-trigger--sticky" aria-label="Открыть/скрыть меню">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
-            viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-            <g>
-              <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-              <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-            </g>
-          </svg>
-          </button>
-        </div>
-        <div class="header__dropdown">
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="index.html">О сервисе</a></li>
-              <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Направления</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Попутчики</a></li>
+      <div class="header__nav header__nav--nojs header__nav--closed">
+        <div class="header__inner">
+          <div class="header__sticky">
+            <a class="header__logo logo header__logo--blue" href="index.html">
+              <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+            </a>
+            <a class="header__logo logo header__logo--white" href="index.html">
+              <img src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+            </a>
+            <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
+              <svg class="header__menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
+              viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+              <g>
+                <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+                <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+              </g>
+            </svg>
+            </button>
+          </div>
+          <div class="header__dropdown">
+            <nav class="header__main-nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="index.html" data-hover="О сервисе">О сервисе</a></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Направления</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="catalog.html" data-hover="Попутчики">Попутчики</a></li>
+              </ul>
+            </nav>
+            <a class="header__auth btn" href="#">Авторизация</a>
+            <ul class="contacts header__contacts">
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--phone contacts__link--header" href="tel:+78005558628">
+                  <span>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
+                    viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                      <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                      c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                      c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                      c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                      M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                      c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                      c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                      c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                    </svg>
+                  </span>
+                  8 800 555-86-28
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--mail contacts__link--header" href="mailto:mail@htmlacademy.ru">
+                  <span>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14"
+                    viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                    <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                    </svg>
+                  </span>
+                  mail@htmlacademy.ru
+                </a>
+              </li>
             </ul>
-          </nav>
-          <a class="header__auth btn" href="#">Авторизация</a>
-          <ul class="contacts header__contacts">
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--phone" href="tel:+78005558628">
-                <span>
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
-                  viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                    <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                    c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                    c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                    c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                    M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                    c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                    c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                    c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
-                  </svg>
-                </span>
-                8 800 555-86-28
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">
-                <span>
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14"
-                  viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                  <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                    c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                    L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                    c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                  </svg>
-                </span>
-                mail@htmlacademy.ru
-              </a>
-            </li>
-          </ul>
-          <ul class="social-links header__social-links">
-            <li class="social-links__item">
-              <a class="social-links__link social-links__link--fb" href="#" target="_blank">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a class="social-links__link social-links__link--vk" href="#" target="_blank">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a class="social-links__link social-links__link--insta" href="#" target="_blank">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="social-links header__social-links">
+              <li class="social-links__item">
+                <a class="social-links__link social-links__link--fb" href="#" target="_blank">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link social-links__link--vk" href="#" target="_blank">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link social-links__link--insta" href="#" target="_blank">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -94,7 +98,6 @@
       <div class="page-header">
         <div class="page-header__inner">
           <h1 class="page-header__title"><span>Направления</span></h1>
-          <a class="page-header__link" href="index.html" aria-label="Вернуться на главную"></a>
         </div>
       </div>
 
@@ -112,16 +115,16 @@
                 <img src="img/travelmates/demin-mobile@1x.jpg" alt="Тот самый бородатый парень в черной шапке и очках" width="100" height="100">
               </div>
             </div>
-            <button class="user-profile__btn btn btn--secondary" type="button">Сменить фото</button>
+            <button class="user-profile__btn btn btn--secondary" type="button"><span>Сменить </span>фото</button>
             <div class="user-profile__bottom">
-              <fieldset class="user-profile__fieldset">
+              <fieldset class="user-profile__fieldset user-profile__fieldset--tags">
                 <legend class="user-profile__legend user-profile__legend--tags">Тэги</legend>
                 <textarea class="user-profile__textarea" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
               </fieldset>
               <fieldset class="user-profile__fieldset user-profile__fieldset--transport">
                 <legend class="user-profile__legend user-profile__legend--transport">Транспорт</legend>
                 <ul class="transport">
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--plane">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-plane" value="plane" checked>
                     <label class="transport__label" for="directions-filter-plane" aria-label="Авиаперелет">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -136,7 +139,7 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--car">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-car" value="car" checked>
                     <label class="transport__label" for="directions-filter-car" aria-label="Автотранспорт">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -149,7 +152,7 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--bike">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-bike" value="bike">
                     <label class="transport__label" for="directions-filter-bike" aria-label="Велосипед">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -162,7 +165,7 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport__item">
+                  <li class="transport__item transport__item--by-foot">
                     <input class="visually-hidden" type="checkbox" name="transport" id="directions-filter-by-foot" value="by-foot" checked>
                     <label class="transport__label" for="directions-filter-by-foot" aria-label="Пешком">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -192,13 +195,13 @@
                 <span class="my-trips__direction">Франция, Италия</span>
                 <span class="my-trips__travelmates">3 попутчика</span>
                 <span class="my-trips__date">26 мар - 29 мар</span>
-                <a class="my-trips__edit" href="/directios/edit">Изменить</a>
+                <a class="my-trips__edit" href="/directions/edit">Изменить</a>
               </li>
               <li class="my-trips__item">
                 <span class="my-trips__direction">Таиланд, Индонезия</span>
                 <span class="my-trips__travelmates">1 попутчик</span>
                 <span class="my-trips__date">1 июл - 15 июл</span>
-                <a class="my-trips__edit" href="/directios/edit">Изменить</a>
+                <a class="my-trips__edit" href="/directions/edit">Изменить</a>
               </li>
             </ol>
           </div>
@@ -218,40 +221,55 @@
             <ol class="new-trip__steps">
               <li class="new-trip__step-item arrival" id="new-trip__step-1">
                 <div class="arrival__inner">
-                  <h3 class="new-trip__step-title">Шаг 1.<br>Даты пребывания</h3>
-                  <p class="new-trip__step-text">
-                    Укажите предпочтительное количество попутчиков,
-                    которых вы хотели бы позвать в поездку
-                    и ее предполагаемую длительность.
-                  </p>
-                  <div class="arrival__fieldset">
-                    <label class="arrival__label" for="arrival-quantity">Ищу попутчиков:</label>
-                    <span class="arrival__unit">Чел.</span>
-                    <div class="arrival__controls-wrapper">
-                      <button class="arrival__control arrival__control--increase-quantity" type="button" aria-label="Уменьшить количество попутчиков"></button>
-                      <input class="arrival__input arrival__quantity" id="arrival-quantity" type="text" name="arrival-quantity" value="2">
-                      <button class="arrival__control arrival__control--decrease-quantity" type="button" aria-label="Увеличить количество попутчиков"></button>
+                  <div class="new-trip__step-title-wrapper">
+                    <h3 class="new-trip__step-title">Шаг 1. <br>Даты пребывания</h3>
+                    <p class="new-trip__step-text">
+                      Укажите предпочтительное количество попутчиков,
+                      которых вы&nbsp;хотели бы позвать в поездку
+                      и ее предполагаемую длительность.
+                    </p>
+                    <ul class="new-trip__step-marks step-marks">
+                      <li class="step-marks__item step-marks__item--current">Даты</li>
+                      <li class="step-marks__item">Маршрут</li>
+                      <li class="step-marks__item">Развлечения</li>
+                    </ul>
+                  </div>
+
+                  <div class="arrival__fieldsets-wrapper">
+                    <div class="arrival__fieldset">
+                      <label class="arrival__label" for="arrival-quantity">Ищу попутчиков:</label>
+                      <span class="arrival__unit">Чел.</span>
+                      <div class="arrival__controls-wrapper">
+                        <button class="arrival__control arrival__control--increase-quantity" type="button" aria-label="Уменьшить количество попутчиков"></button>
+                        <input class="arrival__input arrival__quantity" id="arrival-quantity" type="text" name="arrival-quantity" value="2">
+                        <button class="arrival__control arrival__control--decrease-quantity" type="button" aria-label="Увеличить количество попутчиков"></button>
+                      </div>
+                    </div>
+
+                    <div class="arrival__fieldset">
+                      <label class="arrival__label" for="arrival-duration">Длительность:</label>
+                      <span class="arrival__unit">Дн.</span>
+                      <div class="arrival__controls-wrapper">
+                        <button class="arrival__control arrival__control--increase-duration" type="button" aria-label="Уменьшить количество дней"></button>
+                        <input class="arrival__input arrival__duration" id="arrival-duration" type="text" name="arrival-duration" value="2">
+                        <button class="arrival__control arrival__control--decrease-duration" type="button" aria-label="Увеличить количество дней"></button>
+                      </div>
+                    </div>
+
+                    <div class="arrival__with-kids-wrapper">
+                      <input class="visually-hidden" type="checkbox" id="arrival-kids" checked>
+                      <label class="arrival__with-kids" for="arrival-kids">
+                        <span>
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="9" height="9" fill="#192144" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                            <polygon points="12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 "/>
+                          </svg>
+                        </span>
+                        Можно с детьми
+                      </label>
                     </div>
                   </div>
-                  <div class="arrival__fieldset">
-                    <label class="arrival__label" for="arrival-duration">Длительность:</label>
-                    <span class="arrival__unit">Дн.</span>
-                    <div class="arrival__controls-wrapper">
-                      <button class="arrival__control arrival__control--increase-duration" type="button" aria-label="Уменьшить количество дней"></button>
-                      <input class="arrival__input arrival__duration" id="arrival-duration" type="text" name="arrival-duration" value="2">
-                      <button class="arrival__control arrival__control--decrease-duration" type="button" aria-label="Увеличить количество дней"></button>
-                    </div>
-                  </div>
-                  <input class="visually-hidden" type="checkbox" id="arrival-kids" checked>
-                  <label class="arrival__with-kids" for="arrival-kids">
-                    <span>
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        width="9" height="9" fill="#192144" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
-                        <polygon points="12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 "/>
-                      </svg>
-                    </span>
-                    Можно с детьми
-                  </label>
+
                   <div class="arrival__calendar calendar">
                     <div class="calendar__header">
                       <button class="calendar__control calendar__control--prev" type="button" aria-label="Предыдущий месяц"></button>
@@ -259,199 +277,212 @@
                       <button class="calendar__control calendar__control--next" type="button" aria-label="Следующий месяц"></button>
                     </div>
                     <ul class="calendar__week">
-                      <li class="calendar__weekday">П</li>
-                      <li class="calendar__weekday">В</li>
-                      <li class="calendar__weekday">С</li>
-                      <li class="calendar__weekday">Ч</li>
-                      <li class="calendar__weekday">П</li>
-                      <li class="calendar__weekday calendar__weekday--weekend">С</li>
-                      <li class="calendar__weekday calendar__weekday--weekend">В</li>
+                      <li class="calendar__weekday">П<span>н</span></li>
+                      <li class="calendar__weekday">В<span>т</span></li>
+                      <li class="calendar__weekday">С<span>р</span></li>
+                      <li class="calendar__weekday">Ч<span>т</span></li>
+                      <li class="calendar__weekday">П<span>т</span></li>
+                      <li class="calendar__weekday calendar__weekday--weekend">С<span>б</span></li>
+                      <li class="calendar__weekday calendar__weekday--weekend">В<span>с</span></li>
                     </ul>
                     <ul class="calendar__days-list">
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="february-23">23</label>
                         <input class="visually-hidden" id="february-23" name="february-23" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="february-23">23</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="february-24">24</label>
                         <input class="visually-hidden" id="february-24" name="february-24" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="february-24">24</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="february-25">25</label>
                         <input class="visually-hidden" id="february-25" name="february-25" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="february-25">25</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="february-26">26</label>
                         <input class="visually-hidden" id="february-26" name="february-26" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="february-26">26</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="february-27">27</label>
                         <input class="visually-hidden" id="february-27" name="february-27" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="february-27">27</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="february-28">28</label>
                         <input class="visually-hidden" id="february-28" name="february-28" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="february-28">28</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-1">1</label>
                         <input class="visually-hidden" id="march-1" name="march-1" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled calendar__day--first-day" for="march-1">1 <span>мар</span></label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-2">2</label>
                         <input class="visually-hidden" id="march-2" name="march-2" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-2">2</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-3">3</label>
                         <input class="visually-hidden" id="march-3" name="march-3" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-3">3</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-4">4</label>
                         <input class="visually-hidden" id="march-4" name="march-4" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-4">4</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-5">5</label>
                         <input class="visually-hidden" id="march-5" name="march-5" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-5">5</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-6">6</label>
                         <input class="visually-hidden" id="march-6" name="march-6" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-6">6</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-7">7</label>
                         <input class="visually-hidden" id="march-7" name="march-7" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-7">7</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-8">8</label>
                         <input class="visually-hidden" id="march-8" name="march-8" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-8">8</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-9">9</label>
                         <input class="visually-hidden" id="march-9" name="march-9" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-9">9</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-10">10</label>
                         <input class="visually-hidden" id="march-10" name="march-10" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-10">10</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-11">11</label>
                         <input class="visually-hidden" id="march-11" name="march-11" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-11">11</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-12">12</label>
                         <input class="visually-hidden" id="march-12" name="march-12" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-12">12</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-13">13</label>
                         <input class="visually-hidden" id="march-13" name="march-13" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-13">13</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-14">14</label>
                         <input class="visually-hidden" id="march-14" name="march-14" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-14">14</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-15">15</label>
                         <input class="visually-hidden" id="march-15" name="march-15" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-15">15</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-16">16</label>
                         <input class="visually-hidden" id="march-16" name="march-16" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-16">16</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-17">17</label>
                         <input class="visually-hidden" id="march-17" name="march-17" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-17">17</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-18">18</label>
                         <input class="visually-hidden" id="march-18" name="march-18" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-18">18</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-19">19</label>
                         <input class="visually-hidden" id="march-19" name="march-19" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-19">19</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-20">20</label>
                         <input class="visually-hidden" id="march-20" name="march-20" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-20">20</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-21">21</label>
                         <input class="visually-hidden" id="march-21" name="march-21" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-21">21</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-22">22</label>
                         <input class="visually-hidden" id="march-22" name="march-22" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-22">22</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-23">23</label>
                         <input class="visually-hidden" id="march-23" name="march-23" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-23">23</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-24">24</label>
                         <input class="visually-hidden" id="march-24" name="march-24" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-24">24</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--disabled" for="march-25">25</label>
                         <input class="visually-hidden" id="march-25" name="march-25" type="checkbox" disabled>
+                        <label class="calendar__day calendar__day--disabled" for="march-25">25</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--active calendar__day--current" for="march-26">26</label>
                         <input class="visually-hidden" id="march-26" name="march-26" type="checkbox" checked>
+                        <label class="calendar__day calendar__day--current calendar__day--arrival" for="march-26">26 <span>Заезд</span></label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--active" for="march-27">27</label>
                         <input class="visually-hidden" id="march-27" name="march-27" type="checkbox" checked>
+                        <label class="calendar__day" for="march-27">27</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day calendar__day--active" for="march-28">28</label>
                         <input class="visually-hidden" id="march-28" name="march-28" type="checkbox" checked>
+                        <label class="calendar__day calendar__day--departure" for="march-28">28 <span>Выезд</span></label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="march-29">29</label>
                         <input class="visually-hidden" id="march-29" name="march-29" type="checkbox">
+                        <label class="calendar__day" for="march-29">29</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="march-30">30</label>
                         <input class="visually-hidden" id="march-30" name="march-30" type="checkbox">
+                        <label class="calendar__day" for="march-30">30</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="march-31">31</label>
                         <input class="visually-hidden" id="march-31" name="march-31" type="checkbox">
+                        <label class="calendar__day" for="march-31">31</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="april-1">1</label>
                         <input class="visually-hidden" id="april-1" name="april-1" type="checkbox">
+                        <label class="calendar__day calendar__day--first-day" for="april-1">1 <span>апр</span></label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="april-2">2</label>
                         <input class="visually-hidden" id="april-2" name="april-2" type="checkbox">
+                        <label class="calendar__day" for="april-2">2</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="april-3">3</label>
                         <input class="visually-hidden" id="april-3" name="april-3" type="checkbox">
+                        <label class="calendar__day" for="april-3">3</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="april-4">4</label>
                         <input class="visually-hidden" id="april-4" name="april-4" type="checkbox">
+                        <label class="calendar__day" for="april-4">4</label>
                       </li>
                       <li class="calendar__days-item">
-                        <label class="calendar__day" for="april-5">5</label>
                         <input class="visually-hidden" id="april-5" name="april-5" type="checkbox">
+                        <label class="calendar__day" for="april-5">5</label>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <a class="new-trip__next-step btn" href="#new-trip__step-2">Следующий шаг</a>
+                <a class="new-trip__next-step btn btn--transform" href="#new-trip__step-2">
+                  Следующий шаг
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                    <polygon points="0,14 0,0.1 10,7.1 "/>
+                  </svg>
+                </a>
               </li>
 
               <li class="new-trip__step-item trip" id="new-trip__step-2">
                 <div class="trip__inner">
-                  <h3 class="new-trip__step-title">Шаг 2.<br>Маршрут</h3>
-                  <p class="new-trip__step-text">
-                    Укажите страны, которые вы хотели посетить.
-                    Это может быть одна или сразу несколько.
-                  </p>
+                  <div class="new-trip__step-title-wrapper">
+                    <h3 class="new-trip__step-title">Шаг 2. <br>Маршрут</h3>
+                    <p class="new-trip__step-text">
+                      Укажите страны, которые вы хотели посетить.
+                      Это может быть одна или сразу несколько.
+                    </p>
+                    <ul class="new-trip__step-marks step-marks">
+                      <li class="step-marks__item">Даты</li>
+                      <li class="step-marks__item step-marks__item--current">Маршрут</li>
+                      <li class="step-marks__item">Развлечения</li>
+                    </ul>
+                  </div>
+
                   <div class="trip__route-box">
                     <ul class="trip__route">
-                      <li class="trip__route-item trip__dropdown--selected">
+                      <li class="trip__route-item trip__dropdown trip__dropdown--selected">
                         <button class="trip__country trip__country--dropdown trip__country--selected" type="button">
                           <span class="trip__country-name">Босния и Герцеговина</span>
                           <span>
@@ -468,7 +499,7 @@
                           </span>
                         </button>
                       </li>
-                      <li class="trip__route-item trip__dropdown--selected">
+                      <li class="trip__route-item trip__dropdown trip__dropdown--selected">
                         <button class="trip__country trip__country--dropdown trip__country--selected" type="button">
                           <span class="trip__country-name">Чехия</span>
                           <span>
@@ -500,43 +531,43 @@
                                 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
                             </svg>
                           </span>
-                          <button class="trip__remove-btn" type="button" aria-label="Удалить страну">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9" fill="#000000" viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
-                              <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
-                              C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
-                              L5.2,4.5z"/>
-                            </svg>
-                          </button>
+                        </button>
+                        <button class="trip__remove-btn" type="button" aria-label="Удалить страну">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9" fill="#000000" viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+                            <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                            C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                            L5.2,4.5z"/>
+                          </svg>
                         </button>
                         <div class="trip__countries-box">
-                          <ul class="trip__letters trip__letters--hidden letters">
-                            <li class="letters__item letters__item--active">
+                          <ul class="trip__letters letters">
+                            <li class="trip__letter letters__item letters__item--active">
                               <a href="#letter-a" class="letters__link letters__link--active">А</a>
                             </li>
-                            <li class="letters__item"><a class="letters__link" href="#">Б</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">В</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Г</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Д</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Е</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">З</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">И</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">К</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Л</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">М</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Н</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">О</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">П</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Р</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">С</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Т</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">У</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Ф</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Х</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Ч</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Ш</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Э</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Ю</a></li>
-                            <li class="letters__item"><a class="letters__link" href="#">Я</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Б</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">В</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Г</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Д</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Е</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">З</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">И</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">К</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Л</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">М</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Н</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">О</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">П</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Р</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">С</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Т</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">У</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Ф</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Х</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Ч</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Ш</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Э</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Ю</a></li>
+                            <li class="trip__letter letters__item"><a class="letters__link" href="#">Я</a></li>
                           </ul>
                           <ul class="trip__countries countries" id="letter-a">
                             <li class="countries__item"><a class="countries__link" href="/countries/australia">Австралия</a></li>
@@ -587,40 +618,70 @@
                   </div>
                 </div>
                 <div class="new-trip__btn-box">
-                  <a class="new-trip__next-step btn" href="#new-trip__step-3">Следующий шаг</a>
-                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-1">На шаг назад</a>
+                  <a class="new-trip__next-step btn btn--transform" href="#new-trip__step-3">
+                    Следующий шаг
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </a>
+                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-1">
+                    На шаг назад
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </a>
                 </div>
               </li>
 
               <li class="new-trip__step-item entertainment" id="new-trip__step-3">
                 <div class="entertainment__inner">
-                  <h3 class="new-trip__step-title">Шаг 3.<br>Развлечения</h3>
-                  <p class="new-trip__step-text">
-                    Наконец, расскажите о своих планах времяпровождения.
-                    Можно писать в свободной форме и ставить тэги.
-                  </p>
+                  <div class="new-trip__step-title-wrapper">
+                    <h3 class="new-trip__step-title">Шаг 3. <br>Развлечения</h3>
+                    <p class="new-trip__step-text">
+                      Наконец, расскажите о своих планах времяпровождения.
+                      Можно писать в свободной форме и ставить тэги.
+                    </p>
+                    <ul class="new-trip__step-marks step-marks">
+                      <li class="step-marks__item">Даты</li>
+                      <li class="step-marks__item">Маршрут</li>
+                      <li class="step-marks__item step-marks__item--current">Развлечения</li>
+                    </ul>
+                  </div>
+
                   <ol class="entertainment__list entertainment__list--chain">
                     <li class="entertainment__item">
                       <span class="entertainment__country-wrapper">
                         <span class="entertainment__country">Босния и Герцеговина</span>
                         <img class="entertainment__flag" src="img/flag-bosnia-and-herzegovina.svg" alt="Флаг" width="35" height="24">
                       </span>
-                      <textarea class="entertainment__plan" name="entertainment-plan" placeholder="План действий"></textarea>
-                      <p class="entertainment__error">Это поле должно быть заполнено</p>
+                      <div class="entertainment__plan-box">
+                        <textarea class="entertainment__plan" name="entertainment-plan" placeholder="План действий"></textarea>
+                      </div>
                     </li>
                     <li class="entertainment__item">
                       <span class="entertainment__country-wrapper">
                         <span class="entertainment__country">Чехия</span>
                         <img class="entertainment__flag" src="img/flag-czech.svg" alt="Флаг" width="35" height="24">
                       </span>
-                      <textarea class="entertainment__plan" name="entertainment-plan" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-                      <p class="entertainment__error">Это поле должно быть заполнено</p>
+                      <div class="entertainment__plan-box">
+                        <textarea class="entertainment__plan" name="entertainment-plan" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      </div>
                     </li>
                   </ol>
                 </div>
                 <div class="new-trip__btn-box">
-                  <button class="directions-form__submit btn" type="submit">Отправить</button>
-                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-2">На шаг назад</a>
+                  <button class="directions-form__submit btn btn--transform" type="submit">
+                    Отправить
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </button>
+                  <a class="new-trip__prev-step btn btn--no-bg" href="#new-trip__step-2">
+                    На шаг назад
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14" fill="#1d2e5b" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                      <polygon points="0,14 0,0.1 10,7.1 "/>
+                    </svg>
+                  </a>
                 </div>
               </li>
             </ol>
@@ -696,5 +757,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

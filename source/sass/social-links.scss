@@ -27,3 +27,10 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social-links__link {
+    width: 60px;
+    height: 60px;
+  }
+}

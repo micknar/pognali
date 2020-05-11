@@ -21,53 +21,14 @@
   margin-top: 8px;
 }
 
-.transport__tooltip {
-  position: absolute;
-  top: 44px;
-  left: 50%;
-  z-index: 1;
-  display: none;
-  padding: 16px 22px;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #ffffff;
-  background-color: #101d41;
-  border-radius: 4px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: 50%;
-    display: block;
-    margin-left: -8px;
-    border-bottom: 8px solid #192144;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+.transport__item.tooltip {
+  &:hover::before {
+    top: 34px;
   }
 
-  &--plane {
-    margin-left: -75px;
+  &:hover::after {
+    top: 42px;
   }
-
-  &--car {
-    margin-left: -82px;
-  }
-
-  &--bike {
-    margin-left: -65px;
-  }
-
-  &--by-foot {
-    margin-left: -54px;
-  }
-}
-
-.transport__item--plane:hover .transport__tooltip--plane,
-.transport__item--car:hover .transport__tooltip--car,
-.transport__item--bike:hover .transport__tooltip--bike,
-.transport__item--by-foot:hover .transport__tooltip--by-foot {
-  display: block;
 }
 
 .transport__label {
@@ -122,8 +83,14 @@ input[type="checkbox"]:active:checked + .transport__label svg {
   margin-top: 0;
 }
 
-.transport__item--no-bg .transport__tooltip {
-  top: 34px;
+.transport__item--no-bg.tooltip {
+  &:hover::before {
+    top: 34px;
+  }
+
+  &:hover::after {
+    top: 40px;
+  }
 }
 
 .transport__item--no-bg.transport__item--plane svg {
@@ -148,4 +115,46 @@ input[type="checkbox"]:active:checked + .transport__label svg {
 
 .transport__item.transport__item--disabled svg {
   opacity: 0.15;
+}
+
+@media (min-width: $tablet-width) {
+  .transport__item,
+  .transport__label {
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport__item svg {
+    margin-top: 11px;
+  }
+
+  .transport__item--plane svg {
+    width: 19px;
+    height: 21px;
+  }
+
+  .transport__item--car svg {
+    width: 17px;
+    height: 21px;
+  }
+
+  .transport__item--bike svg {
+    width: 24px;
+    height: 21px;
+  }
+
+  .transport__item--by-foot svg {
+    width: 20px;
+    height: 21px;
+  }
+
+  .transport__item--no-bg.tooltip {
+    &:hover::before {
+      top: 34px;
+    }
+
+    &:hover::after {
+      top: 42px;
+    }
+  }
 }

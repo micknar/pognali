@@ -114,15 +114,126 @@
   }
 }
 
-.entertainment__error {
-  display: none; //temp
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  padding: 13px 15px;
-  color: #ff0000;
-  background-color: #ffefef;
-  border: 1px solid #f47e7e;
-  border-top: none;
-  border-radius: 0 0 4px 4px;
+.entertainment__plan-box--error {
+  position: relative;
+
+  &::before {
+    content: "Это поле должно быть заполнено";
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 13px 15px;
+    color: #ff0000;
+    background-color: #ffefef;
+    border: 1px solid #f47e7e;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.entertainment__plan-box--error .entertainment__plan {
+  border-color: #f47e7e;
+}
+
+@media (min-width: $tablet-width) {
+  .entertainment__list {
+    margin-right: 30px;
+
+    &--chain::before {
+      top: 21px;
+      left: auto;
+      right: -29px;
+      width: 3px;
+      height: 247px;
+    }
+  }
+
+  .entertainment__country {
+    width: 100%;
+    margin-bottom: 37px;
+    padding-left: 0;
+    font-size: 30px;
+    font-weight: bold;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .entertainment__flag {
+    width: 70px;
+    height: 47px;
+  }
+
+  .entertainment__item {
+    margin-bottom: 49px;
+
+    &::before {
+      right: -35px;
+      left: auto;
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &:last-of-type {
+      margin-bottom: 47px;
+    }
+  }
+
+  .entertainment__plan-box {
+    &--error::before {
+      font-size: 20px;
+    }
+  }
+
+  .entertainment__plan {
+    min-height: 142px;
+    padding: 15px 17px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .entertainment__inner {
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .entertainment__country-wrapper {
+    align-items: flex-start;
+    max-width: 881px;
+    margin-bottom: 26px;
+  }
+
+  .entertainment__country {
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  .entertainment__plan {
+    max-width: 730px;
+  }
+
+  .entertainment__plan-box {
+    max-width: 730px;
+  }
+
+  .entertainment__list--chain {
+    &::before {
+      right: 195px;
+      height: 261px;
+    }
+  }
+
+  .entertainment__item {
+    &::before {
+      right: 189px;
+    }
+  }
 }

@@ -1,7 +1,18 @@
 .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  overflow: hidden;
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal__inner {
@@ -26,5 +37,25 @@
 
   &:active {
     color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal__inner {
+    padding: 46px 90px 0;
+  }
+
+  .modal__close {
+    padding-top: 38px;
+    padding-bottom: 45px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: unset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal__inner {
+    padding: 47px 60px 0;
   }
 }

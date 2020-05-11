@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  min-width: 320px;
-  width: 320px;
+  position: relative;
+  min-width: $mobile-width;
   margin: 0 auto;
   padding: 0;
   font-family: "BloggerSans", "Arial", sans-serif;
@@ -30,7 +30,9 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -40,4 +42,11 @@ a {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }

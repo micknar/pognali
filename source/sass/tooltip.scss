@@ -1,0 +1,37 @@
+.tooltip {
+  position: relative;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    display: block;
+    margin-left: -8px;
+    border-bottom: 8px solid #192144;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+
+  &::after {
+    display: none;
+    content: attr(data-title);
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    padding: 16px 22px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #101d41;
+    border-radius: 4px;
+  }
+
+  &:hover::after {
+    display: block;
+  }
+}

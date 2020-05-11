@@ -7,3 +7,9 @@
     color: rgba(29, 46, 91, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .directions-form__submit {
+    display: flex;
+  }
+}

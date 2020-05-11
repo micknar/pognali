@@ -5,6 +5,7 @@
 }
 
 .countries__link {
+  display: block;
   color: $basic-text;
 
   &:hover,
@@ -14,5 +15,18 @@
 
   &:active {
     color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .countries__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries--list {
+    margin-bottom: 48px;
   }
 }

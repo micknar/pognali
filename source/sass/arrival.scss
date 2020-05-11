@@ -1,7 +1,3 @@
-.arrival {
-  padding-bottom: 20px;
-}
-
 .arrival__inner {
   padding: 0 5px;
 }
@@ -132,7 +128,7 @@ input[type="checkbox"] + .arrival__with-kids svg {
   opacity: 0;
 }
 
-input[type="heckbox"]:hover + .arrival__with-kids span,
+input[type="checkbox"]:hover + .arrival__with-kids span,
 input[type="checkbox"]:focus + .arrival__with-kids span {
   border-color: #959bb2;
 }
@@ -148,4 +144,132 @@ input[type="checkbox"]:checked + .arrival__with-kids svg {
 
 input[type="checkbox"]:active:checked + .arrival__with-kids svg {
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .arrival__fieldset {
+    position: relative;
+    margin-bottom: 25px;
+
+    &:nth-of-type(2) {
+      order: 3;
+      margin-bottom: 59px;
+    }
+  }
+
+  .arrival__label,
+  .arrival__unit {
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .arrival__controls-wrapper {
+    height: 70px;
+  }
+
+  .arrival__input,
+  .arrival__with-kids {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .arrival__with-kids-wrapper {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+
+  .arrival__with-kids {
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    color: #1d2e5b;
+
+    & span {
+      width: 36px;
+      height: 36px;
+      margin-right: 15px;
+      padding: 7px 11px;
+    }
+
+    & svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .arrival__control {
+    width: 70px;
+    padding: 25px;
+
+    &--decrease-quantity::before,
+    &--decrease-duration::before {
+      width: 20px;
+      background-image: url("../img/icons/qty-minus.svg");
+    }
+
+    &--increase-quantity::before,
+    &--increase-duration::before {
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icons/qty-plus.svg");
+    }
+  }
+
+  .arrival__fieldsets-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .arrival__inner {
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .arrival__fieldsets-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .arrival__fieldset {
+    align-items: center;
+    margin-bottom: 13px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .arrival__controls-wrapper {
+    width: 181px;
+    margin-right: 35px;
+  }
+
+  .arrival__label {
+    min-width: 222px;
+    margin-bottom: 0;
+  }
+
+  .arrival__unit {
+    order: 3;
+    margin-bottom: 0;
+    opacity: 1;
+  }
+
+  .arrival__control {
+    width: 58px;
+    padding: 25px 19px;
+  }
+
+  .arrival__with-kids-wrapper {
+    margin-bottom: 0;
+    padding-top: 17px;
+    border: none;
+  }
 }
