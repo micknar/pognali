@@ -128,7 +128,7 @@ input[type="checkbox"] + .arrival__with-kids svg {
   opacity: 0;
 }
 
-input[type="heckbox"]:hover + .arrival__with-kids span,
+input[type="checkbox"]:hover + .arrival__with-kids span,
 input[type="checkbox"]:focus + .arrival__with-kids span {
   border-color: #959bb2;
 }
