@@ -156,6 +156,7 @@
   margin-bottom: 10px;
   padding: 16px 20px 76px;
   border-radius: 20px;
+  overflow: hidden;
 
   &:last-of-type {
     margin-bottom: 18px;
@@ -290,8 +291,8 @@
     position: absolute;
     z-index: -1;
     top: 9px;
-    left: -20px;
-    width: 768px;
+    left: -34px;
+    right: -497px;
     height: 1px;
     background-color: $main-bg;
   }
@@ -508,11 +509,6 @@
 
     &--wide::after {
       left: 38px;
-    }
-
-    &--wide::before {
-      left: -34px;
-      width: calc(100% + 62px);
     }
 
     &--medium,
