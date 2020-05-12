@@ -126,7 +126,7 @@
 
 @media (min-width: $tablet-width) {
   .registration {
-    padding: 130px 74px 62px;
+    padding: 130px 74px 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -185,6 +185,10 @@
     padding: 164px 132px 104px;
   }
 
+  .registration__header {
+    margin-bottom: 58px;
+  }
+
   .registration__text {
     max-width: 630px;
     margin-bottom: 45px;
@@ -193,7 +197,7 @@
   }
 
   .registration__form {
-    margin: 58px 0 65px;
+    margin: 60px 0 65px;
   }
 
   .registration__btn {

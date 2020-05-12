@@ -155,9 +155,7 @@
   .travelmates__pagination {
     margin: 0 40px 122px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .travelmates__list--catalog {
     padding: 0 40px;
   }
@@ -170,6 +168,8 @@
     &::before {
       width: 27px;
       height: 27px;
+      margin-left: -10px;
+      margin-right: 22px;
       background-size: 27px 27px;
     }
   }
@@ -243,6 +243,7 @@
 
     &::before {
       margin-right: 24px;
+      margin-left: -75px;
     }
   }
 

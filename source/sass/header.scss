@@ -1,5 +1,9 @@
 .header {
   min-height: 73px;
+
+  &--inner-page {
+    background-color: #161c35;
+  }
 }
 
 .header__nav {
@@ -49,6 +53,10 @@
 
 .header__nav--nojs .header__social-links {
   display: flex;
+}
+
+.header--inner-page .header__sticky {
+  padding-top: 13px;
 }
 
 .header__sticky {
@@ -224,6 +232,10 @@
 
   .header__nav--nojs .header__social-links {
     display: flex;
+  }
+
+  .header--inner-page .header__sticky {
+    padding-top: 40px;
   }
 
   .header__sticky {

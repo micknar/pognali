@@ -1,12 +1,12 @@
 .travelmates-filter {
   margin: 0 25px 28px;
-  padding: 26px 0 22px;
+  padding: 25px 0 22px;
   background-color: #ffd74b;
   border-radius: 20px;
 }
 
 .travelmates-filter__title {
-  margin: 0 0 30px;
+  margin: 0 0 35px;
   padding: 0 25px;
   font-size: 22.5px;
   font-weight: bold;
@@ -19,12 +19,12 @@
 }
 
 .travelmates-filter__fieldset {
-  margin: 0 5px 20px;
+  margin: 0 5px 21px;
   padding: 0;
   border: none;
 
   &:last-of-type {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 
   &--expanded {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   &:hover,
@@ -130,7 +130,7 @@
 
 .travelmates-filter__label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: 15px;
   line-height: 1;
   color: $basic-text;
@@ -151,7 +151,7 @@
   vertical-align: baseline;
   width: 18px;
   height: 18px;
-  margin-right: 8px;
+  margin-right: 4px;
   padding: 2px 5px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -205,7 +205,7 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
     }
 
     &:nth-of-type(4) {
-      margin-bottom: 12px;
+      margin-bottom: 13px;
     }
 
     &:last-of-type {
@@ -213,6 +213,10 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
       margin-bottom: 36px;
       border-bottom: 1px solid #f3c72b;
     }
+  }
+
+  .travelmates-filter__fieldset--high .travelmates-filter__legend {
+    padding-top: 8px;
   }
 
   .travelmates-filter__title,
@@ -250,11 +254,15 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
   }
 
   .travelmates-filter__item {
-    flex: 0 0 164px;
+    flex: 1 0 164px;
+
+    &:nth-child(3) {
+      flex: 1 0 144px;
+    }
   }
 
   .travelmates-filter__label {
-    margin: 2px 0;
+    margin: 5px 0 0;
     font-size: 20px;
 
     & span {
@@ -287,7 +295,7 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
 
   .travelmates-filter__list .range-slider__track {
     min-width: 277px;
-    margin-right: 61px;
+    margin-right: 68px;
   }
 }
 
@@ -322,7 +330,7 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
     }
 
     &:nth-of-type(4) {
-      margin-bottom: 28px;
+      margin-bottom: 22px;
     }
   }
 
@@ -337,6 +345,10 @@ input[type="checkbox"]:active:checked + .travelmates-filter__label svg {
     &--expanded {
       margin-bottom: 20px;
     }
+  }
+
+  .travelmates-filter__fieldset--high .travelmates-filter__legend {
+    padding-top: 0;
   }
 
   .travelmates-filter__label {
