@@ -16,7 +16,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
 .footer__social-links {
@@ -56,6 +56,8 @@
 
   .footer__social-links {
     min-width: 180px;
+    margin-left: 10px;
+    margin-right: 22px;
     margin-bottom: 0;
   }
 
@@ -94,6 +96,10 @@
     max-width: $desktop-width;
     margin-right: auto;
     margin-left: auto;
-    padding: 48px 60px 46px;
+    padding: 46px 60px 48px;
+  }
+
+  .footer__social-links {
+    margin-right: 60px;
   }
 }

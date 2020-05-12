@@ -235,6 +235,11 @@
     margin-top: 10px;
   }
 
+  .header__nav--closed .header__menu-icon {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
   .header__dropdown {
     padding-left: 72px;
   }
@@ -362,8 +367,8 @@
       content: "";
       position: absolute;
       top: 73px;
-      left: -45px;
-      width: 45px;
+      left: -60px;
+      width: 60px;
       height: 2px;
       background-color: #ffffff;
     }

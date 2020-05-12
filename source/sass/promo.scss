@@ -5,15 +5,15 @@
 
 .promo__inner {
   margin: 0 auto;
-  padding: 25px 25px 39px;
+  padding: 20px 25px 39px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), linear-gradient(to bottom, rgba(25, 33, 68, 0) 42%, rgba(255, 255, 255, 0) 40%, #0f1632 40%, #192144 80%), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 54% 154px, 0 0, -2px -71px;
+  background-position: 62% 152px, 0 0, -2px -71px;
 }
 
 .promo__title {
   max-width: 240px;
-  margin: 0 auto 247px;
+  margin: 0 auto 248px;
   font-size: 36px;
   font-weight: bold;
   line-height: 1.11;
@@ -24,7 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 30px;
+  margin: 0 0 26px;
   padding: 0;
   list-style: none;
 }
@@ -90,7 +90,7 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-left: 25px;
   padding-right: 23px;
   padding-bottom: 33px;
@@ -142,9 +142,9 @@
 
   .promo__inner {
     width: auto;
-    padding: 25px 20px 101px 40px;
+    padding: 28px 20px 101px 40px;
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
-    background-position: 73% 43%, -364px 247px;
+    background-position: 72% 42%, -364px 250px;
   }
 
   .promo__nav {
@@ -153,22 +153,22 @@
 
   .promo__title {
     max-width: 410px;
-    margin-bottom: 90px;
+    margin-bottom: 86px;
+    padding-right: 15px;
     font-size: 60px;
     line-height: 1.17;
   }
 
   .promo__review {
     max-width: 305px;
-    margin-bottom: 208px;
+    margin-bottom: 216px;
     padding-left: 35px;
     padding-right: 0;
   }
 
   .promo__steps-item {
     flex-direction: column-reverse;
-    width: 50%;
-    padding: 28px 30px 23px;
+    padding: 30px 32px 24px;
     font-size: 24px;
 
     &::before {
@@ -181,11 +181,16 @@
       margin-top: 0;
     }
 
+    &:nth-child(2n+1) {
+      width: calc(50% + 10px);
+    }
+
     &:nth-child(4n-3) {
       border-radius: 20px 0 0 0;
     }
 
     &:nth-child(2n) {
+      width: calc(50% - 10px);
       margin-left: -20px;
       border-radius: 20px 20px 0 0;
     }
@@ -195,7 +200,6 @@
     }
 
     &:nth-child(4n) {
-      margin-left: -20px;
       border-radius: 0 0 20px 20px;
     }
   }
@@ -218,23 +222,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: $desktop-width;
-    padding: 120px 25px 122px 60px;
+    padding: 96px 25px 122px 60px;
     background-color: transparent;
     background-image: url("../img/traveller-illustration-desktop@1x.png");
-    background-position: 59% bottom;
+    background-position: 60% bottom;
   }
 
   .promo__title {
     max-width: 480px;
-    margin: 0 0 100px;
+    margin: 0 0 90px;
     padding-left: 66px;
     text-align: left;
   }
 
   .promo__review {
     flex-basis: 265px;
-    margin-right: 80px;
-    margin-bottom: 100px;
+    margin-right: 56px;
+    margin-top: 12px;
+    margin-bottom: 90px;
     padding: 0;
   }
 
@@ -245,7 +250,7 @@
   .promo__steps-item {
     flex-direction: row-reverse;
     width: 25%;
-    padding: 27px 51px 30px 34px;
+    padding: 27px 51px 30px 32px;
 
     &::before {
       margin-top: 0;

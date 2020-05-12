@@ -22,7 +22,7 @@
 
 .travelmate--preview .progress-bar {
   position: absolute;
-  top: 16px;
+  top: 17px;
   left: 17px;
   z-index: 1;
   width: 60px;
@@ -73,7 +73,7 @@
 }
 
 .travelmate__inner {
-  padding: 28px 34px 10px;
+  padding: 25px 34px 10px;
   text-align: center;
 }
 
@@ -81,7 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   font-size: 21px;
   line-height: 1;
   color: #1d2e5b;
@@ -116,15 +116,28 @@
   line-height: inherit;
 }
 
-.travelmate--preview .travelmate__name {
-  margin-left: 11px;
+.travelmate--preview .travelmate__profile-link {
+  position: relative;
+}
+
+.travelmate--preview .travelmate__status {
+  position: absolute;
+  top: 8px;
+
+  &--offline {
+    left: 20px;
+  }
+
+  &--online {
+    left: 30px;
+  }
 }
 
 .travelmate__tags-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 16px;
+  margin: 0 0 17px;
   padding: 0;
   list-style: none;
 }
@@ -355,6 +368,11 @@
     }
   }
 
+  .travelmate--preview .progress-bar {
+    top: 20px;
+    left: 20px;
+  }
+
   .travelmate__picture-link {
     width: 285px;
     height: 285px;
@@ -369,15 +387,23 @@
   }
 
   .travelmate__inner {
-    padding: 28px 30px 20px;
+    padding: 29px 30px 18px;
   }
 
   .travelmate__name {
     font-size: 24px;
   }
 
-  .travelmate--preview .travelmate__name {
-    margin-left: 16px;
+  .travelmate--preview .travelmate__status {
+    top: 10px;
+
+    &--offline {
+      left: 16px;
+    }
+
+    &--online {
+      left: 26px;
+    }
   }
 
   .travelmate--preview .travelmate__profile-link {
@@ -389,6 +415,10 @@
     height: 7px;
   }
 
+  .travelmate--preview .travelmate__tags-list {
+    margin-bottom: 16px;
+  }
+
   .travelmate__tags-list {
     margin-bottom: 22px;
   }
@@ -396,6 +426,11 @@
   .travelmate__tags-link {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .travelmate--preview .transport__item,
+  .travelmate--preview .transport__label {
+    width: 33px;
   }
 
   .travelmate--catalog {
@@ -557,6 +592,19 @@
 
   .travelmate--preview .travelmate__tags-list {
     margin-bottom: 18px;
+  }
+
+  .travelmate__inner {
+    padding: 30px 30px 16px;
+  }
+
+  .travelmate--preview .progress-bar {
+    top: 22px;
+    left: 22px;
+  }
+
+  .travelmate--preview .progress-bar__number {
+    padding-top: 4px;
   }
 
   .travelmate--catalog {
