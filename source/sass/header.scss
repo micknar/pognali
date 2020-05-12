@@ -327,6 +327,7 @@
   }
 
   .header__sticky {
+    width: auto;
     padding: 48px 0 10px;
   }
 
@@ -341,6 +342,7 @@
   .header__inner {
     position: relative;
     max-width: $desktop-width;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     padding: 0 60px;
@@ -351,24 +353,29 @@
   }
 
   .header__main-nav {
-    position: absolute;
-    top: 48px;
-    left: 407px;
-    margin: 0;
+    position: relative;
+    max-width: 700px;
+    padding: 48px 0 10px 45px;
+    margin: 0 0 0 100px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 25px;
-      left: -90px;
+      top: 73px;
+      left: -45px;
       width: 45px;
       height: 2px;
       background-color: #ffffff;
     }
   }
 
-  .header__nav--sticky .header__main-nav::before {
-    background-color: #192144;
+  .header__nav--sticky .header__main-nav {
+    padding-top: 0;
+
+    &::before {
+      top: 17px;
+      background-color: #192144;
+    }
   }
 
   .header__dropdown {
