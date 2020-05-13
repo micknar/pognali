@@ -1,7 +1,7 @@
 .about {
   position: relative;
   z-index: 6;
-  padding: 32px 25px 84px;
+  padding: 32px 25px 60px;
   color: #ffffff;
   background-color: #192144;
   background-image: url("../img/about-mobile@1x.png");
@@ -17,7 +17,7 @@
 }
 
 .about__inner p {
-  margin-bottom: 27px;
+  margin: 0 0 20px;
   padding: 0;
   font-weight: 300;
 
@@ -31,7 +31,7 @@
 }
 
 .about__header {
-  margin: 0 0 23px;
+  margin: 0 0 20px;
   font-size: 24px;
   line-height: 1;
   font-weight: bold;
@@ -52,12 +52,10 @@
   }
 
   .about__inner {
-    padding-left: 50px;
-    padding-right: 0;
-    padding-bottom: 88px;
+    padding: 2px 0 88px 50px;
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: right 11px;
+    background-position: 98% 11px;
   }
 
   .about__header {
@@ -72,7 +70,7 @@
       top: -37px;
       left: -35px;
       z-index: -1;
-      width: 688px;
+      width: 100%;
       height: 213px;
       background-color: #141b3b;
       border-radius: 20px;
@@ -80,10 +78,11 @@
   }
 
   .about__inner p {
+    margin-bottom: 35px;
     padding-right: 385px;
 
     &:last-of-type {
-      margin-bottom: 45px;
+      margin-bottom: 55px;
     }
   }
 
@@ -100,7 +99,8 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding-top: 74px;
+    margin-top: -60px;
+    padding-top: 134px;
     padding-left: 0;
     padding-bottom: 0;
   }
@@ -110,12 +110,12 @@
     padding-left: 130px;
     padding-bottom: 163px;
     background-image: url("../img/about-desktop@1x.png");
-    background-position: 93% 11px;
+    background-position: 93% 13px;
   }
 
   .about__header {
     max-width: 600px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     padding-top: 55px;
     padding-right: 0;
 
@@ -128,13 +128,13 @@
   }
 
   .about__inner p {
-    max-width: 670px;
-    margin-bottom: 44px;
+    max-width: 630px;
+    margin-bottom: 40px;
     padding-right: 0;
 
     &:last-of-type {
-      margin-bottom: 80px;
-      padding-right: 230px;
+      margin-bottom: 88px;
+      padding-right: 210px;
     }
   }
 }

@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 14px;
   color: $basic-text;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -35,6 +35,7 @@
 @media (min-width: $tablet-width) {
   .copyright {
     max-width: 153px;
+    padding-top: 10px;
     border-top: 0;
   }
 

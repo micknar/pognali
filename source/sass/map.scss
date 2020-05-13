@@ -1,5 +1,5 @@
 .map {
-  height: 546px;
+  height: 332px;
   margin-top: -30px;
   background-image: url("../img/map.jpg");
   background-position: 50%;
@@ -15,9 +15,15 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    height: 674px;
+    height: 582px;
     margin-top: -60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 518px;
   }
 }

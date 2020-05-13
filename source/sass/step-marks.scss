@@ -1,13 +1,37 @@
-@media (min-width: $desktop-width) {
-  .step-marks {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.step-marks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
+  &--dots {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.step-marks--dots .step-marks__item {
+  width: 6px;
+  height: 5px;
+  margin-left: 15px;
+  background-color: rgba(128, 130, 133, 0.3);
+  border-radius: 50%;
+
+  &--current {
+    background-color: #1d2e5b;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .step-marks--dots .step-marks__item {
+    width: 5px;
+    margin-left: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .step-marks__item {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     font-size: 20px;
     line-height: 1;
     letter-spacing: 2px;

@@ -1,17 +1,10 @@
 .footer {
   position: relative;
   z-index: 3;
+  margin-top: -30px;
   background-color: #ffffff;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-
-  &--overlap {
-    margin-top: -26px;
-  }
-
-  &--home {
-    margin-top: -240px;
-  }
 }
 
 .footer__inner {
@@ -23,7 +16,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
 .footer__social-links {
@@ -46,16 +39,9 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    margin-top: -60px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-
-    &--home {
-      margin-top: -156px;
-    }
-  }
-
-  .footer--overlap {
-    margin-top: -56px;
   }
 
   .footer__inner {
@@ -70,6 +56,8 @@
 
   .footer__social-links {
     min-width: 180px;
+    margin-left: 10px;
+    margin-right: 22px;
     margin-bottom: 0;
   }
 
@@ -108,6 +96,10 @@
     max-width: $desktop-width;
     margin-right: auto;
     margin-left: auto;
-    padding: 48px 60px 46px;
+    padding: 46px 60px 48px;
+  }
+
+  .footer__social-links {
+    margin-right: 60px;
   }
 }

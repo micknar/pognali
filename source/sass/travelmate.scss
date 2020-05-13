@@ -22,7 +22,7 @@
 
 .travelmate--preview .progress-bar {
   position: absolute;
-  top: 16px;
+  top: 17px;
   left: 17px;
   z-index: 1;
   width: 60px;
@@ -72,12 +72,8 @@
   width: 100%;
 }
 
-.travelmate__country-tooltip {
-  display: none; //temp
-}
-
 .travelmate__inner {
-  padding: 28px 34px 10px;
+  padding: 25px 34px 10px;
   text-align: center;
 }
 
@@ -85,7 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   font-size: 21px;
   line-height: 1;
   color: #1d2e5b;
@@ -120,15 +116,28 @@
   line-height: inherit;
 }
 
-.travelmate--preview .travelmate__name {
-  margin-left: 11px;
+.travelmate--preview .travelmate__profile-link {
+  position: relative;
+}
+
+.travelmate--preview .travelmate__status {
+  position: absolute;
+  top: 8px;
+
+  &--offline {
+    left: 20px;
+  }
+
+  &--online {
+    left: 30px;
+  }
 }
 
 .travelmate__tags-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 16px;
+  margin: 0 0 17px;
   padding: 0;
   list-style: none;
 }
@@ -154,12 +163,12 @@
 
 .travelmate--catalog {
   margin-bottom: 10px;
-  padding: 16px 20px 76px;
+  padding: 15px 20px 77px;
   border-radius: 20px;
   overflow: hidden;
 
   &:last-of-type {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -176,12 +185,13 @@
 .travelmate--catalog .travelmate__trip {
   flex-direction: column;
   margin-bottom: 8px;
+  padding-left: 6px;
 }
 
 .travelmate--catalog .travelmate__profile-link {
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 38px;
+  margin-bottom: 44px;
   margin-left: 84px;
   font-size: 20px;
 }
@@ -200,7 +210,7 @@
 .travelmate--catalog .travelmate__tags-list {
   justify-content: flex-start;
   max-width: 185px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .travelmate--catalog .travelmate__likes-counter {
@@ -220,6 +230,7 @@
   width: 31px;
   height: 31px;
   padding-top: 4px;
+  padding-left: 6px;
   background-color: $main-bg;
   border: none;
   border-radius: 50%;
@@ -229,7 +240,6 @@
   }
 
   & .travelmate__heart {
-    margin: auto;
     opacity: 0.3;
   }
 
@@ -280,7 +290,7 @@
 .travelmate__title {
   position: relative;
   z-index: 1;
-  margin: 0 0 12px;
+  margin: 0 0 15px;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.2;
@@ -307,21 +317,39 @@
     background-color: #ffffff;
   }
 
+  &--wide,
+  &--medium {
+    padding-left: 6px;
+  }
+
   &--wide::after {
     width: 116px;
+    left: -6px;
   }
 
   &--medium::after {
     width: 90px;
+    left: -6px;
   }
 
   &--narrow::after {
     width: 63px;
   }
 
-  &--medium {
-    margin-bottom: 19px;
+  &--narrow {
+    margin-bottom: 8px;
   }
+}
+
+.travelmate--catalog .travelmate__country {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.travelmate--catalog .travelmate__flag {
+  width: 26px;
+  height: 18px;
+  margin-right: 12px;
 }
 
 .travelmate__country-name {
@@ -330,6 +358,10 @@
   line-height: 1.5;
   color: #1d2e5b;
   text-transform: uppercase;
+}
+
+.travelmate--catalog .travelmate__transport-list {
+  padding-left: 4px;
 }
 
 .travelmate__transport-level-wrapper {
@@ -359,6 +391,11 @@
     }
   }
 
+  .travelmate--preview .progress-bar {
+    top: 20px;
+    left: 20px;
+  }
+
   .travelmate__picture-link {
     width: 285px;
     height: 285px;
@@ -373,15 +410,23 @@
   }
 
   .travelmate__inner {
-    padding: 28px 30px 20px;
+    padding: 29px 30px 18px;
   }
 
   .travelmate__name {
     font-size: 24px;
   }
 
-  .travelmate--preview .travelmate__name {
-    margin-left: 16px;
+  .travelmate--preview .travelmate__status {
+    top: 10px;
+
+    &--offline {
+      left: 16px;
+    }
+
+    &--online {
+      left: 26px;
+    }
   }
 
   .travelmate--preview .travelmate__profile-link {
@@ -393,6 +438,10 @@
     height: 7px;
   }
 
+  .travelmate--preview .travelmate__tags-list {
+    margin-bottom: 16px;
+  }
+
   .travelmate__tags-list {
     margin-bottom: 22px;
   }
@@ -402,11 +451,17 @@
     line-height: 1.2;
   }
 
+  .travelmate--preview .transport__item,
+  .travelmate--preview .transport__label {
+    width: 33px;
+  }
+
   .travelmate--catalog {
-    padding: 35px 25px 25px 35px;
+    margin-bottom: 40px;
+    padding: 30px 25px 11px 35px;
 
     &:last-of-type {
-      margin-bottom: 42px;
+      margin-bottom: 43px;
     }
   }
 
@@ -416,11 +471,11 @@
     left: 35px;
     width: 190px;
     height: 190px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   .travelmate__user-info {
-    max-width: 290px;
+    max-width: 42%;
     margin-left: 220px;
   }
 
@@ -434,7 +489,7 @@
   .travelmate--catalog .travelmate__profile-link {
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     padding-left: 3px;
   }
 
@@ -495,6 +550,8 @@
 
   .travelmate--catalog .travelmate__trip {
     flex-direction: row;
+    margin-right: 80px;
+    padding-left: 0;
   }
 
   .travelmate--catalog .travelmate__country {
@@ -517,6 +574,15 @@
     }
   }
 
+  .travelmate--catalog .travelmate__flag {
+    width: 35px;
+    height: 24px;
+  }
+
+  .travelmate__country-name {
+    font-size: 20px;
+  }
+
   .travelmate__transport-level-wrapper {
     position: absolute;
     top: 27px;
@@ -529,10 +595,11 @@
   .travelmate--catalog .travelmate__transport-list {
     flex-direction: column;
     margin-bottom: 12px;
+    padding-left: 0;
   }
 
   .travelmate--catalog .transport__item {
-    height: 33px;
+    height: 32px;
     background-color: transparent;
   }
 
@@ -543,6 +610,7 @@
 
   .travelmate--catalog .progress-bar__number {
     margin-bottom: 4px;
+    padding-top: 6px;
     padding-bottom: 3px;
     border-bottom: 1px solid rgba(68, 68, 68, 0.1);
   }
@@ -560,6 +628,19 @@
 
   .travelmate--preview .travelmate__tags-list {
     margin-bottom: 18px;
+  }
+
+  .travelmate__inner {
+    padding: 30px 30px 16px;
+  }
+
+  .travelmate--preview .progress-bar {
+    top: 22px;
+    left: 22px;
+  }
+
+  .travelmate--preview .progress-bar__number {
+    padding-top: 4px;
   }
 
   .travelmate--catalog {
@@ -588,6 +669,7 @@
     max-width: none;
     margin-left: 0;
     padding-top: 45px;
+    padding-bottom: 20px;
 
     &::after {
       content: "";
@@ -615,10 +697,15 @@
 
   .travelmate--catalog .travelmate__tags-list {
     padding-left: 27px;
+    padding-right: 27px;
   }
 
   .travelmate__action {
     margin-left: 22px;
+  }
+
+  .travelmate__like {
+    margin-right: 8px;
   }
 
   .travelmate__title {
@@ -631,14 +718,20 @@
     justify-content: space-between;
     flex: 0 0 319px;
     margin: 0;
-    padding-top: 49px;
-    padding-left: 36px;
+    padding-top: 48px;
+    padding-left: 38px;
     padding-right: 44px;
     padding-bottom: 42px;
   }
 
+  .travelmate--catalog .travelmate__flag {
+    margin-right: 20px;
+  }
+
   .travelmate--catalog .travelmate__trip {
     flex-direction: column;
+    margin-right: 0;
+    margin-left: 4px;
   }
 
   .travelmate__transport-level-wrapper {

@@ -129,7 +129,12 @@ input[type="checkbox"]:checked + label.calendar__day {
   }
 
   .calendar__header {
-    padding: 24px 0;
+    margin-bottom: 32px;
+    padding: 24px 15px;
+  }
+
+  .calendar__week {
+    margin-bottom: 3px;
   }
 
   .calendar__month {
@@ -183,6 +188,7 @@ input[type="checkbox"]:checked + label.calendar__day {
 
   .calendar__header {
     margin-bottom: 11px;
+    padding: 24px 2px;
   }
 
   .calendar__week {
@@ -197,13 +203,14 @@ input[type="checkbox"]:checked + label.calendar__day {
 
   .calendar__days-list {
     margin-left: 0;
+    margin-bottom: 58px;
   }
 
   .calendar__day {
     position: relative;
     width: 144px;
     height: 72px;
-    padding: 12px 18px;
+    padding: 13px 14px;
     font-size: 18px;
     font-weight: normal;
     letter-spacing: 1.8px;

@@ -7,8 +7,9 @@
 }
 
 .trip__route {
-  margin: 0;
+  margin: 0 0 28px;
   padding: 0;
+  padding-top: 2px;
   list-style: none;
 
   &--edit {
@@ -19,29 +20,43 @@
 }
 
 .trip__letters {
+  max-width: 220px;
+  margin-top: -1px;
+  margin-left: 0;
   margin-bottom: 0;
   font-weight: 500;
 }
 
 .trip__countries {
-  padding: 15px 20px;
-  border: 1px solid #cbced9;
-  border-top: none;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  margin: 0 0 15px;
+  padding: 13px 19px 0;
 }
 
 .trip__countries-box {
   display: none;
 
   &--expanded {
+    position: absolute;
+    z-index: 2;
+    top: 42px;
+    left: 1px;
     display: block;
+    width: calc(100% - 1px);
+    background-color: #ffffff;
+    border: 1px solid #cbced9;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
   }
 }
 
 .trip__route-item {
   position: relative;
   margin-bottom: 22px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &:not(:last-of-type)::before {
     content: "";
@@ -60,7 +75,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 12px 11px;
+  padding: 11px 14px 11px 10px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
@@ -137,10 +152,13 @@
   &--expanded {
     color: #ffffff;
     background-color: #1d2e5b;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   &--expanded::before,
-  &--expanded .trip__country-name::after {
+  &--expanded .trip__country-name::after,
+  &--expanded + .trip__remove-btn {
     display: none;
   }
 
@@ -241,12 +259,25 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .trip__letter:nth-child(5n) .letters__link,
+  .trip__letter:nth-child(5n-1) .letters__link {
+    margin-left: -2px;
+  }
+
+  .trip__letter .letters__link--active,
+  .trip__letter .letters__link:active {
+    color: #1d2e5b;
+    background-color: $main-bg;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .trip__route {
     &--edit::before {
       content: "";
       position: absolute;
-      top: -41px;
+      top: -40px;
       right: 96px;
       width: 1px;
       height: 329px;
@@ -286,7 +317,7 @@
     letter-spacing: 2px;
 
     &--selected::before {
-      top: 27px;
+      top: 25px;
       right: -34px;
       z-index: 1;
       width: 15px;
@@ -294,7 +325,7 @@
     }
 
     &:not(.trip__country--selected)::before {
-      top: 27px;
+      top: 25px;
       right: -34px;
       width: 15px;
       height: 15px;
@@ -312,6 +343,11 @@
     &--expanded .trip__dropdown-hide-icon {
       width: 17px;
       height: 17px;
+    }
+
+    &--expanded + .trip__remove-btn,
+    &:not(.trip__country--selected)::before {
+      display: block;
     }
   }
 
@@ -345,17 +381,13 @@
   }
 
   .trip__countries-box {
-    position: absolute;
-    z-index: 5;
+    top: 70px;
+    left: 0;
     display: none;
     flex-wrap: wrap;
-    padding-top: 34px;
-    padding-left: 27px;
-    padding-bottom: 59px;
     width: 575px;
-    background-color: #ffffff;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+    padding-left: 25px;
+    padding-bottom: 36px;
 
     &--expanded {
       display: flex;
@@ -375,13 +407,14 @@
   .trip__letters {
     align-content: flex-start;
     width: 266px;
+    max-width: none;
     margin-right: 79px;
   }
 
   .trip__letters .letters__link {
     width: 54px;
     height: 70px;
-    padding-top: 23px;
+    padding-top: 24px;
     font-size: 20px;
     font-weight: 500;
     line-height: 0.9;
@@ -389,7 +422,8 @@
   }
 
   .trip__countries {
-    padding-top: 0;
+    margin-top: -5px;
+    padding: 0 22px;
     border: none;
     box-shadow: none;
   }
@@ -403,7 +437,6 @@
 
   .trip__country {
     &--selected::before {
-      top: 27px;
       right: -53px;
       z-index: 1;
       width: 15px;
@@ -420,6 +453,8 @@
   }
 
   .trip__route {
+    padding: 0;
+
     &--edit {
       right: 110px;
     }
@@ -437,7 +472,8 @@
   }
 
   .trip__remove-btn {
-    right: -112px;
+    top: 23px;
+    right: -104px;
 
     & svg {
       width: 18px;
@@ -446,12 +482,14 @@
   }
 
   .trip__country--dropdown + .trip__remove-btn {
-    right: -274px;
+    right: -264px;
   }
 
   .trip__countries-box {
     width: 730px;
-    padding-bottom: 19px;
+    padding-bottom: 16px;
+    padding-top: 34px;
+    padding-left: 27px;
 
     &::before {
       right: 239px;
@@ -459,16 +497,23 @@
 
     &--expanded {
       display: flex;
+      border: none;
     }
   }
 
+  .trip__countries {
+    padding: 0 15px;
+  }
+
   .trip__letters {
-    width: 370px;
+    width: 380px;
+    margin-top: 0;
     margin-right: 92px;
   }
 
   .trip__letters .letters__link {
     width: 60px;
+    margin-left: 0;
     margin-right: 15px;
     margin-bottom: 15px;
     border-radius: 4px;

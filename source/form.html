@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--inner-page">
       <div class="header__nav header__nav--nojs header__nav--closed">
         <div class="header__inner">
           <div class="header__sticky">
@@ -189,7 +189,7 @@
 
         <section class="my-trips">
           <div class="my-trips__inner">
-            <h2 class="my-trips__title">Мои планы</h2>
+            <h2 class="my-trips__title">Мои планы:</h2>
             <ol class="my-trips__list">
               <li class="my-trips__item">
                 <span class="my-trips__direction">Франция, Италия</span>
@@ -211,11 +211,11 @@
           <div class="new-trip__inner">
             <div class="new-trip__header">
               <h2 class="new-trip__title">Добавить план:</h2>
-              <div class="new-trip__controls">
-                <button class="new-trip__dot new-trip__dot--active" type="button"></button>
-                <button class="new-trip__dot" type="button"></button>
-                <button class="new-trip__dot" type="button"></button>
-              </div>
+              <ul class="new-trip__step-marks step-marks step-marks--dots">
+                <li class="step-marks__item step-marks__item--current"></li>
+                <li class="step-marks__item "></li>
+                <li class="step-marks__item "></li>
+              </ul>
             </div>
 
             <ol class="new-trip__steps">
@@ -690,7 +690,7 @@
       </form>
     </main>
 
-    <footer class="footer footer--overlap">
+    <footer class="footer">
       <div class="footer__inner">
         <a class="footer__logo logo" href="index.html">
           <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
