@@ -8,7 +8,7 @@
 }
 
 .new-trip__inner {
-  padding: 25px 25px 64px;
+  padding: 28px 25px 64px;
 }
 
 .new-trip__header {
@@ -33,13 +33,17 @@
 
 .new-trip__step-item {
   margin-bottom: 10px;
-  padding: 24px 20px 11px;
+  padding: 24px 20px 10px;
   background-color: #ffffff;
   border-radius: 10px;
 }
 
 .new-trip__step-item.arrival {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
+}
+
+.new-trip__step-item.entertainment {
+  padding-top: 22px;
 }
 
 .new-trip__step-title {
@@ -75,16 +79,16 @@
 }
 
 .new-trip__step-marks.step-marks--dots {
-  margin-right: 15px;
+  margin-right: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .new-trip__inner {
-    padding: 55px 75px 83px;
+    padding: 43px 75px 83px;
   }
 
   .new-trip__header {
-    margin-bottom: 47px;
+    margin-bottom: 52px;
   }
 
   .new-trip__title {
@@ -94,12 +98,25 @@
 
   .new-trip__step-item {
     margin-bottom: 40px;
-    padding: 44px 39px 53px 39px;
+    padding: 44px 39px 52px 39px;
     border-radius: 30px;
   }
 
   .new-trip__step-item.arrival {
     padding-bottom: 55px;
+  }
+
+  .new-trip__step-item.entertainment {
+    padding-top: 44px;
+  }
+
+  .new-trip__step-item.trip {
+    margin-bottom: 51px;
+  }
+
+  .new-trip__step-item.entertainment .new-trip__step-title-wrapper {
+    padding-bottom: 34px;
+    margin-bottom: 34px;
   }
 
   .new-trip__step-title-wrapper {
@@ -109,7 +126,7 @@
   }
 
   .new-trip__step-title {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
     font-size: 36px;
   }
 
@@ -120,7 +137,8 @@
   }
 
   .new-trip__step-item.trip .new-trip__step-title-wrapper {
-    margin-bottom: 41px;
+    margin-bottom: 39px;
+    padding-bottom: 36px;
   }
 
   .new-trip__step-item.trip .new-trip__step-text {
@@ -143,12 +161,17 @@
   }
 
   .new-trip__prev-step {
-    flex-basis: 199px;
+    flex-basis: 179px;
+    padding: 0;
   }
 
   .new-trip__next-step,
   .new-trip__prev-step {
     display: flex;
+  }
+
+  .new-trip__step-marks.step-marks--dots {
+    margin-right: 2px;
   }
 }
 
@@ -163,9 +186,7 @@
     max-width: $desktop-width;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 60px;
-    padding-right: 59px;
-    padding-bottom: 132px;
+    padding: 46px 59px 132px 60px;
   }
 
   .new-trip__header {
@@ -178,24 +199,32 @@
 
   .new-trip__step-item {
     margin-bottom: 45px;
-    padding: 100px 160px 105px;
+    padding: 95px 160px 105px;
     border-radius: 60px;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .new-trip__step-item.trip {
+    margin-bottom: 45px;
+    padding-bottom: 105px;
+  }
+
+  .new-trip__step-item.entertainment {
+    margin-bottom: 0;
+    padding-top: 95px;
   }
 
   .new-trip__step-item.arrival {
-    padding-bottom: 105px;
+    padding: 98px 160px 105px;
   }
 
   .new-trip__step-item.trip .new-trip__step-title-wrapper {
     margin-bottom: 62px;
+    padding-bottom: 55px;
   }
 
   .new-trip__step-item.entertainment .new-trip__step-title-wrapper {
     margin-bottom: 74px;
+    padding-bottom: 55px;
   }
 
   .new-trip__step-title br {
@@ -228,12 +257,11 @@
   .new-trip__steps .new-trip__step-marks {
     display: block;
     position: absolute;
-    top: 0;
-    right: 44px;
+    top: 9px;
+    right: 47px;
   }
 
   .new-trip__prev-step {
     max-width: 179px;
-    padding: 0;
   }
 }

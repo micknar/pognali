@@ -5,13 +5,13 @@
 .entertainment__list {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 3px 0 0;
   list-style: none;
 
   &--chain::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: -14px;
     width: 2px;
     height: 279px;
@@ -24,7 +24,7 @@
   margin-bottom: 25px;
 
   &:last-of-type {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   &::before {
@@ -85,7 +85,7 @@
 
 .entertainment__plan {
   display: block;
-  padding: 13px 15px;
+  padding: 8px 12px;
   width: 100%;
   min-height: 220px;
   resize: none;
@@ -139,9 +139,10 @@
 @media (min-width: $tablet-width) {
   .entertainment__list {
     margin-right: 30px;
+    padding: 0;
 
     &--chain::before {
-      top: 21px;
+      top: 25px;
       left: auto;
       right: -29px;
       width: 3px;
@@ -151,7 +152,7 @@
 
   .entertainment__country {
     width: 100%;
-    margin-bottom: 37px;
+    margin-bottom: 40px;
     padding-left: 0;
     font-size: 30px;
     font-weight: bold;
@@ -170,6 +171,7 @@
     margin-bottom: 49px;
 
     &::before {
+      top: 10px;
       right: -35px;
       left: auto;
       width: 15px;
@@ -193,7 +195,7 @@
 
   .entertainment__plan {
     min-height: 142px;
-    padding: 15px 17px;
+    padding: 15px 100px 15px 17px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -203,6 +205,15 @@
   .entertainment__inner {
     margin-bottom: 56px;
     padding: 0;
+  }
+
+  .entertainment__item {
+    margin-bottom: 46px;
+
+    &::before {
+      top: 14px;
+      right: 189px;
+    }
   }
 
   .entertainment__country-wrapper {
@@ -218,6 +229,7 @@
 
   .entertainment__plan {
     max-width: 730px;
+    padding: 22px 15px 22px 25px;
   }
 
   .entertainment__plan-box {
@@ -228,12 +240,6 @@
     &::before {
       right: 195px;
       height: 261px;
-    }
-  }
-
-  .entertainment__item {
-    &::before {
-      right: 189px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .user-profile {
-  padding: 23px 25px 33px;
+  padding: 23px 25px 32px;
 }
 
 .user-profile__top {
@@ -42,7 +42,7 @@
 
 .user-profile__btn {
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 34px;
   border: none;
 
   &:active {
@@ -52,8 +52,8 @@
 
 .user-profile__fieldset {
   position: relative;
-  margin-bottom: 25px;
-  padding: 0 5px;
+  margin: 0 0 23px;
+  padding: 0;
   border: none;
 
   &:last-of-type {
@@ -136,7 +136,7 @@
   .user-profile__picture {
     width: 94px;
     height: 94px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   .user-profile__level {
@@ -145,7 +145,7 @@
   }
 
   .user-profile__btn {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     padding: 21px;
     line-height: 0.9;
     font-weight: 500;
@@ -171,6 +171,10 @@
     &--transport {
       margin-left: -75px;
     }
+
+    &--tags {
+      margin-left: -41px;
+    }
   }
 
   .user-profile__fieldset {
@@ -189,10 +193,11 @@
 
   .user-profile__fieldset .transport {
     min-height: 94px;
-    padding-top: 25px;
+    padding-top: 23px;
   }
 
   .user-profile__textarea {
+    padding: 32px 38px 12px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -224,11 +229,11 @@
   .user-profile__picture {
     width: 190px;
     height: 190px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
   }
 
   .user-profile__level.progress-bar {
-    margin: auto 0;
+    margin: 44px 0 0;
   }
 
   .user-profile__level .progress-bar__number,
