@@ -113,6 +113,15 @@
   }
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .rates__inner {
+    &::after {
+      background-image: url("../img/rates@2x.png");
+      background-size: 99px auto;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .rates {
     margin-bottom: -60px;
@@ -249,6 +258,14 @@
       right: 246px;
       width: 444px;
       height: 300px;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .rates__inner {
+      &::after {
+        background-size: 198px auto;
+      }
     }
   }
 }

@@ -252,6 +252,13 @@
       background-size: 21px 20px;
     }
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .directions__inner {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 289px auto;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

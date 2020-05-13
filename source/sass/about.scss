@@ -42,6 +42,13 @@
   display: none;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about {
+    background-image: url("../img/about-mobile@2x.png");
+    background-size: 292px auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .about {
     padding-right: 0;
@@ -95,6 +102,13 @@
     display: flex;
     max-width: 274px;
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about__inner {
+      background-image: url("../img/about-tablet@2x.png");
+      background-size: 376px auto;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -135,6 +149,13 @@
     &:last-of-type {
       margin-bottom: 88px;
       padding-right: 210px;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about__inner {
+      background-image: url("../img/about-desktop@2x.png");
+      background-size: 630px auto;
     }
   }
 }
