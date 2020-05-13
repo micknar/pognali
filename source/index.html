@@ -14,10 +14,18 @@
         <div class="header__inner">
           <div class="header__sticky">
             <a class="header__logo logo header__logo--blue">
-              <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-blue@1x.png 1x, img/logo/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png 1x, img/logo/logo-tablet-blue@2x.png 2x">
+                <img src="img/logo/logo-mobile-blue@1x.png" srcset="img/logo/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+              </picture>
             </a>
             <a class="header__logo logo header__logo--white">
-              <img src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-white@1x.png 1x, img/logo/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-white@1x.png 1x, img/logo/logo-tablet-white@2x.png 2x">
+                <img src="img/logo/logo-mobile-white@1x.png" srcset="img/logo/logo-mobile-white@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+              </picture>
             </a>
             <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
               <svg class="header__menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
@@ -204,8 +212,12 @@
 
           <div class="directions__list">
             <article class="directions__item">
-              <img class="directions__img" src="img/directions/thailand-mobile@1x.jpg" alt="Фото Таиланда" width="270" height="110">
-              <img class="directions__flag" src="img/flag-thailand.svg" width="35" height="24" alt="Флаг Таиланда">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/directions/thailand-desktop@1x.jpg 1x, img/directions/thailand-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/directions/thailand-desktop@1x.jpg 1x, img/directions/thailand-desktop@2x.jpg 2x">
+                <img class="directions__img" src="img/directions/thailand-mobile@1x.jpg" srcset="img/directions/thailand-mobile@2x.jpg 2x" alt="Фото Таиланда" width="270" height="110">
+              </picture>
+              <img class="directions__flag" src="img/countries/flag-thailand.svg" width="35" height="24" alt="Флаг Таиланда">
               <div class="directions__item-inner">
                 <a class="directions__link" href="#">
                   <h3 class="directions__title">Таиланд</h3>
@@ -216,8 +228,12 @@
             </article>
 
             <article class="directions__item">
-              <img class="directions__img" src="img/directions/france-mobile@1x.jpg" alt="Фото Франции" width="270" height="110">
-              <img class="directions__flag" src="img/flag-france.svg" width="35" height="24" alt="Флаг Франции">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/directions/france-desktop@1x.jpg 1x, img/directions/france-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/directions/france-desktop@1x.jpg 1x, img/directions/france-desktop@2x.jpg 2x">
+                <img class="directions__img" src="img/directions/france-mobile@1x.jpg" srcset="img/directions/france-mobile@2x.jpg 2x" alt="Фото Франции" width="270" height="110">
+              </picture>
+              <img class="directions__flag" src="img/countries/flag-france.svg" width="35" height="24" alt="Флаг Франции">
               <div class="directions__item-inner">
                 <a class="directions__link" href="#">
                   <h3 class="directions__title">Франция</h3>
@@ -228,8 +244,12 @@
             </article>
 
             <article class="directions__item">
-              <img class="directions__img" src="img/directions/czech-mobile@1x.jpg" alt="Фото Чехии" width="270" height="110">
-              <img class="directions__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/directions/czech-desktop@1x.jpg 1x, img/directions/czech-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/directions/czech-desktop@1x.jpg 1x, img/directions/czech-desktop@2x.jpg 2x">
+                <img class="directions__img" src="img/directions/czech-mobile@1x.jpg" srcset="img/directions/czech-mobile@2x.jpg 2x" alt="Фото Чехии" width="270" height="110">
+              </picture>
+              <img class="directions__flag" src="img/countries/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
               <div class="directions__item-inner">
                 <a class="directions__link" href="#">
                   <h3 class="directions__title">Чехия</h3>
@@ -273,18 +293,20 @@
               </div>
 
               <a class="travelmate__picture-link" href="#">
-                <img class="travelmate__picture" src="img/travelmates/firsova-desktop@1x.jpg" alt="Девушка плавает в океане" width="270" height="270">
+                <picture>
+                  <img class="travelmate__picture" src="img/travelmates/firsova-desktop@1x.jpg" srcset="img/travelmates/firsova-desktop@2x.jpg 2x" alt="Девушка плавает в океане" width="270" height="270">
+                </picture>
               </a>
 
               <ul class="travelmate__trip">
                 <li class="travelmate__country tooltip" data-title="Шри-Ланка">
-                  <img class="travelmate__flag" src="img/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
+                  <img class="travelmate__flag" src="img/countries/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
                 </li>
                 <li class="travelmate__country tooltip" data-title="Таиланд">
-                  <img class="travelmate__flag" src="img/flag-thailand.svg" alt="Флаг Таиланда" width="35" height="24">
+                  <img class="travelmate__flag" src="img/countries/flag-thailand.svg" alt="Флаг Таиланда" width="35" height="24">
                 </li>
                 <li class="travelmate__country tooltip" data-title="Сейшелы">
-                  <img class="travelmate__flag" src="img/flag-seychelles.svg" alt="Флаг Сейшел" width="35" height="24">
+                  <img class="travelmate__flag" src="img/countries/flag-seychelles.svg" alt="Флаг Сейшел" width="35" height="24">
                 </li>
               </ul>
 
@@ -363,15 +385,17 @@
               </div>
 
               <a class="travelmate__picture-link" href="#">
-                <img class="travelmate__picture" src="img/travelmates/demin-desktop@1x.jpg" alt="Бородатый парень в черной шапке и очках" width="270" height="270">
+                <picture>
+                  <img class="travelmate__picture" src="img/travelmates/demin-desktop@1x.jpg" srcset="img/travelmates/demin-desktop@2x.jpg 2x" alt="Бородатый парень в черной шапке и очках" width="270" height="270">
+                </picture>
               </a>
 
               <ul class="travelmate__trip">
                 <li class="travelmate__country tooltip" data-title="Бельгия">
-                  <img class="travelmate__flag" src="img/flag-belgium.svg" alt="Флаг Бельгии" width="35" height="24">
+                  <img class="travelmate__flag" src="img/countries/flag-belgium.svg" alt="Флаг Бельгии" width="35" height="24">
                 </li>
                 <li class="travelmate__country tooltip" data-title="Чехия">
-                  <img class="travelmate__flag" src="img/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
+                  <img class="travelmate__flag" src="img/countries/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
                 </li>
               </ul>
 
@@ -571,7 +595,11 @@
     <footer class="footer">
       <div class="footer__inner">
         <a class="footer__logo logo">
-          <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="120" height="30">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-blue@1x.png 1x, img/logo/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png 1x, img/logo/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo/logo-mobile-blue@1x.png" srcset="img/logo/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+          </picture>
         </a>
 
         <ul class="social-links footer__social-links">

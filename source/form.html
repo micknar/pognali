@@ -14,10 +14,18 @@
         <div class="header__inner">
           <div class="header__sticky">
             <a class="header__logo logo header__logo--blue" href="index.html">
-              <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-blue@1x.png 1x, img/logo/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png 1x, img/logo/logo-tablet-blue@2x.png 2x">
+                <img src="img/logo/logo-mobile-blue@1x.png" srcset="img/logo/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+              </picture>
             </a>
             <a class="header__logo logo header__logo--white header__logo--inner-page" href="index.html">
-              <img src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-white@1x.png 1x, img/logo/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-white@1x.png 1x, img/logo/logo-tablet-white@2x.png 2x">
+                <img src="img/logo/logo-mobile-white@1x.png" srcset="img/logo/logo-mobile-white@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+              </picture>
             </a>
             <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
               <svg class="header__menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
@@ -112,7 +120,10 @@
                 <span class="progress-bar__level">level</span>
               </div>
               <div class="user-profile__picture">
-                <img src="img/travelmates/demin-mobile@1x.jpg" alt="Тот самый бородатый парень в черной шапке и очках" width="100" height="100">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/user-profile/photo-account-tablet@1x.jpg 1x, img/user-profile/photo-account-tablet@2x.jpg 2x">
+                  <img src="img/user-profile/photo-account-mobile@1x.jpg" srcset="img/user-profile/photo-account-mobile@2x.jpg 2x" alt="Тот самый бородатый парень в черной шапке и очках" width="100" height="100">
+                </picture>
               </div>
             </div>
             <button class="user-profile__btn btn btn--secondary" type="button"><span>Сменить </span>фото</button>
@@ -595,7 +606,7 @@
                     </ul>
                     <ul class="trip__route trip__route--edit">
                       <li class="trip__edit">
-                        <img class="trip__flag" src="img/flag-bosnia-and-herzegovina.svg" alt="Флаг" width="35" height="24">
+                        <img class="trip__flag" src="img/countries/flag-bosnia.svg" alt="Флаг" width="35" height="24">
                         <button class="trip__remove-btn" type="button" aria-label="Удалить страну">
                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9" fill="#000000" viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
                             <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
@@ -605,7 +616,7 @@
                         </button>
                       </li>
                       <li class="trip__edit">
-                        <img class="trip__flag" src="img/flag-czech.svg" alt="Флаг" width="35" height="24">
+                        <img class="trip__flag" src="img/countries/flag-czech.svg" alt="Флаг" width="35" height="24">
                         <button class="trip__remove-btn" type="button" aria-label="Удалить страну">
                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9" fill="#000000" viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
                             <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
@@ -652,7 +663,7 @@
                     <li class="entertainment__item">
                       <span class="entertainment__country-wrapper">
                         <span class="entertainment__country">Босния и Герцеговина</span>
-                        <img class="entertainment__flag" src="img/flag-bosnia-and-herzegovina.svg" alt="Флаг" width="35" height="24">
+                        <img class="entertainment__flag" src="img/countries/flag-bosnia.svg" alt="Флаг" width="35" height="24">
                       </span>
                       <div class="entertainment__plan-box">
                         <textarea class="entertainment__plan" name="entertainment-plan" placeholder="План действий"></textarea>
@@ -661,7 +672,7 @@
                     <li class="entertainment__item">
                       <span class="entertainment__country-wrapper">
                         <span class="entertainment__country">Чехия</span>
-                        <img class="entertainment__flag" src="img/flag-czech.svg" alt="Флаг" width="35" height="24">
+                        <img class="entertainment__flag" src="img/countries/flag-czech.svg" alt="Флаг" width="35" height="24">
                       </span>
                       <div class="entertainment__plan-box">
                         <textarea class="entertainment__plan" name="entertainment-plan" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
@@ -693,7 +704,11 @@
     <footer class="footer">
       <div class="footer__inner">
         <a class="footer__logo logo" href="index.html">
-          <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-blue@1x.png 1x, img/logo/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png 1x, img/logo/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo/logo-mobile-blue@1x.png" srcset="img/logo/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+          </picture>
         </a>
 
         <ul class="social-links footer__social-links">

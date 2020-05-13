@@ -72,6 +72,8 @@
   z-index: 2;
   top: 90px;
   left: 25px;
+  width: 35px;
+  height: 24px;
 }
 
 .directions__item-inner {
@@ -229,7 +231,7 @@
   .directions__flag {
     width: 70px;
     height: 47px;
-    top: 0;
+    top: 15px;
     left: unset;
     right: 150px;
   }
@@ -312,6 +314,10 @@
 
   .directions__item-text {
     margin-bottom: 20px;
+  }
+
+  .directions__flag {
+    top: 23px;
   }
 
   .directions__btn {

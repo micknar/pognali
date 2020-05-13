@@ -14,10 +14,18 @@
         <div class="header__inner">
           <div class="header__sticky">
             <a class="header__logo logo header__logo--blue" href="index.html">
-              <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-blue@1x.png 1x, img/logo/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png 1x, img/logo/logo-tablet-blue@2x.png 2x">
+                <img src="img/logo/logo-mobile-blue@1x.png" srcset="img/logo/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+              </picture>
             </a>
             <a class="header__logo logo header__logo--white header__logo--inner-page" href="index.html">
-              <img src="img/logo-mobile-white@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-white@1x.png 1x, img/logo/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-white@1x.png 1x, img/logo/logo-tablet-white@2x.png 2x">
+                <img src="img/logo/logo-mobile-white@1x.png" srcset="img/logo/logo-mobile-white@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+              </picture>
             </a>
             <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
               <svg class="header__menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
@@ -689,7 +697,11 @@
           <div class="travelmates__list travelmates__list--catalog">
             <article class="travelmate travelmate--catalog">
               <a class="travelmate__picture-box" href="#">
-                <img class="travelmate__picture" src="img/travelmates/firsova-mobile@1x.jpg" alt="Девушка плавает в океане" width="70" height="70">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/travelmates/firsova-desktop@1x.jpg 1x, img/travelmates/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/travelmates/firsova-tablet@1x.jpg 1x, img/travelmates/firsova-tablet@2x.jpg 2x">
+                  <img class="travelmate__picture" src="img/travelmates/firsova-mobile@1x.jpg" srcset="img/travelmates/firsova-mobile@2x.jpg 2x" alt="Девушка плавает в океане" width="70" height="70">
+                </picture>
               </a>
 
               <div class="travelmate__user-info">
@@ -733,15 +745,15 @@
                 <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
                 <ul class="travelmate__trip">
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
                     <span class="travelmate__country-name">Шри-Ланка</span>
                   </li>
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-thailand.svg" alt="Флаг Таиланда" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-thailand.svg" alt="Флаг Таиланда" width="35" height="24">
                     <span class="travelmate__country-name">Таиланд</span>
                   </li>
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-seychelles.svg" alt="Флаг Сейшел" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-seychelles.svg" alt="Флаг Сейшел" width="35" height="24">
                     <span class="travelmate__country-name">Сейшелы</span>
                   </li>
                 </ul>
@@ -811,7 +823,11 @@
 
             <article class="travelmate travelmate--catalog">
               <a class="travelmate__picture-box" href="#">
-                <img class="travelmate__picture" src="img/travelmates/demin-tablet@1x.jpg" alt="Бородатый парень в черной шапке и очках" width="70" height="70">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/travelmates/demin-desktop@1x.jpg 1x, img/travelmates/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/travelmates/demin-tablet@1x.jpg 1x, img/travelmates/demin-tablet@2x.jpg 2x">
+                  <img class="travelmate__picture" src="img/travelmates/demin-mobile@1x.jpg" srcset="img/travelmates/demin-mobile@2x.jpg 2x" alt="Бородатый парень в черной шапке и очках" width="70" height="70">
+                </picture>
               </a>
 
               <div class="travelmate__user-info">
@@ -854,11 +870,11 @@
                 <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
                 <ul class="travelmate__trip">
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-belgium.svg" alt="Флаг Бельгии" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-belgium.svg" alt="Флаг Бельгии" width="35" height="24">
                     <span class="travelmate__country-name">Бельгия</span>
                   </li>
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
                     <span class="travelmate__country-name">Чехия</span>
                   </li>
                 </ul>
@@ -928,7 +944,11 @@
 
             <article class="travelmate travelmate--catalog">
               <a class="travelmate__picture-box" href="#">
-                <img class="travelmate__picture" src="img/travelmates/smolov-mobile@1x.jpg" alt="Парень в белой футболке и шортах сидит на крыше авто" width="70" height="70">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/travelmates/smolov-desktop@1x.jpg 1x, img/travelmates/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/travelmates/smolov-tablet@1x.jpg 1x, img/travelmates/smolov-tablet@2x.jpg 2x">
+                  <img class="travelmate__picture" src="img/travelmates/smolov-mobile@1x.jpg" srcset="img/travelmates/smolov-mobile@2x.jpg 2x" alt="Парень в белой футболке и шортах сидит на крыше авто" width="70" height="70">
+                </picture>
               </a>
 
               <div class="travelmate__user-info">
@@ -971,15 +991,15 @@
                 <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
                 <ul class="travelmate__trip">
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-usa.svg" alt="Флаг США" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-usa.svg" alt="Флаг США" width="35" height="24">
                     <span class="travelmate__country-name">США</span>
                   </li>
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-australia.svg" alt="Флаг Австралии" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-australia.svg" alt="Флаг Австралии" width="35" height="24">
                     <span class="travelmate__country-name">Австралия</span>
                   </li>
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-dominica.svg" alt="Флаг Доминики" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-dominica.svg" alt="Флаг Доминики" width="35" height="24">
                     <span class="travelmate__country-name">Доминика</span>
                   </li>
                 </ul>
@@ -1049,7 +1069,11 @@
 
             <article class="travelmate travelmate--catalog">
               <a class="travelmate__picture-box" href="#">
-                <img class="travelmate__picture" src="img/travelmates/rogovaya-mobile@1x.jpg" alt="Парень в белой футболке и шортах сидит на крыше авто" width="70" height="70">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/travelmates/rogovaya-desktop@1x.jpg 1x, img/travelmates/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/travelmates/rogovaya-tablet@1x.jpg 1x, img/travelmates/rogovaya-tablet@2x.jpg 2x">
+                  <img class="travelmate__picture" src="img/travelmates/rogovaya-mobile@1x.jpg" srcset="img/travelmates/rogovaya-mobile@2x.jpg 2x" alt="Девушка в деловом костюме" width="70" height="70">
+                </picture>
               </a>
 
               <div class="travelmate__user-info">
@@ -1091,11 +1115,11 @@
                 <h4 class="travelmate__title travelmate__title--wide">хочет посетить</h4>
                 <ul class="travelmate__trip">
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-uk.svg" alt="Флаг Великобритании" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-united-kingdom.svg" alt="Флаг Великобритании" width="35" height="24">
                     <span class="travelmate__country-name">Великобритания</span>
                   </li>
                   <li class="travelmate__country">
-                    <img class="travelmate__flag" src="img/flag-germany.svg" alt="Флаг Германии" width="35" height="24">
+                    <img class="travelmate__flag" src="img/countries/flag-germany.svg" alt="Флаг Германии" width="35" height="24">
                     <span class="travelmate__country-name">Германия</span>
                   </li>
                 </ul>
@@ -1186,7 +1210,11 @@
     <footer class="footer">
       <div class="footer__inner">
         <a class="footer__logo logo" href="index.html">
-          <img src="img/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-blue@1x.png 1x, img/logo/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png 1x, img/logo/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo/logo-mobile-blue@1x.png" srcset="img/logo/logo-mobile-blue@2x.png 2x" alt="Логотип «Погнали»" width="100" height="19">
+          </picture>
         </a>
 
         <ul class="social-links footer__social-links">
