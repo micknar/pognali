@@ -1,11 +1,12 @@
 .promo {
+  margin-top: -1px;
   color: #ffffff;
   background-color: #161c36;
 }
 
 .promo__inner {
   margin: 0 auto;
-  padding: 20px 25px 39px;
+  padding: 21px 25px 39px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), linear-gradient(to bottom, rgba(25, 33, 68, 0) 42%, rgba(255, 255, 255, 0) 40%, #0f1632 40%, #192144 80%), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 62% 152px, 0 0, -2px -71px;
@@ -137,6 +138,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    margin-top: 0;
     background-color: #182044;
   }
 
