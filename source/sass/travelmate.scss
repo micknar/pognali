@@ -239,6 +239,7 @@
   height: 31px;
   padding-top: 4px;
   padding-left: 6px;
+  padding-right: 6px;
   background-color: $main-bg;
   border: none;
   border-radius: 50%;
@@ -380,6 +381,11 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.travelmate--catalog .progress-bar__circle {
+  width: 45px;
+  height: 45px;
 }
 
 .travelmate--catalog .progress-bar__number {
@@ -625,6 +631,11 @@
     height: 60px;
   }
 
+  .travelmate--catalog .progress-bar__circle {
+    width: 60px;
+    height: 60px;
+  }
+
   .travelmate--catalog .progress-bar__number {
     margin-bottom: 4px;
     padding-top: 6px;
@@ -665,6 +676,7 @@
     width: 950px;
     margin-bottom: 30px;
     padding: 0;
+    overflow: visible;
 
     &:last-of-type {
       margin-bottom: 62px;
