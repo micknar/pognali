@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
-  z-index: 2;
+  z-index: 4;
+  margin-top: -1px;
   color: #ffffff;
   background-color: #161c35;
   border-bottom-left-radius: 20px;
@@ -11,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 25px 13px;
+  padding: 19px 25px 13px;
 }
 
 .page-header__title {
@@ -56,6 +57,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    margin-top: 0;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }

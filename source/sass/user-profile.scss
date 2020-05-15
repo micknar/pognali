@@ -32,6 +32,13 @@
 .user-profile__level {
   width: 100px;
   height: 100px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.user-profile__level .progress-bar__circle {
+  width: 100px;
+  height: 100px;
 }
 
 .user-profile__level .progress-bar__level {
@@ -142,6 +149,12 @@
   .user-profile__level {
     width: 94px;
     height: 94px;
+    padding: 0;
+  }
+
+  .user-profile__level .progress-bar__circle {
+    width: 94px;
+    height: 94px;
   }
 
   .user-profile__btn {
@@ -222,7 +235,7 @@
     position: absolute;
     top: -190px;
     right: 155px;
-    z-index: 2;
+    z-index: 4;
     width: 329px;
   }
 

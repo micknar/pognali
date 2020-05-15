@@ -1,6 +1,6 @@
 .country-filter {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   margin-top: -30px;
   margin-bottom: 24px;
   background-color: #e2e5f2;
@@ -317,6 +317,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .country-filter {
+    margin-bottom: 45px;
+  }
+
   .country-filter__inner,
   .country-filter__dropdown {
     max-width: $desktop-width;
@@ -371,7 +375,7 @@
 
   .country-filter__all-countries {
     display: flex;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     padding: 0 34px;
   }
 }

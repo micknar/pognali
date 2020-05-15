@@ -98,6 +98,13 @@
   margin-bottom: 76px;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .travelmates--preview {
+    background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-mobile@2x.png");
+    background-size: 143px auto, 71px auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .travelmates--preview {
     margin-top: -60px;
@@ -171,6 +178,13 @@
       margin-left: -10px;
       margin-right: 22px;
       background-size: 27px 27px;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .travelmates--preview {
+      background-image: url("../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
+      background-size: 285px auto, 143px auto;
     }
   }
 }
@@ -249,5 +263,12 @@
 
   .travelmates__pagination {
     margin: 0 0 137px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .travelmates__inner {
+      background-image: url("../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
+      background-size: 285px auto, 143px auto;
+    }
   }
 }

@@ -15,6 +15,7 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: -1;
     top: 66px;
     right: 26px;
     width: 99px;
@@ -110,6 +111,15 @@
 
   &:active svg {
     opacity: 0.3;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .rates__inner {
+    &::after {
+      background-image: url("../img/rates@2x.png");
+      background-size: 99px auto;
+    }
   }
 }
 
@@ -249,6 +259,14 @@
       right: 246px;
       width: 444px;
       height: 300px;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .rates__inner {
+      &::after {
+        background-size: 198px auto;
+      }
     }
   }
 }

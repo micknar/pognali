@@ -1,5 +1,6 @@
 .header {
   min-height: 73px;
+  background-color: #161c35;
 
   &--inner-page {
     background-color: #161c35;
@@ -7,7 +8,6 @@
 }
 
 .header__nav {
-  padding: 0 25px;
   background-color: #161c35;
 
   &--expanded,
@@ -18,9 +18,16 @@
   &--sticky {
     position: fixed;
     top: 0;
-    z-index: 9;
+    z-index: 16;
     width: 100%;
     background-color: #ffffff;
+  }
+
+  &--expanded:not(.header__nav--nojs) {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 15;
   }
 }
 
@@ -55,18 +62,9 @@
   display: flex;
 }
 
-.header--inner-page .header__sticky {
-  padding-top: 13px;
-}
-
 .header__sticky {
   display: flex;
   justify-content: space-between;
-  padding: 21px 0;
-}
-
-.header__logo {
-  margin-top: 6px;
 }
 
 .header__nav .header__logo--blue {
@@ -88,9 +86,9 @@
 }
 
 .header__menu-trigger {
-  padding: 0;
-  width: 32px;
-  height: 32px;
+  padding: 21px 24px;
+  width: 82px;
+  height: 74px;
   margin-top: -1px;
   margin-right: -3px;
   background-color: transparent;
@@ -121,9 +119,30 @@
   background-position: center center;
 }
 
+.header__logo {
+  width: 150px;
+  height: 73px;
+}
+
+.header__logo img {
+  padding: 27px 25px 21px;
+}
+
+.header__logo--inner-page {
+  height: 67px;
+}
+
+.header__nav--inner-page:not(.header__nav--sticky) .header__menu-trigger {
+  margin-top: -9px;
+}
+
+.header__logo--inner-page img {
+  padding-top: 19px;
+}
+
 .header__auth {
   display: block;
-  margin: 0 auto 51px;
+  margin: 0 25px 51px;
   padding: 10px;
   border-radius: 25px;
 }
@@ -234,17 +253,35 @@
     display: flex;
   }
 
-  .header--inner-page .header__sticky {
-    padding-top: 40px;
+  .header__logo--inner-page {
+    height: 67px;
   }
 
   .header__sticky {
     width: 52%;
-    padding: 39px 0 44px 12px;
+  }
+
+  .header__logo {
+    flex: 0 0 205px;
+    width: 205px;
+    height: 132px;
+  }
+
+  .header__logo img {
+    padding: 46px 0 0 39px;
+  }
+
+  .header__nav--inner-page:not(.header__nav--sticky) .header__menu-trigger {
+    margin-top: 28px;
+  }
+
+  .header__logo--inner-page img {
+    padding-top: 49px;
   }
 
   .header__menu-trigger {
-    margin-top: 10px;
+    margin-top: 28px;
+    margin-right: -25px;
   }
 
   .header__nav--closed .header__menu-icon {
@@ -270,7 +307,7 @@
     top: 40px;
     right: 40px;
     width: 189px;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .header__social-links {
@@ -366,7 +403,13 @@
   }
 
   .header__logo {
-    margin-top: 0;
+    flex: 0 0 200px;
+    width: 200px;
+    height: 52px;
+  }
+
+  .header__logo img {
+    padding: 0;
   }
 
   .header__main-nav {

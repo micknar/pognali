@@ -208,6 +208,7 @@
   .registration__contacts {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .registration__contacts .contacts__item {

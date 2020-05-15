@@ -72,6 +72,8 @@
   z-index: 2;
   top: 90px;
   left: 25px;
+  width: 35px;
+  height: 24px;
 }
 
 .directions__item-inner {
@@ -229,15 +231,15 @@
   .directions__flag {
     width: 70px;
     height: 47px;
-    top: 0;
-    left: unset;
+    top: 15px;
+    left: auto;
     right: 150px;
   }
 
   .directions__counter {
     position: relative;
     top: 0;
-    right: unset;
+    right: auto;
     left: 31px;
     font-size: 20px;
     line-height: 1.5;
@@ -248,6 +250,13 @@
       width: 21px;
       height: 20px;
       background-size: 21px 20px;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .directions__inner {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 289px auto;
     }
   }
 }
@@ -312,6 +321,10 @@
 
   .directions__item-text {
     margin-bottom: 20px;
+  }
+
+  .directions__flag {
+    top: 23px;
   }
 
   .directions__btn {
