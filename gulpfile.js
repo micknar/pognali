@@ -4,11 +4,11 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
-var concat = require('gulp-concat');
+var concat = require("gulp-concat");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var mqpacker = require('css-mquery-packer');
-var sortCSSmq = require('sort-css-media-queries');
+var mqpacker = require("css-mquery-packer");
+var sortCSSmq = require("sort-css-media-queries");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -28,7 +28,7 @@ gulp.task("css", function () {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
-      mqpacker ({sort: sortCSSmq})
+      mqpacker({sort: sortCSSmq})
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -39,7 +39,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,jpeg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.mozjpeg({quality: 95, progressive: true}),
@@ -56,7 +56,7 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("webp", function() {
-  return gulp.src("img/**/*.{png,jpg}")
+  return gulp.src("img/**/*.{png,jpg,jpeg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"));
 });
@@ -85,8 +85,9 @@ var minifyJS = () =>
     })
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
 
-gulp.task('minifyJS', minifyJS)
+gulp.task("minifyJS", minifyJS)
 
 gulp.task("clean", function () {
   return del("build");
@@ -119,7 +120,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/img/icons/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("minifyJS", "html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("minifyJS"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
