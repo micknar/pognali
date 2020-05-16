@@ -9,7 +9,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var mqpacker = require("css-mquery-packer");
 var sortCSSmq = require("sort-css-media-queries");
-var minify = require("gulp-csso");
+var cssmin = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
@@ -18,7 +18,7 @@ var webp = require("gulp-webp");
 var del = require("del");
 var posthtml = require("gulp-posthtml");
 var htmlmin = require("gulp-html-minifier-terser");
-var jsmin = require("gulp-terser-js");
+var terser = require("gulp-terser-js");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -32,7 +32,7 @@ gulp.task("css", function () {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    .pipe(minify())
+    .pipe(cssmin())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -68,11 +68,11 @@ gulp.task("html", function() {
   .pipe(gulp.dest("build"));
 });
 
-var minifyJS = () =>
+var jsmin = () =>
   gulp.src("source/js/*.js")
     .pipe(sourcemap.init())
     .pipe(concat("scripts.min.js"))
-    .pipe(jsmin({
+    .pipe(terser({
       mangle: {
         toplevel: true
       }
@@ -87,7 +87,7 @@ var minifyJS = () =>
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 
-gulp.task("minifyJS", minifyJS)
+gulp.task("jsmin", jsmin)
 
 gulp.task("clean", function () {
   return del("build");
@@ -96,8 +96,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/*.ico"
+    "source/img/**"
     ], {
       base: "source"
     })
@@ -120,9 +119,9 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/img/icons/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("minifyJS"));
+  gulp.watch("source/js/*.js", gulp.series("jsmin"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "images", "webp", "css", "sprite", "minifyJS", "html"));
+gulp.task("build", gulp.series("clean", "copy", "images", "webp", "css", "sprite", "jsmin", "html"));
 gulp.task("start", gulp.series("build", "server"));
