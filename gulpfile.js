@@ -11,7 +11,6 @@ var sortCSSmq = require('sort-css-media-queries');
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 var del = require("del");
@@ -37,17 +36,17 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
-    imagemin.mozjpeg({quality: 95, progressive: true})
+    imagemin.mozjpeg({quality: 95, progressive: true}),
+    imagemin.svgo()
   ]))
   .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function() {
   return gulp.src("source/img/icons/icon-*.svg")
-  .pipe(svgmin())
   .pipe(svgstore({inlineSvg: true}))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
