@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="header header--inner-page">
       <div class="header__nav header__nav--nojs header__nav--closed header__nav--inner-page">
         <div class="header__inner">
@@ -36,7 +40,7 @@
               </picture>
             </a>
             <button type="button" class="header__menu-trigger" aria-label="Открыть/скрыть меню">
-              <svg class="header__menu-icon" width="25" height="11"><use xlink:href="img/sprite.svg#icon-menu-hamburger"></use></svg>
+              <svg class="header__menu-icon" width="25" height="11"><use xlink:href="#icon-menu-hamburger"></use></svg>
             </button>
           </div>
           <div class="header__dropdown">
@@ -52,7 +56,7 @@
               <li class="contacts__item">
                 <a class="contacts__link contacts__link--phone contacts__link--header" href="tel:+78005558628">
                   <span>
-                    <svg width="18" height="14"><use xlink:href="img/sprite.svg#icon-contacts-phone"></use></svg>
+                    <svg width="18" height="14"><use xlink:href="#icon-contacts-phone"></use></svg>
                   </span>
                   8 800 555-86-28
                 </a>
@@ -60,7 +64,7 @@
               <li class="contacts__item">
                 <a class="contacts__link contacts__link--mail contacts__link--header" href="mailto:mail@htmlacademy.ru">
                   <span>
-                    <svg width="18" height="14"><use xlink:href="img/sprite.svg#icon-contacts-mail"></use></svg>
+                    <svg width="18" height="14"><use xlink:href="#icon-contacts-mail"></use></svg>
                   </span>
                   mail@htmlacademy.ru
                 </a>
@@ -460,7 +464,7 @@
                   <input class="visually-hidden" type="checkbox" name="hobby" id="filter-gym" value="gym" checked>
                   <label class="travelmates-filter__label" for="filter-gym">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Спортзал
                   </label>
@@ -469,7 +473,7 @@
                   <input class="visually-hidden" type="checkbox" name="hobby" id="filter-hookah" value="hookah">
                   <label class="travelmates-filter__label" for="filter-hookah">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Кальян
                   </label>
@@ -478,7 +482,7 @@
                   <input class="visually-hidden" type="checkbox" name="hobby" id="filter-couch" value="couch">
                   <label class="travelmates-filter__label" for="filter-couch">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Диван
                   </label>
@@ -496,7 +500,7 @@
                   <input class="visually-hidden" type="checkbox" name="music" id="filter-rock" value="rock" checked>
                   <label class="travelmates-filter__label" for="filter-rock">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Тяжелый рок
                   </label>
@@ -505,7 +509,7 @@
                   <input class="visually-hidden" type="checkbox" name="music" id="filter-rap" value="rap">
                   <label class="travelmates-filter__label" for="filter-rap">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Русский рэп
                   </label>
@@ -514,7 +518,7 @@
                   <input class="visually-hidden" type="checkbox" name="music" id="filter-eurodance" value="eurodance">
                   <label class="travelmates-filter__label" for="filter-eurodance">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Евроденс
                   </label>
@@ -532,7 +536,7 @@
                   <input class="visually-hidden" type="checkbox" name="food" id="filter-meat-eater" value="meat-eater" checked>
                   <label class="travelmates-filter__label" for="filter-meat-eater">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Мясоед
                   </label>
@@ -541,7 +545,7 @@
                   <input class="visually-hidden" type="checkbox" name="food" id="filter-healthy-nutrition" value="healthy-nutrition">
                   <label class="travelmates-filter__label" for="filter-healthy-nutrition">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Сидит на ПП
                   </label>
@@ -550,7 +554,7 @@
                   <input class="visually-hidden" type="checkbox" name="food" id="filter-raw-foodist" value="raw-foodist">
                   <label class="travelmates-filter__label" for="filter-raw-foodist">
                     <span>
-                      <svg width="9" height="9" fill="#192144"><use xlink:href="img/sprite.svg#icon-checkbox-checked"></use></svg>
+                      <svg width="9" height="9" fill="#192144"><use xlink:href="#icon-checkbox-checked"></use></svg>
                     </span>
                     Веган-сыроед
                   </label>
@@ -567,25 +571,25 @@
                 <li class="transport__item transport__item--plane">
                   <input class="visually-hidden" type="checkbox" name="transport" id="catalog-filter-plane" value="plane" checked>
                   <label class="transport__label" for="catalog-filter-plane" aria-label="Авиаперелет">
-                    <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-plane"></use></svg>
+                    <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-plane"></use></svg>
                   </label>
                 </li>
                 <li class="transport__item transport__item--car">
                   <input class="visually-hidden" type="checkbox" name="transport" id="catalog-filter-car" value="car" checked>
                   <label class="transport__label" for="catalog-filter-car" aria-label="Автотранспорт">
-                    <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-car"></use></svg>
+                    <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-car"></use></svg>
                   </label>
                 </li>
                 <li class="transport__item transport__item--bike">
                   <input class="visually-hidden" type="checkbox" name="transport" id="catalog-filter-bike" value="bike">
                   <label class="transport__label" for="catalog-filter-bike" aria-label="Велосипед">
-                    <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-bike"></use></svg>
+                    <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-bike"></use></svg>
                   </label>
                 </li>
                 <li class="transport__item transport__item--by-foot">
                   <input class="visually-hidden" type="checkbox" name="transport" id="catalog-filter-by-foot" value="by-foot" checked>
                   <label class="transport__label" for="catalog-filter-by-foot" aria-label="Пешком">
-                    <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-by-foot"></use></svg>
+                    <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-by-foot"></use></svg>
                   </label>
                 </li>
               </ul>
@@ -652,8 +656,8 @@
                   <a class="travelmate__call btn" href="#">Позвать!</a>
                   <div class="travelmate__likes-counter">
                     <button class="travelmate__like travelmate__like--liked" type="button">
-                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="img/sprite.svg#icon-heart"></use></svg>
-                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="img/sprite.svg#icon-heart-liked"></use></svg>
+                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="#icon-heart"></use></svg>
+                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="#icon-heart-liked"></use></svg>
                     </button>
                     1,5 M
                   </div>
@@ -682,16 +686,16 @@
                     <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
                     <ul class="travelmate__transport-list transport">
                       <li class="transport__item transport__item--plane tooltip" data-title="Авиаперелет">
-                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-plane"></use></svg>
+                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-plane"></use></svg>
                       </li>
                       <li class="transport__item transport__item--car tooltip transport__item--disabled" data-title="Автотранспорт">
-                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-car"></use></svg>
+                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-car"></use></svg>
                       </li>
                       <li class="transport__item transport__item--bike tooltip transport__item--disabled" data-title="Велосипед">
-                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-bike"></use></svg>
+                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-bike"></use></svg>
                       </li>
                       <li class="transport__item transport__item--by-foot tooltip transport__item--disabled" data-title="Пешком">
-                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-by-foot"></use></svg>
+                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-by-foot"></use></svg>
                       </li>
                     </ul>
                   </div>
@@ -742,8 +746,8 @@
                   <a class="travelmate__call btn" href="#">Позвать!</a>
                   <div class="travelmate__likes-counter">
                     <button class="travelmate__like" type="button">
-                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="img/sprite.svg#icon-heart"></use></svg>
-                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="img/sprite.svg#icon-heart-liked"></use></svg>
+                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="#icon-heart"></use></svg>
+                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="#icon-heart-liked"></use></svg>
                     </button>
                     1500
                   </div>
@@ -768,16 +772,16 @@
                     <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
                     <ul class="travelmate__transport-list transport">
                       <li class="transport__item transport__item--plane tooltip" data-title="Авиаперелет">
-                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-plane"></use></svg>
+                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-plane"></use></svg>
                       </li>
                       <li class="transport__item transport__item--car tooltip" data-title="Автотранспорт">
-                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-car"></use></svg>
+                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-car"></use></svg>
                       </li>
                       <li class="transport__item transport__item--bike tooltip transport__item--disabled" data-title="Велосипед">
-                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-bike"></use></svg>
+                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-bike"></use></svg>
                       </li>
                       <li class="transport__item transport__item--by-foot tooltip" data-title="Пешком">
-                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-by-foot"></use></svg>
+                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-by-foot"></use></svg>
                       </li>
                     </ul>
                   </div>
@@ -828,8 +832,8 @@
                   <a class="travelmate__call btn" href="#">Позвать!</a>
                   <div class="travelmate__likes-counter">
                     <button class="travelmate__like" type="button">
-                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="img/sprite.svg#icon-heart"></use></svg>
-                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="img/sprite.svg#icon-heart-liked"></use></svg>
+                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="#icon-heart"></use></svg>
+                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="#icon-heart-liked"></use></svg>
                     </button>
                     170
                   </div>
@@ -858,16 +862,16 @@
                     <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
                     <ul class="travelmate__transport-list transport">
                       <li class="transport__item transport__item--plane tooltip" data-title="Авиаперелет">
-                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-plane"></use></svg>
+                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-plane"></use></svg>
                       </li>
                       <li class="transport__item transport__item--car tooltip transport__item--disabled" data-title="Автотранспорт">
-                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-car"></use></svg>
+                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-car"></use></svg>
                       </li>
                       <li class="transport__item transport__item--bike tooltip" data-title="Велосипед">
-                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-bike"></use></svg>
+                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-bike"></use></svg>
                       </li>
                       <li class="transport__item transport__item--by-foot tooltip transport__item--disabled" data-title="Пешком">
-                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-by-foot"></use></svg>
+                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-by-foot"></use></svg>
                       </li>
                     </ul>
                   </div>
@@ -917,8 +921,8 @@
                   <a class="travelmate__call btn" href="#">Позвать!</a>
                   <div class="travelmate__likes-counter">
                     <button class="travelmate__like" type="button">
-                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="img/sprite.svg#icon-heart"></use></svg>
-                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="img/sprite.svg#icon-heart-liked"></use></svg>
+                      <svg class="travelmate__heart" width="13" height="11" fill="#192144"><use xlink:href="#icon-heart"></use></svg>
+                      <svg class="travelmate__liked-heart" width="13" height="11" fill="#f02323"><use xlink:href="#icon-heart-liked"></use></svg>
                     </button>
                     23
                   </div>
@@ -943,16 +947,16 @@
                     <h4 class="travelmate__title travelmate__title--medium">транспорт</h4>
                     <ul class="travelmate__transport-list transport">
                       <li class="transport__item transport__item--plane tooltip" data-title="Авиаперелет">
-                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-plane"></use></svg>
+                        <svg width="14" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-plane"></use></svg>
                       </li>
                       <li class="transport__item transport__item--car tooltip" data-title="Автотранспорт">
-                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-car"></use></svg>
+                        <svg width="13" height="16" fill="#1d2e5b"><use xlink:href="#icon-transport-car"></use></svg>
                       </li>
                       <li class="transport__item transport__item--bike tooltip transport__item--disabled" data-title="Велосипед">
-                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-bike"></use></svg>
+                        <svg width="19" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-bike"></use></svg>
                       </li>
                       <li class="transport__item transport__item--by-foot tooltip transport__item--disabled" data-title="Пешком">
-                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="img/sprite.svg#icon-transport-by-foot"></use></svg>
+                        <svg width="15" height="17" fill="#1d2e5b"><use xlink:href="#icon-transport-by-foot"></use></svg>
                       </li>
                     </ul>
                   </div>
@@ -1007,17 +1011,17 @@
         <ul class="social-links footer__social-links">
           <li class="social-links__item">
             <a class="social-links__link social-links__link--fb" href="#" target="_blank" aria-label="Facebook">
-              <svg width="11" height="21" fill="#192144"><use xlink:href="img/sprite.svg#icon-social-fb"></use></svg>
+              <svg width="11" height="21" fill="#192144"><use xlink:href="#icon-social-fb"></use></svg>
             </a>
           </li>
           <li class="social-links__item">
             <a class="social-links__link social-links__link--vk" href="#" target="_blank" aria-label="Вконтакте">
-              <svg width="23" height="12" fill="#192144"><use xlink:href="img/sprite.svg#icon-social-vk"></use></svg>
+              <svg width="23" height="12" fill="#192144"><use xlink:href="#icon-social-vk"></use></svg>
             </a>
           </li>
           <li class="social-links__item">
             <a class="social-links__link social-links__link--insta" href="#" target="_blank" aria-label="Instagram">
-              <svg width="18" height="18" fill="#192144"><use xlink:href="img/sprite.svg#icon-social-insta"></use></svg>
+              <svg width="18" height="18" fill="#192144"><use xlink:href="#icon-social-insta"></use></svg>
             </a>
           </li>
         </ul>
