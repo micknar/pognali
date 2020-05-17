@@ -7,7 +7,6 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
-    "css-mquery-packer": "1.2.0",
     "del": "5.1.0",
     "gulp": "4.0.x",
     "gulp-concat": "^2.6.1",
