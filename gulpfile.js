@@ -39,11 +39,11 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function() {
-  return gulp.src(["!source/img/icons/icon-*.svg", "source/img/**/*.{png,jpg,jpeg,svg}"])
+  return gulp.src(["source/img/**/*.{png,jpg,jpeg,svg}", "!source/img/icons/icon-*.svg"])
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.mozjpeg({quality: 95, progressive: true}),
-    imagemin.svgo()
+    imagemin.svgo({plugins: [{removeViewBox: false}]})
   ]))
   .pipe(gulp.dest("build/img"));
 });
