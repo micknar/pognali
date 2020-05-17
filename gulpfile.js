@@ -7,7 +7,6 @@ var sass = require("gulp-sass");
 var concat = require("gulp-concat");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var sortCSSmq = require("sort-css-media-queries");
 var cssmin = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
