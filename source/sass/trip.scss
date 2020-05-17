@@ -461,24 +461,24 @@
     padding: 0;
 
     &--edit {
-      right: 110px;
+      right: 116px;
     }
 
     &--edit::before {
       top: -62px;
-      right: 116px;
+      right: 110px;
       height: 442px;
     }
 
     &--edit::after {
       top: 378px;
-      right: 116px;
+      right: 110px;
     }
   }
 
   .trip__remove-btn {
     top: 23px;
-    right: -104px;
+    right: -110px;
 
     & svg {
       width: 18px;

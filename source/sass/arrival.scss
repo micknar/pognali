@@ -234,7 +234,7 @@ input[type="checkbox"]:active:checked + .arrival__with-kids svg {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   .arrival__fieldset {
@@ -248,11 +248,11 @@ input[type="checkbox"]:active:checked + .arrival__with-kids svg {
 
   .arrival__controls-wrapper {
     width: 181px;
-    margin-right: 35px;
+    margin-right: 37px;
   }
 
   .arrival__label {
-    min-width: 222px;
+    min-width: 220px;
     margin-bottom: 0;
   }
 
@@ -271,5 +271,9 @@ input[type="checkbox"]:active:checked + .arrival__with-kids svg {
     margin-bottom: 0;
     padding-top: 17px;
     border: none;
+  }
+
+  .arrival__with-kids span {
+    margin-right: 22px;
   }
 }
