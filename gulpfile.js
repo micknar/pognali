@@ -7,7 +7,6 @@ var sass = require("gulp-sass");
 var concat = require("gulp-concat");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var mqpacker = require("css-mquery-packer");
 var sortCSSmq = require("sort-css-media-queries");
 var cssmin = require("gulp-csso");
 var rename = require("gulp-rename");
@@ -26,10 +25,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      mqpacker({sort: sortCSSmq})
-    ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(cssmin())
