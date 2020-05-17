@@ -69,7 +69,7 @@ gulp.task("html", function() {
 });
 
 var jsmin = () =>
-  gulp.src("source/js/*.js")
+  gulp.src(["source/js/*.js", "!source/js/*.min.js"])
     .pipe(sourcemap.init())
     .pipe(concat("scripts.min.js"))
     .pipe(terser({
@@ -96,7 +96,8 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**"
+    "source/img/**",
+    "source/js/*.min.js"
     ], {
       base: "source"
     })
