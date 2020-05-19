@@ -3,9 +3,12 @@
   background: #ffffff;
   border-radius: 10px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &:hover .travelmate__picture {
+    transform: scale(1.02);
   }
 }
 
@@ -13,11 +16,6 @@
   width: 270px;
   margin-left: auto;
   margin-right: auto;
-
-  &:hover .travelmate__picture,
-  &:focus .travelmate__picture {
-    transform: scale(1.02);
-  }
 }
 
 .travelmate--preview .progress-bar {
