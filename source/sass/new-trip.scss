@@ -214,7 +214,7 @@
   }
 
   .new-trip__step-item.arrival {
-    padding: 98px 160px 105px;
+    padding: 98px 160px 104px;
   }
 
   .new-trip__step-item.trip .new-trip__step-title-wrapper {
@@ -247,7 +247,7 @@
   .new-trip__step-title-wrapper {
     position: relative;
     margin-bottom: 30px;
-    padding-bottom: 55px;
+    padding-bottom: 54px;
   }
 
   .new-trip__header .new-trip__step-marks {
@@ -263,5 +263,6 @@
 
   .new-trip__prev-step {
     max-width: 179px;
+    margin-right: 4px;
   }
 }
