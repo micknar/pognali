@@ -1,7 +1,7 @@
 # «Погнали» - сервис для поиска попутчиков для путешествий
 
-* Студент: [Marina Chibirova](https://up.htmlacademy.ru/adaptive/19/user/527331).
-* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
+* Студент: [Marina Chibirova](https://up.htmlacademy.ru/adaptive/19/user/527331)
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw)
 * Сборка: [https://micknar.github.io/pognali](https://micknar.github.io/pognali/)
 
 ---
