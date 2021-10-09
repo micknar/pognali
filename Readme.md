@@ -1,11 +1,7 @@
-# «Погнали» - сервис для поиска попутчиков для путешествий
+# [«Погнали»](https://micknar.github.io/pognali/) [![Build](https://github.com/micknar/pognali/actions/workflows/build.yml/badge.svg)](https://github.com/micknar/pognali/actions/workflows/build.yml)
 
-* Студент: [Marina Chibirova](https://up.htmlacademy.ru/adaptive/19/user/527331)
-* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw)
-* Сборка: [https://micknar.github.io/pognali](https://micknar.github.io/pognali/)
 
----
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+Сервис для поиска попутчиков для путешествий.
